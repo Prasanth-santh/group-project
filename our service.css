@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* service-bg */
+
+.service-bg{
+    background-image: url(./bg\ img.jpg);
+    width: 100%;
+    height:350px;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.service-bg h1{
+    color: white;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+.service-bg .gray{
+    color: rgb(156, 150, 150);
+    font-size: 25px;
+    font-weight: bold;
+}
+.service-bg .white{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:512px) {
+    .service-bg{
+        padding:100px 20px;
+    }
+    
+}
+
+/* header */
+
+.header{
+    text-align: center;
+    width: 100%;
+    padding: 100px 20px;
+    
+
+}
+.header h1{
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+.header .blue{
+    color: blue;
+}
+.header p{
+    color: gray;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* cardcontainer */
+
+.cardcontainer{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    gap: 20px;
+}
+.card{
+    width: 25%;
+    padding: 70px 40px;
+    background-color: rgb(209, 235, 245);
+    border-radius: 10px;
+    text-align: center;
+}
+.card h2{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.card p{
+    font-size: 20px;
+    color: gray;
+    line-height: 30px;
+}
