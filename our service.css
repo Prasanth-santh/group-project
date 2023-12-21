@@ -50,13 +50,14 @@
     font-size: 45px;
     padding-bottom: 30px;
 }
-.header .blue{
+.blue{
     color: blue;
 }
 .header p{
     color: gray;
     font-size: 20px;
     line-height: 30px;
+    
 }
 
 /* cardcontainer */
@@ -66,9 +67,11 @@
     flex-wrap:wrap ;
     justify-content: center;
     gap: 20px;
+    padding:20px;
+    padding-bottom: 50px;
 }
 .card{
-    width: 25%;
+    width: 350px;
     padding: 70px 40px;
     background-color: rgb(209, 235, 245);
     border-radius: 10px;
@@ -82,4 +85,42 @@
     font-size: 20px;
     color: gray;
     line-height: 30px;
+}
+.card:hover{
+    border: 2px solid rgba(18, 230, 106, 0.562);
+    cursor: pointer;
+}
+.card:hover h2{
+    color:  rgba(11, 230, 102, 0.966);
+}
+
+/* clientbox */
+
+.clientbox{
+    background-color: rgb(179, 212, 231);
+    padding: 100px;
+}
+.clientbox h1{
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+.clientbox p{
+    font-size: 20px;
+    line-height: 30px;
+    width: 50%;
+}
+
+/* client-info-box */
+
+.client-info-box{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.client-info-box .client-info{
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    width: 600px;
 }
