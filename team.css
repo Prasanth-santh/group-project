@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color: white;
+    --light:gray;
+
+}
+.first-content{
+    min-height: 300px;
+    width: 100%;
+    margin: 6rem 0rem;
+    border: 1px solid black;
+    background-image:url(https://bitrader.thetork.com/wp-content/themes/bitrader/assets/img/bg/breadcrumb_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.first-text{
+    
+    margin: 20px 2rem ;
+    text-align: left;
+}
+.first-text h1{
+    padding-top: 3.8rem ;
+    color: var(--color);
+    font-size: 50px;
+}
+.first-text span{
+    color: var(--light);
+}
+.first-text h3{
+ color: var(--color);
+ padding-top: 2rem;
+ font-size: 1.3rem;
+}
