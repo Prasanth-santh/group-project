@@ -87,11 +87,11 @@
     line-height: 30px;
 }
 .card:hover{
-    border: 2px solid rgba(18, 230, 106, 0.562);
+    border: 2px solid rgb(115, 235, 91);
     cursor: pointer;
 }
 .card:hover h2{
-    color:  rgba(11, 230, 102, 0.966);
+    color:  rgb(52, 236, 67);
 }
 
 /* clientbox */
@@ -99,6 +99,7 @@
 .clientbox{
     background-color: rgb(179, 212, 231);
     padding: 100px;
+    text-align: center;
 }
 .clientbox h1{
     font-size: 45px;
@@ -108,6 +109,7 @@
     font-size: 20px;
     line-height: 30px;
     width: 50%;
+    margin: auto;
 }
 
 /* client-info-box */
@@ -116,11 +118,49 @@
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
+    gap:30px;
 }
-.client-info-box .client-info{
+
+.client-info{
     background-color: white;
+    
+    width:450px ;
+    border-bottom: 1px solid gray;
+}
+.client-info-box p{
+    width: 100%;
+    padding-bottom: 30px;
+}
+.bottomline{
+    padding: 40px;
     border-radius: 5px;
-    padding: 30px;
-    width: 600px;
+    background-color: white;
+}
+
+/* profile-info */
+
+.profile-info{
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.profile img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.profile-details h1{
+    font-size: 25px;
+    
+}
+.profile-details p{
+    margin: unset;
+    padding: unset;
+    /* line-height: 10px; */
+
 }
