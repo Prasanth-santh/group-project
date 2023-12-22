@@ -4,7 +4,36 @@
     box-sizing: border-box;
 }
 .service-d-bg{
-    background-image: url(./service\ details\ pic/graph);
-    height: 50vh;
-    background-color: blue;
+    height: 60vh;
+}
+.service-d-bg img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    filter: brightness(40%);
+}
+.bg-content{
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    line-height: 38px;
+    /* display: flex; */
+
+}
+.bg-content h1{
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bg-content span{
+    color: gray;
+}
+.service-modules{
+    padding:90px 40px;
+}
+.search-bar{
+    width: 30%;
+    background-color: red;
+    padding: 20px;
+    
 }
