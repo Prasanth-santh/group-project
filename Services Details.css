@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.service-d-bg{
+    background-image: url(./service\ details\ pic/graph);
+    height: 50vh;
+    background-color: blue;
+}
