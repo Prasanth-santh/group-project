@@ -76,6 +76,7 @@
     background-color: rgb(209, 235, 245);
     border-radius: 10px;
     text-align: center;
+    border: 3px solid transparent;
 }
 .card h2{
     padding-bottom: 20px;
@@ -87,11 +88,11 @@
     line-height: 30px;
 }
 .card:hover{
-    border: 2px solid rgb(115, 235, 91);
+    border: 3px solid rgba(76, 172, 113, 0.904);
     cursor: pointer;
 }
 .card:hover h2{
-    color:  rgb(52, 236, 67);
+    color:  rgba(31, 240, 111, 0.904);
 }
 
 /* clientbox */
@@ -123,9 +124,9 @@
     gap:30px;
 }
 
+
 .client-info{
     background-color: white;
-    
     width:450px ;
     border-bottom: 1px solid gray;
 }
@@ -135,8 +136,21 @@
 }
 .bottomline{
     padding: 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
+    border: 3px solid transparent;
+}
+.bottomline:hover{
+    border: 3px solid rgba(76, 172, 113, 0.904);
+    cursor: pointer;
+}
+
+/* profile info container */
+
+.profile-info-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* profile-info */
@@ -146,7 +160,9 @@
     padding-top: 30px;
     gap: 20px;
     flex-wrap: wrap;
+    border: 2px solid transparent;
 }
+
 .profile img{
     height: 70px;
     width: 70px;
@@ -159,8 +175,20 @@
     
 }
 .profile-details p{
-    margin: unset;
     padding: unset;
-    /* line-height: 10px; */
+    text-align: left;
+    line-height: 0;
+}
 
+ /* icon */
+
+.profile-info-container .icon{
+    padding-top:30px ;
+}
+.icon i{
+    font-size: 50px;
+    color: gray;
+}
+.bottomline:hover .icon i{
+    color:rgba(31, 240, 111, 0.904);
 }
