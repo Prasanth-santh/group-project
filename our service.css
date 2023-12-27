@@ -94,7 +94,23 @@
 .card:hover h2{
     color:  rgba(31, 240, 111, 0.904);
 }
-
+.card p i{
+    font-size: 50px;
+    color: rgba(76, 172, 113, 0.904);
+    /* margin: auto; */
+    background-color: white;
+    padding: 40px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+   
+}
+/* .card p:first-child{
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: auto;
+} */
 /* clientbox */
 
 .clientbox{
@@ -187,8 +203,8 @@
 }
 .icon i{
     font-size: 50px;
-    color: gray;
+    color: rgba(117, 241, 165, 0.904);
 }
 .bottomline:hover .icon i{
-    color:rgba(31, 240, 111, 0.904);
+    color:rgb(10, 102, 59);
 }
