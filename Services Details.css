@@ -15,7 +15,7 @@
 .bg-content{
     color: white;
     position: absolute;
-    top: 35%;
+    top: 31%;
     left: 15%;
     line-height: 38px;
     /* display: flex; */
@@ -32,6 +32,8 @@
     display: flex;
     gap: 30px;
     justify-content: space-between;
+    padding:90px 50px;
+    width: 100%;
 }
 .left-module{
     display: flex;
@@ -41,11 +43,7 @@
     flex-direction: column;
     gap: 40px;
     background-color: blueviolet;
-    width: 30%;
-}
-.service-modules{
-    padding:90px 50px;
-    width: 100%;
+    /* width: 30%; */
 }
 .search-bar{
     width: 100%;
@@ -61,7 +59,8 @@
     width: 100%;
     padding: 18px 15px;
     border-radius: 10px;
-    background-color: rgb(223, 217, 217);
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(201, 196, 196);
 }
 #search::placeholder{
     font-size: larger;
@@ -69,10 +68,10 @@
 .s-icon{
     position: relative;
     top: -48px;
-    left: 220px;
+    left: 80%;
     font-size: larger;
     color: white;
-    background-color: rgb(132, 231, 107);
+    background-color: rgb(157, 243, 136);
     padding: 10px;
     border-radius: 50%;
 }
@@ -94,6 +93,7 @@
     font-size: large;
     color: grey;
     line-height: 35px;
+    transition: all 0.2s;
 }
 .categories a{
     text-decoration: none;
@@ -101,6 +101,7 @@
 }
 .categories p:hover{
     color: rgb(132, 231, 107);
+    transform: scale(1.06,1.06);
 }
 .social-links{
     width: 100%;
@@ -138,17 +139,17 @@
     background-color: crimson;
     padding: 20px 25px;
     border-radius: 7px;
-    min-height: 1400px;
+    min-height: 140px;
 }
 .content {
-    height: 300px;
+    /* height: 300px; */
     width: 100%;
     padding: 10px;
     margin-top: 25px ;
-    /* background-color: red; */
+    background-color: red;
 }
 .content img{
-    height: 100%;
+    height: 270px;
     width: 100%;
     border-radius: 16px;
 }
@@ -164,4 +165,120 @@
 .smart-trading p{
     color: grey;
     font-size: 19px;
+}
+.qna{
+    background-color: cadetblue;
+    padding: 35px;
+    /* margin-top: 270px; */
+    border-radius: 4px;
+    width: 85%;
+    margin: auto;
+}
+.qus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qus-container{
+    border-bottom: 2px solid grey;
+    padding: 20px 15px;
+}
+.qna i{
+    font-size: larger;
+    padding: 7px ;
+    border: 1px solid transparent;
+    border-radius: 69%;
+}
+.qna input{
+    display: none;
+}
+.ans{
+    margin-top: 17px;
+    font-size: 19px;
+    display: none;
+}
+.qus-container-1 input:checked~.box1{
+    transform: rotate(315deg);
+    border: 1px solid grey;
+    border-radius: 60%;
+}
+.qus-container-2 input:checked~.box2{
+    transform: rotate(315deg);
+    border: 1px solid grey;
+    border-radius: 60%;
+}
+.qus-container-3 input:checked~.box3{
+    transform: rotate(315deg);
+    border: 1px solid grey;
+    border-radius: 60%;
+}
+.qus-container-4 input:checked~.box4{
+    transform: rotate(315deg);
+    border: 1px solid grey;
+    border-radius: 60%;
+}
+.experts-img-container{
+    padding: 18px;
+    margin-top: 36px;
+}
+.img-holder{
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    height: 400px;
+    margin-top: 15px;
+    /* width: 100%; */
+    position: relative;
+ 
+}
+.img img{
+    height: 100%;
+    width: 380px;
+    transition: all 0.4s;
+}
+.exp-details{
+    position: absolute;
+    top: 75%;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 90%;
+    left: 5%;
+    border-radius: 18px;
+    padding: 20px;
+    line-height: 25px;
+    opacity: 0.8;
+}
+.img:hover img{
+    height: 410px;
+    transform: scale3d(1.01, 1.01, 1.01);
+}
+.img:hover .exp-details h3{
+    color: rgb(132, 231, 107);
+}
+
+
+
+
+@media screen and (min-width:320px) and (max-width:960px)
+{
+    .service-modules{
+        flex-direction: column-reverse;
+        padding: 9px;
+    }
+    .bg-content{
+        line-height: normal;
+    }
+}
+
+@media screen and (min-width:340px) and (max-width:500px){
+    .s-icon{
+        left: 85%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:960px){
+    .s-icon{
+        left: 90%;
+    }
 }
