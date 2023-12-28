@@ -96,26 +96,23 @@
 }
 .card p i{
     font-size: 50px;
-    color: rgba(76, 172, 113, 0.904);
-    /* margin: auto; */
-    background-color: white;
-    padding: 40px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-   
+    color: rgba(21, 245, 107, 0.904);
+    padding-top:40px ;
 }
-/* .card p:first-child{
+.card p:first-child{
     background-color: white;
-    height: 80px;
-    width: 80px;
+    height: 130px;
+    width: 130px;
     border-radius: 50%;
     margin: auto;
-} */
+    margin-bottom: 30px;
+} 
 /* clientbox */
 
 .clientbox{
     background-color: rgb(179, 212, 231);
     padding: 100px;
+    min-height: 700px;
     text-align: center;
 }
 .clientbox h1{
@@ -129,6 +126,16 @@
     margin: auto;
 }
 
+@media screen and (max-width:705px) {
+    .clientbox{
+        padding:50px 30px;
+    }
+    .clientbox p{
+        width: 100%;
+    }
+    
+}
+
 /* client-info-box */
 
 .client-info-box{
@@ -138,6 +145,8 @@
     justify-content: center;
     width: 100%;
     gap:30px;
+    position: relative;
+
 }
 
 
@@ -159,6 +168,22 @@
 .bottomline:hover{
     border: 3px solid rgba(76, 172, 113, 0.904);
     cursor: pointer;
+}
+
+
+@media screen and (max-width:600px) {
+    .client-info{
+        width: 100%;
+    }
+    
+}
+
+/* animation-boxs */
+
+.animation-boxs{
+    position: absolute;
+    left: 0;
+    
 }
 
 /* profile info container */
@@ -196,6 +221,13 @@
     line-height: 0;
 }
 
+@media screen and (max-width:430px) {
+    .profile-info{
+        justify-content: center;
+    }
+    
+}
+
  /* icon */
 
 .profile-info-container .icon{
@@ -207,4 +239,10 @@
 }
 .bottomline:hover .icon i{
     color:rgb(10, 102, 59);
+}
+
+@media screen and (max-width:430px){
+    .profile-info-container .icon{
+        display: none;
+    }
 }
