@@ -145,14 +145,15 @@ nav{
 
 }
  
-section{
-    display: flex;
-    min-height: 100vh;
-}
 
   /* Nav bar over  */
 
   /* Section bar Stat */
+
+  section{
+    display: flex;
+    min-height: 100vh;
+}
 
   .lefsection{
     width: 40%;
@@ -196,6 +197,50 @@ section{
     width:300px;
 }
 
+/* leftsection animation */
+
+.lefsection img{
+    animation-name: lefimg;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lefimg {
+    from{
+        padding-left:0px;
+        animation-duration: 2s;
+    }
+    to{
+        padding-left:50px;
+        animation-duration: 2s;
+    }
+}
+
+
+/* center section animation */
+
+.centersection img{
+    animation-name: center;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes center {
+    from{
+        margin-bottom: 10px;
+    }
+    to{
+        margin-bottom: 100px;
+    }
+}
+    
+
+
+
+
 .rightsection{
     background-color: gray;
     width: 40%;
@@ -209,11 +254,6 @@ section{
     font-size: 30px;
 }
 
-.right1 span{
-    font-size: 30px;
-    font-weight:bold;
-}
-
 .right1,.right2,.right3{
     background-color: lightcoral;
     height: 100px;
@@ -222,106 +262,121 @@ section{
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
-}
-
-
-.right1{
     position: relative;
 }
-.right1 span{
+
+
+.right1 span , .right2 span , .right3 span{
     top: 22px;
+    font-size: 30px;
+    font-weight: bold;
     position: absolute;
     animation-name: right;
     display: inline-block;
-    animation-duration: 2.4s;
+    animation-duration: 3.6s;
     animation-timing-function: linear;
+    animation-iteration-count:1;
 }
+
+
+/* rightsection box 1st animation*/
 
 .right1 :nth-child(1){
     animation-delay: 0.1; 
     opacity:0;  
 }
+
 .right1 :nth-child(2){
-    animation-delay: 0.2s;
+    animation-delay: 0.4s;
     opacity: 0;
 }
 
 .right1 :nth-child(3){
-    animation-delay: 0.3s;
+    animation-delay: 0.8s;
     opacity: 0;   
 }
 
 .right1 :nth-child(4){
-    animation-delay: 0.6s;
-    opacity: 0;
-}
-.right1 :nth-child(5){
-    animation-delay: 0.9s;
-    opacity: 0;   
-}
-.right1 :nth-child(6){
     animation-delay: 1.2s;
     opacity: 0;
 }
-.right1 :nth-child(7){
-    animation-delay: 1.5s;
+
+.right1 :nth-child(5){
+    animation-delay: 1.6s;
     opacity: 0;   
 }
+
+.right1 :nth-child(6){
+    animation-delay: 2.0s;
+    opacity: 0;
+}
+
+.right1 :nth-child(7){
+    animation-delay: 2.4s;
+    opacity: 0;   
+}
+
 .right1 :nth-child(8){
-    animation-delay: 1.8s;
+    animation-delay: 2.8s;
     opacity: 0;
 }
 
 .right1 :nth-child(9){
-    animation-delay: 2.1s;
+    animation-delay: 3.2s;
     opacity: 0;   
 }
 
 .right1 :nth-child(10){
-    animation-delay: 2.4s;
+    animation-delay: 3.6s;
     opacity: 0;
 }
 
-
+/* rightsection box 1 animation keyframs*/
 
 @keyframes right {
     from{
         background-color:red;
         opacity: 5;
     }
+
     to{
-        background-color: transparent;
+        background-color: red;
         opacity: 0;
-        /* display: inline-block; */
     }
     
 }
 
+/* rightsection box 1animation backward key uses */
+
 .right1 :nth-child(10){
     animation-name: lastnumber;
+    animation-delay: 3.8s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
      
-
 }
 
 @keyframes lastnumber {
     from{
+        background-color: red;
         opacity: 0;
     }
     to{
+        background-color: red;
         opacity: 5;
     }
 }
+/* -------------------------------------------------------------- */
 
 /* 10years right box close */
 
 /* 24/7 right box stat */
 
-.right2{
+/* .right2{
     position: relative;
-}
-.right2 span{
+} */
+/* .right2 span{
     font-weight:bold;
     display: inline-block;
     font-size:30px;
@@ -331,6 +386,14 @@ section{
     animation-timing-function: linear;
     top: 13px;
    
+} */
+
+.right2 span{
+    top: 13px;
+}
+
+.right2 p{
+    padding-top:18px ;
 }
 
 .right2 :nth-child(1){
@@ -354,7 +417,7 @@ section{
 }
 
 .right2 :nth-child(5){
-    animation-delay: 1;
+    animation-delay: 1s;
     opacity: 0;
 }
 
@@ -369,7 +432,7 @@ section{
 }
 
 .right2 :nth-child(8){
-    animation-delay: 1.6;
+    animation-delay: 1.6s;
     opacity: 0;
 }
 
@@ -389,67 +452,67 @@ section{
 }
 
 .right2 :nth-child(12){
-    animation-delay: 2.2s;
-    opacity: 0;
-}
-
-.right2 :nth-child(13){
     animation-delay: 2.4s;
     opacity: 0;
 }
 
-.right2 :nth-child(14){
+.right2 :nth-child(13){
     animation-delay: 2.6s;
     opacity: 0;
 }
 
-.right2 :nth-child(15){
+.right2 :nth-child(14){
     animation-delay: 2.8s;
     opacity: 0;
 }
 
-.right2 :nth-child(16){
-    animation-delay: 3.0s;
+.right2 :nth-child(15){
+    animation-delay: 3s;
     opacity: 0;
 }
 
-.right2 :nth-child(17){
+.right2 :nth-child(16){
     animation-delay: 3.2s;
     opacity: 0;
 }
 
-.right2 :nth-child(18){
+.right2 :nth-child(17){
     animation-delay: 3.4s;
     opacity: 0;
 }
 
-.right2 :nth-child(19){
+.right2 :nth-child(18){
     animation-delay: 3.6s;
     opacity: 0;
 }
 
-.right2 :nth-child(20){
+.right2 :nth-child(19){
     animation-delay: 3.8s;
     opacity: 0;
 }
 
-.right2 :nth-child(21){
+.right2 :nth-child(20){
     animation-delay: 4s;
     opacity: 0;
 }
 
-.right2 :nth-child(22){
+.right2 :nth-child(21){
     animation-delay: 4.2s;
     opacity: 0;
 }
 
-.right2 :nth-child(23){
+.right2 :nth-child(22){
     animation-delay: 4.4s;
     opacity: 0;
 }
 
-.right2 :nth-child(24){
+.right2 :nth-child(23){
     animation-delay: 4.6s;
+    opacity: 0;
+}
+
+.right2 :nth-child(24){
+    animation-delay: 4.8s;
     opacity: 0;
 }
 
@@ -465,13 +528,34 @@ section{
 }
 
 
-/* right 3 animation stat */
+.right2 :nth-child(24){
+    animation-name: lastright2;
+    animation-duration: 0.2s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+} 
 
-.right3{
-    position: relative;
+@keyframes lastright2 {
+    from{
+        background-color:red;
+        opacity: 0;
+    }
+    to{
+        background-color: red;
+        opacity: 1;
+    }
 }
 
-.right3 span{
+
+
+/* right 3 animation stat */
+
+/* .right3{
+    position: relative;
+} */
+
+/* .right3 span{
     font-size: 30px;
     font-weight: bold;
     position: absolute;
@@ -480,6 +564,11 @@ section{
     animation-name: right3;
     animation-duration: 4s;
     animation-timing-function: linear;
+} */
+
+.right3 span{
+    top: 23px;
+
 }
 
 .right3 :nth-child(1){
@@ -617,5 +706,24 @@ section{
     to{
         background-color: red;
         opacity: 0;
+    }
+}
+
+.right3 :nth-child(25){
+    animation-name: lastright3;
+    animation-duration: 0.2s;
+    animation-delay: 4.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+} 
+
+@keyframes lastright3 {
+    from{
+        background-color:red;
+        opacity: 0;
+    }
+    to{
+        background-color: red;
+        opacity: 1;
     }
 }
