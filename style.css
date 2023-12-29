@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.container{
+    width: 100%;
+    min-height:100vh;
+}
+
 nav{
     height: 100px;
     width: 100%;
@@ -139,4 +144,326 @@ nav{
     }
 
 }
+ 
+section{
+    display: flex;
+    min-height: 100vh;
+}
+
+  /* Nav bar over  */
+
+  /* Section bar Stat */
+
+  .lefsection{
+    width: 40%;
+    background-color: lightcoral;
+    height: 100vh;
+    padding: 100px 1px 1px 50px;
+  }
+
+  .lefsection h1{
+    padding: 20px 1px 20px 1px;
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  .lefsection p{
+    padding: 5px 1px 20px 1px;
+  }
+
+  .lefsection button{
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    border: unset;
+  }
+
+  .leftbuttontag :nth-child(2){
+    margin-left:25px;
+    background-color:white;
+  }
+
+.centersection{
+    height: 100vh;
+    background-color: rgba(0, 208, 148, 0.32);;
+    display: flex;
+    align-items: end;
+}
+
+.centersection img{
+    height: 300px;
+    width:300px;
+}
+
+.rightsection{
+    background-color: gray;
+    width: 40%;
+    display: grid;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 10px;
+}
+
+.rightsection h1{
+    font-size: 30px;
+}
+
+.right1 span{
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.right1,.right2,.right3{
+    background-color: lightcoral;
+    height: 100px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+
+.right1{
+    position: relative;
+}
+.right1 span{
+    top: 22px;
+    position: absolute;
+    animation-name: right;
+    display: inline-block;
+    animation-duration: 2.4s;
+    animation-timing-function: linear;
+}
+
+.right1 :nth-child(1){
+    animation-delay: 0.1; 
+    opacity: 0;  
+}
+.right1 :nth-child(2){
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.right1 :nth-child(3){
+    animation-delay: 0.3s;
+    opacity: 0;   
+}
+
+.right1 :nth-child(4){
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+.right1 :nth-child(5){
+    animation-delay: 0.9s;
+    opacity: 0;   
+}
+.right1 :nth-child(6){
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+.right1 :nth-child(7){
+    animation-delay: 1.5s;
+    opacity: 0;   
+}
+.right1 :nth-child(8){
+    animation-delay: 1.8s;
+    opacity: 0;
+}
+
+.right1 :nth-child(9){
+    animation-delay: 2.1s;
+    opacity: 0;   
+}
+
+.right1 :nth-child(10){
+    animation-delay: 2.4s;
+    opacity: 0;
+}
+
+
+
+@keyframes right {
+    from{
+        background-color:red;
+        opacity: 5;
+    }
+    to{
+        background-color: transparent;
+        opacity: 0;
+        /* display: inline-block; */
+    }
+    
+}
+
+.right1 :nth-child(10){
+    animation-name: lastnumber;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+     
+
+}
+
+@keyframes lastnumber {
+    from{
+        opacity: 5;
+    }
+    to{
+        opacity: 5;
+    }
+}
+
+/* 10years right box close */
+
+/* 24/7 right box stat */
+
+.right2{
+    position: relative;
+}
+.right2 span{
+    font-weight:bold;
+    display: inline-block;
+    font-size:30px;
+    animation-name: right2;
+    position: absolute;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    top: 13px;
+   
+}
+
+.right2 :nth-child(1){
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.right2 :nth-child(2){
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+.right2 :nth-child(3){
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.right2 :nth-child(4){
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+.right2 :nth-child(5){
+    animation-delay: 1;
+    opacity: 0;
+}
+
+.right2 :nth-child(6){
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+
+.right2 :nth-child(7){
+    animation-delay: 1.4s;
+    opacity: 0;
+}
+
+.right2 :nth-child(8){
+    animation-delay: 1.6;
+    opacity: 0;
+}
+
+.right2 :nth-child(9){
+    animation-delay: 1.8s;
+    opacity: 0;
+}
+
+.right2 :nth-child(10){
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+.right2 :nth-child(11){
+    animation-delay: 2.2s;
+    opacity: 0;
+}
+
+.right2 :nth-child(12){
+    animation-delay: 2.2s;
+    opacity: 0;
+}
+
+.right2 :nth-child(13){
+    animation-delay: 2.4s;
+    opacity: 0;
+}
+
+.right2 :nth-child(14){
+    animation-delay: 2.6s;
+    opacity: 0;
+}
+
+.right2 :nth-child(15){
+    animation-delay: 2.8s;
+    opacity: 0;
+}
+
+.right2 :nth-child(16){
+    animation-delay: 3.0s;
+    opacity: 0;
+}
+
+.right2 :nth-child(17){
+    animation-delay: 3.2s;
+    opacity: 0;
+}
+
+.right2 :nth-child(18){
+    animation-delay: 3.4s;
+    opacity: 0;
+}
+
+.right2 :nth-child(19){
+    animation-delay: 3.6s;
+    opacity: 0;
+}
+
+.right2 :nth-child(20){
+    animation-delay: 3.8s;
+    opacity: 0;
+}
+
+.right2 :nth-child(21){
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+.right2 :nth-child(22){
+    animation-delay: 4.2s;
+    opacity: 0;
+}
+
+.right2 :nth-child(23){
+    animation-delay: 4.4s;
+    opacity: 0;
+}
+
+.right2 :nth-child(24){
+    animation-delay: 4.6s;
+    opacity: 0;
+}
+
+@keyframes right2{
+    from{
+        background-color: red;
+        opacity: 5;
+    }
+    to{
+        background-color: red;
+        opacity: 0;
+    }
+}
+
+
+
 
