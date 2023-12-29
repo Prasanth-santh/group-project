@@ -727,3 +727,131 @@ nav{
         opacity: 1;
     }
 }
+
+/* section2 stat */
+
+.section2{
+    min-height: 110vh;
+    width: 100%;
+    /* background-color: aqua; */
+    /* background-image: url("./homepic/bg\ img.png"); */
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    /* background-color: rgba(48, 199, 199,1); */
+    background-color: rgb(34, 29, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.section2hl{
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.section2hl h1{
+    font-size: 50px;
+}
+
+.section2hl p{
+    margin: auto;
+    width: 80%;
+    font-size: 20px;
+    line-height: normal;
+    color: lightgray;
+}
+
+
+
+
+
+.section2main{
+    display:grid;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    width: 100%;
+    padding: 5px 20px 5px 20px;
+    grid-template-columns: auto auto auto auto;
+    
+}
+.section2main .sm1box, .sm2box,.sm3box,.sm4box{
+    background-color:white;
+    height: 360px;
+    text-align: center;
+    padding: 25px 15px 25px 15px;
+    padding-top: 25px;
+    border-radius: 10px;
+    transition: all 1s;
+    box-shadow: -2px 0 gray, 0 2px gray, 2px 0 gray, 0 -2px gray;
+}
+
+.section2main h1{
+    padding: 10px 1px 10px 1px;
+}
+
+.section2main p{
+    font-size: 20px;
+}
+
+
+/* click panna mela pora div */
+.sm1box:hover{
+    margin-bottom: 30px;
+    cursor: pointer;
+    
+}
+
+/* section2 finish */
+
+/* section3 Stat */
+
+.section3{
+    min-height: 100vh;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 60px 1px 60px;
+}
+
+.section3 .s3right,.s3left{
+    height: 80vh;
+    width: 50%;
+}
+
+.section3 .s3right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 5%;
+}
+.s3right img{
+    height: 50px;
+    width: 100px;
+}
+
+.section3 .s3right h1{
+    font-size: 40px;
+}
+.section3 .s3right p{
+    font-size: 22px;
+}
+.section3 .s3right button{
+    width: 32%;
+    padding: 18px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: unset;
+    background-color:rgb(113, 206, 126); 
+    transition: all 1s;
+
+}
+
+.s3right button:hover{
+    margin-top: 0px;
+}
