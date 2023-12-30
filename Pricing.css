@@ -46,6 +46,9 @@
     border-radius: 10px;
     background-color: white;
 }
+.pricing-box:hover{
+    cursor: pointer;
+}
 .choosing-plan{
     min-height: 100px;
     border-bottom: 1px solid gray;
@@ -90,6 +93,7 @@
 .plan-details button:hover{
     background-color: #00d084;
     color: white;
+    cursor: pointer;
 }
 .plan1{
     position: relative;

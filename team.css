@@ -241,6 +241,9 @@
     line-height: 1.8rem;
     font-size: 1.2rem;
 }
+.bitrader p:hover{
+    color: white;
+}
 .downlode-img{
     display: flex;
     gap: 10px;
