@@ -4,18 +4,25 @@
     box-sizing: border-box;
 }
 .blog-content{
-    min-height: 500px;
-    border: 1px solid black;
+    /* min-height: 500px; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 100px 0 ;
+}
+img:hover{
+    cursor: pointer;
 }
 .blog-peoples{
-    border: 1px solid black;
-    /* width: 800px; */
+    width: 800px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    
 }
 .blogs{
     width: 350px;
@@ -27,6 +34,15 @@
 .blogs img{
     width: 100%;
     border-radius: 10px;
+}
+.img-hover{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.img-hover img:hover{
+    transition: 1s all;
+    transform: scale(1.1);
 }
 .blogs span{
     height: 40px;
@@ -44,6 +60,10 @@
 .blogs h3{
     padding: 0 0 10px;
     font-size: 1.3rem;
+}
+.blogs h3:hover{
+    color: #00D094;
+    cursor: pointer;
 }
 .blogs p{
     line-height: 1.4rem;
@@ -68,13 +88,11 @@
 .categories{
     width: 400px;
     padding: 20px;
-    border: 1px solid black;
 
 }
 .search-here{
     width: 350px;
     margin: 10px 0 ;
-    border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
 }
@@ -92,6 +110,8 @@
     border-radius: 5px;
     border: 1px solid #E6EDFB;
     background-color: #F5F7FC;
+    outline: none;
+    font-size: 1.4rem;
 
 }
 .search-here i{
@@ -112,7 +132,6 @@
 .category-box{
     width: 350px;
     margin: 10px 0 ;
-    border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
 }
@@ -123,7 +142,66 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0;
 }
 .category-container h3,p{
     color: gray;
+}
+.category-container h3:hover ,p:hover{
+    color: #00D094;
+    cursor: pointer;
+}
+.people-post{
+    margin: 15px 0 0;
+}
+.people-details{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 ;
+
+}
+.people-details img{
+    height: 70px;
+    width: 80px;
+    border-radius: 8px;
+
+}
+.people-works p{
+    padding: 5px 0 ;
+}
+.people-works p:hover{
+    color: #00D094;
+    cursor: pointer;
+}
+.tags{
+    margin: 15px 0 0;
+
+}
+.tags button{
+    height: 40px;
+    margin: 10px 0;
+    /* width: 150px; */
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    font-size: 1.2rem;
+    color: gray;
+}
+.tags button:hover{
+    border: 1px solid #EDFFFA;
+    background-color: #E5F9F3;
+    color: #00D094;
+    cursor: pointer;
+}
+@media screen and (min-width:300px) and (max-width:500px) {
+    .blogs{
+        width:280px;
+
+    }
+    .search-here{
+        width: 280px;
+    }
+    
 }
