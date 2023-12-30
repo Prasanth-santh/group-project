@@ -153,13 +153,14 @@ nav{
   section{
     display: flex;
     min-height: 100vh;
+    width: 100%;
 }
 
   .lefsection{
     width: 40%;
     background-color: lightcoral;
-    height: 100vh;
-    padding: 100px 1px 1px 50px;
+    min-height: 100vh;
+    padding: 100px 1px 30px 50px;
   }
 
   .lefsection h1{
@@ -172,21 +173,40 @@ nav{
     padding: 5px 1px 20px 1px;
   }
 
-  .lefsection button{
+  .leftbuttontag{
+    display: flex;
+    align-items: center;
+}
+
+  .leftbuttontag button{
     width: 40%;
-    padding: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     background-color: lightgreen;
     border: unset;
+    gap: 5px;
   }
 
-  .leftbuttontag :nth-child(2){
+  .videobutton i{
+    font-size: 20px;
+  }
+
+  /* lbi enpathu left button i tag enru artham */
+  .leftbuttontag .lbi{
+    display: none;
+  }
+
+
+  .leftbuttontag .videobutton{
     margin-left:25px;
     background-color:white;
   }
 
 .centersection{
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgba(0, 208, 148, 0.32);;
     display: flex;
     align-items: end;
@@ -209,11 +229,9 @@ nav{
 @keyframes lefimg {
     from{
         padding-left:0px;
-        animation-duration: 2s;
     }
     to{
         padding-left:50px;
-        animation-duration: 2s;
     }
 }
 
@@ -335,12 +353,12 @@ nav{
 
 @keyframes right {
     from{
-        background-color:red;
+        background-color:white;
         opacity: 5;
     }
 
     to{
-        background-color: red;
+        background-color: white;
         opacity: 0;
     }
     
@@ -359,11 +377,11 @@ nav{
 
 @keyframes lastnumber {
     from{
-        background-color: red;
+        background-color: white ;
         opacity: 0;
     }
     to{
-        background-color: red;
+        background-color: white;
         opacity: 5;
     }
 }
@@ -699,12 +717,12 @@ nav{
 
 @keyframes right3 {
     from{
-        background-color: red;
+        /* background-color: red; */
         opacity: 5;
 
     }
     to{
-        background-color: red;
+        /* background-color: red; */
         opacity: 0;
     }
 }
@@ -719,11 +737,11 @@ nav{
 
 @keyframes lastright3 {
     from{
-        background-color:red;
+        /* background-color:red; */
         opacity: 0;
     }
     to{
-        background-color: red;
+        /* background-color: red; */
         opacity: 1;
     }
 }
@@ -736,7 +754,7 @@ nav{
     /* background-color: aqua; */
     /* background-image: url("./homepic/bg\ img.png"); */
     /* background-repeat: no-repeat; */
-    background-size: contain;
+    /* background-size: contain; */
     /* background-color: rgba(48, 199, 199,1); */
     background-color: rgb(34, 29, 29);
     display: flex;
@@ -773,31 +791,35 @@ nav{
     gap: 30px;
     align-items: center;
     justify-content: center;
-    height: 420px;
+    min-height: 420px;
     width: 100%;
-    padding: 5px 20px 5px 20px;
-    grid-template-columns: auto auto auto auto;
+    padding: 5px 20px 40px 20px;
+    grid-template-columns: 22% 22% 22% 22%;
     
 }
-.section2main .sm1box, .sm2box,.sm3box,.sm4box{
+.section2main .sm1box{
     background-color:white;
     height: 360px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 25px 15px 25px 15px;
-    padding-top: 25px;
     border-radius: 10px;
     transition: all 1s;
     box-shadow: -2px 0 gray, 0 2px gray, 2px 0 gray, 0 -2px gray;
 }
+
 
 .section2main h1{
     padding: 10px 1px 10px 1px;
 }
 
 .section2main p{
-    font-size: 20px;
+    font-size: 18px;
+    overflow: hidden;
 }
-
 
 /* click panna mela pora div */
 .sm1box:hover{
@@ -820,8 +842,12 @@ nav{
 }
 
 .section3 .s3right,.s3left{
-    height: 80vh;
+    min-height: 80vh;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* align-items: center; */
 }
 
 .section3 .s3right{
@@ -842,7 +868,7 @@ nav{
     font-size: 22px;
 }
 .section3 .s3right button{
-    width: 32%;
+    width: 160px;
     padding: 18px;
     margin-top: 10px;
     border-radius: 10px;
@@ -855,3 +881,180 @@ nav{
 .s3right button:hover{
     margin-top: 0px;
 }
+
+
+/* resposive stat */
+
+@media screen and (max-width:1200px){
+    .lefsection h1{
+        font-size: 50px;
+    }
+}
+
+@media screen  and (max-width:1100px){
+    
+    .lefsection{
+        padding-left:20px;
+        padding-right: 20px;
+    }
+
+    .lefsection h1{
+        font-size: 45px;
+    }
+
+    .leftbuttontag :nth-child(3){
+        display: none;
+    }
+
+    .leftbuttontag button{
+        width: 45%;
+    }
+    /* section 2 responsive */
+
+    .sm1box h1{
+        font-size: 25px;
+        padding: 5px 0px;
+    }
+
+    .sm1box p{
+        font-size: normal;
+    }
+
+    
+
+    .leftbuttontag .lbi{
+        display: inline-block;
+        font-size: 40px;
+        padding-left:25px;
+        color:aqua;
+    }
+    
+}
+
+    @media screen  and (max-width:1000px) {
+
+        .sm1box{
+            width: 300px;
+        }
+        .section2main{
+            grid-template-columns: auto auto;
+        }
+    }
+
+    @media screen and (max-width:900px) {
+        .lefsection h1{
+            font-size: 35px;
+            line-height: 35px;
+        }
+        
+        .leftbuttontag button{
+            width: 65%;
+        }
+
+        
+
+    }
+
+    @media screen  and (max-width:800px) {
+            .section3{
+            flex-direction: column;
+            padding: 10px;
+            margin-top: 60px;
+
+    }
+
+            .section3 .s3right , .s3left{
+            width: 100%;
+            background-color: red;
+
+}
+}
+
+
+    @media screen and (max-width:750px) {
+            section{
+                display: grid;
+            }
+
+             .lefsection, .centersection, .rightsection{
+                width: 100%;
+            }
+
+            .lefsection h1{
+                font-size: 60px;
+                line-height: 50px;
+            }
+
+            .lefsection p{
+                font-size: 20px;
+            }
+
+            .leftbuttontag button{
+                width: 30%;
+            }
+
+            .leftbuttontag .lbi{
+                display: none;
+            }
+            .leftbuttontag .videobutton{
+                display: flex;
+            }
+            
+            .centersection{
+                display: flex;
+                justify-content: center;
+            }
+
+            .centersection img{
+                height: 95%;
+                width: 75%;
+            }
+
+    }
+
+    @media screen and (max-width:660px) {
+        .section2main{
+            grid-template-columns: auto;
+        }
+
+        .leftbuttontag button{
+            width: 150px;
+        }
+
+        
+    }
+    
+    @media screen and (max-width:500px){
+        section .centersection img{
+            height: 100%;
+            width: 100%;
+}
+
+    .section3 .s3left img{
+            width: 100%;
+            height: 100%;
+            margin: 20px;
+}
+    /* .sm1box img{
+
+            height: 10%;
+            width: 10%;
+            
+} */
+
+
+}
+
+    @media screen and (max-width:400px) {
+        .leftbuttontag{
+        width: 75%;
+    }
+
+  
+    }
+
+    @media screen and (max-width:350px) {
+        .leftbuttontag{
+        width: 85%;
+    }
+    }
