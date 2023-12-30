@@ -147,7 +147,7 @@ img:hover{
 .category-container h3,p{
     color: gray;
 }
-.category-container h3:hover ,p:hover{
+.category-container h3:hover ,.category-container p:hover{
     color: #00D094;
     cursor: pointer;
 }
