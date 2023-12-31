@@ -224,12 +224,12 @@
 }
 .footer-content{
     min-height: 300px;
-
     display: flex;
     gap: 50px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 .bitrader{
     width: 400px;
@@ -322,6 +322,28 @@
     cursor: var(--cursor);
     border:2px solid #00d084;
 }
+.pricing-wave{
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    animation-name: img-animate1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: 2s all ;
+}
+@keyframes img-animate1{
+    0%{
+        left: 30%;
+    }
+    50%{
+        left: 33%;
+    }
+    100%{
+        left: 30%;
+    }
+}
 @media screen and (min-width:300px) and ( max-width:500px){
     .detials-providing{
         grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
@@ -343,6 +365,12 @@
     .bitrader{
         width: 300px;
     }
-
+   
+    
+}
+@media screen and (min-width:300px) and (max-width:900px) {
+    .pricing-wave{
+        display: none;
+    }
     
 }
