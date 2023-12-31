@@ -1,15 +1,15 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
-    min-height:100vh;
+    min-height: 100vh;
 }
 
-nav{
+nav {
     height: 100px;
     width: 100%;
     position: relative;
@@ -20,7 +20,7 @@ nav{
     padding: 1px 20px 1px 20px;
 }
 
-.centernav{
+.centernav {
     display: flex;
     justify-content: space-between;
     width: 45%;
@@ -29,7 +29,9 @@ nav{
     z-index: 80;
 }
 
-.centernav .homelink,.servicelink,.pagelink{
+.centernav .homelink,
+.servicelink,
+.pagelink {
     width: 150px;
     display: flex;
     flex-direction: column;
@@ -41,59 +43,60 @@ nav{
     position: absolute;
     left: -50px;
     font-size: 20px;
-    top:60px;
-    background-color:aqua;
+    top: 60px;
+    background-color: aqua;
     /* display: none; */
     opacity: 0;
     transition: all 1s;
     z-index: 10;
 }
 
-        /* Home button */
-.home input:checked~.homelink{
+/* Home button */
+.home input:checked~.homelink {
     display: flex;
     top: 35px;
     opacity: 5;
     z-index: 8;
 }
 
-.home i:hover{
+.home i:hover {
     transform: rotate(-90deg);
     transition: all 1s;
 }
 
-.centernav i:hover{
+.centernav i:hover {
     transform: rotate(-90deg);
     transition: all 1s;
 }
 
 
-.services .servicelink{
+.services .servicelink {
     left: 90px;
 }
 
-.services input:checked~.servicelink{
+.services input:checked~.servicelink {
     display: flex;
     top: 35px;
     opacity: 5;
     z-index: 8;
 }
 
-.page .pagelink{
-    left:330px;
-} 
+.page .pagelink {
+    left: 330px;
+}
 
-.page input:checked~.pagelink{
+.page input:checked~.pagelink {
     display: flex;
     top: 35px;
     opacity: 5;
     z-index: 8;
-    
+
 }
 
-.centernav input{
+.centernav input {
     display: none;
 }
+
 .buttontag {
     width: 20%;
     display: flex;
@@ -101,7 +104,8 @@ nav{
     align-items: center;
     gap: 10px;
 }
-.buttontag button{
+
+.buttontag button {
     width: 80%;
     padding: 15px;
     border-radius: 10px;
@@ -109,12 +113,12 @@ nav{
     background-color: rgb(113, 206, 126);
 }
 
-.buttontag label i{
+.buttontag label i {
     color: red;
     font-size: 32px;
 }
 
-#centercheck{
+#centercheck {
     display: none;
 }
 
@@ -122,13 +126,13 @@ nav{
 /* nav par responsive */
 
 @media screen and (max-width:1050px) {
-    .centernav{
+    .centernav {
         width: 50%;
     }
 }
 
 @media screen and (max-width:900px) {
-    .centernav{
+    .centernav {
         position: absolute;
         top: 96px;
         background-color: red;
@@ -139,46 +143,46 @@ nav{
         transition: all 1s;
     }
 
-    nav #centercheck:checked~.centernav{
+    nav #centercheck:checked~.centernav {
         left: 0px;
     }
 
 }
- 
 
-  /* Nav bar over  */
 
-  /* Section bar Stat */
+/* Nav bar over  */
 
-  section{
+/* Section bar Stat */
+
+section {
     display: flex;
     min-height: 100vh;
     width: 100%;
 }
 
-  .lefsection{
+.lefsection {
     width: 40%;
     background-color: lightcoral;
     min-height: 100vh;
     padding: 100px 1px 30px 50px;
-  }
+}
 
-  .lefsection h1{
+.lefsection h1 {
     padding: 20px 1px 20px 1px;
     font-size: 60px;
     line-height: 50px;
-  }
+}
 
-  .lefsection p{
+.lefsection p {
     padding: 5px 1px 20px 1px;
-  }
+}
 
-  .leftbuttontag{
+.leftbuttontag {
     display: flex;
     align-items: center;
 }
 
-  .leftbuttontag button{
+.leftbuttontag button {
     width: 40%;
     height: 50px;
     display: flex;
@@ -188,38 +192,39 @@ nav{
     background-color: lightgreen;
     border: unset;
     gap: 5px;
-  }
+}
 
-  .videobutton i{
+.videobutton i {
     font-size: 20px;
-  }
+}
 
-  /* lbi enpathu left button i tag enru artham */
-  .leftbuttontag .lbi{
+/* lbi enpathu left button i tag enru artham */
+.leftbuttontag .lbi {
     display: none;
-  }
+}
 
 
-  .leftbuttontag .videobutton{
-    margin-left:25px;
-    background-color:white;
-  }
+.leftbuttontag .videobutton {
+    margin-left: 25px;
+    background-color: white;
+}
 
-.centersection{
+.centersection {
     min-height: 100vh;
-    background-color: rgba(0, 208, 148, 0.32);;
+    background-color: rgba(0, 208, 148, 0.32);
+    ;
     display: flex;
     align-items: end;
 }
 
-.centersection img{
+.centersection img {
     height: 300px;
-    width:300px;
+    width: 300px;
 }
 
 /* leftsection animation */
 
-.lefsection img{
+.lefsection img {
     animation-name: lefimg;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -227,18 +232,19 @@ nav{
 }
 
 @keyframes lefimg {
-    from{
-        padding-left:0px;
+    from {
+        padding-left: 0px;
     }
-    to{
-        padding-left:50px;
+
+    to {
+        padding-left: 50px;
     }
 }
 
 
 /* center section animation */
 
-.centersection img{
+.centersection img {
     animation-name: center;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -247,32 +253,34 @@ nav{
 }
 
 @keyframes center {
-    from{
+    from {
         margin-bottom: 10px;
     }
-    to{
+
+    to {
         margin-bottom: 100px;
     }
 }
-    
 
 
 
 
-.rightsection{
+
+.rightsection {
     background-color: gray;
     width: 40%;
-    display: grid;
-    justify-content: center;
-    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
     gap: 10px;
 }
 
-.rightsection h1{
-    font-size: 30px;
-}
 
-.right1,.right2,.right3{
+.right1,
+.right2,
+.right3 {
     background-color: lightcoral;
     height: 100px;
     width: 180px;
@@ -283,479 +291,290 @@ nav{
     position: relative;
 }
 
-
-.right1 span , .right2 span , .right3 span{
-    top: 22px;
-    font-size: 30px;
-    font-weight: bold;
-    position: absolute;
-    animation-name: right;
+.rightsection span {
     display: inline-block;
-    animation-duration: 3.6s;
+}
+
+.anime1::before {
+    content: "10";
+    animation-name: rightfirst;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-iteration-count:1;
-}
-
-
-/* rightsection box 1st animation*/
-
-.right1 :nth-child(1){
-    animation-delay: 0.1; 
-    opacity:0;  
-}
-
-.right1 :nth-child(2){
-    animation-delay: 0.4s;
-    opacity: 0;
-}
-
-.right1 :nth-child(3){
-    animation-delay: 0.8s;
-    opacity: 0;   
-}
-
-.right1 :nth-child(4){
-    animation-delay: 1.2s;
-    opacity: 0;
-}
-
-.right1 :nth-child(5){
-    animation-delay: 1.6s;
-    opacity: 0;   
-}
-
-.right1 :nth-child(6){
-    animation-delay: 2.0s;
-    opacity: 0;
-}
-
-.right1 :nth-child(7){
-    animation-delay: 2.4s;
-    opacity: 0;   
-}
-
-.right1 :nth-child(8){
-    animation-delay: 2.8s;
-    opacity: 0;
-}
-
-.right1 :nth-child(9){
-    animation-delay: 3.2s;
-    opacity: 0;   
-}
-
-.right1 :nth-child(10){
-    animation-delay: 3.6s;
-    opacity: 0;
-}
-
-/* rightsection box 1 animation keyframs*/
-
-@keyframes right {
-    from{
-        background-color:white;
-        opacity: 5;
-    }
-
-    to{
-        background-color: white;
-        opacity: 0;
-    }
-    
-}
-
-/* rightsection box 1animation backward key uses */
-
-.right1 :nth-child(10){
-    animation-name: lastnumber;
-    animation-delay: 3.8s;
-    animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    animation-timing-function: linear;
-     
 }
 
-@keyframes lastnumber {
-    from{
-        background-color: white ;
-        opacity: 0;
+@keyframes rightfirst {
+    0% {
+        content: "1";
     }
-    to{
-        background-color: white;
-        opacity: 5;
+
+    11% {
+        content: "2";
     }
+
+    22% {
+        content: "3";
+    }
+
+    33% {
+        content: "4";
+    }
+
+    44% {
+        content: "5";
+    }
+
+    55% {
+        content: "6";
+    }
+
+    66% {
+        content: "7";
+    }
+
+    77% {
+        content: "8";
+    }
+
+    88% {
+        content: "9";
+    }
+
+    99% {
+        content: "10";
+    }
+
 }
-/* -------------------------------------------------------------- */
 
-/* 10years right box close */
-
-/* 24/7 right box stat */
-
-/* .right2{
-    position: relative;
-} */
-/* .right2 span{
-    font-weight:bold;
-    display: inline-block;
-    font-size:30px;
-    animation-name: right2;
-    position: absolute;
+.anime2::before {
+    content: "24";
+    animation-name: right2content;
     animation-duration: 4s;
     animation-timing-function: linear;
-    top: 13px;
-   
-} */
-
-.right2 span{
-    top: 13px;
-}
-
-.right2 p{
-    padding-top:18px ;
-}
-
-.right2 :nth-child(1){
-    animation-delay: 0.2s;
-    opacity: 0;
-}
-
-.right2 :nth-child(2){
-    animation-delay: 0.4s;
-    opacity: 0;
-}
-
-.right2 :nth-child(3){
-    animation-delay: 0.6s;
-    opacity: 0;
-}
-
-.right2 :nth-child(4){
-    animation-delay: 0.8s;
-    opacity: 0;
-}
-
-.right2 :nth-child(5){
-    animation-delay: 1s;
-    opacity: 0;
-}
-
-.right2 :nth-child(6){
-    animation-delay: 1.2s;
-    opacity: 0;
-}
-
-.right2 :nth-child(7){
-    animation-delay: 1.4s;
-    opacity: 0;
-}
-
-.right2 :nth-child(8){
-    animation-delay: 1.6s;
-    opacity: 0;
-}
-
-.right2 :nth-child(9){
-    animation-delay: 1.8s;
-    opacity: 0;
-}
-
-.right2 :nth-child(10){
-    animation-delay: 2s;
-    opacity: 0;
-}
-
-.right2 :nth-child(11){
-    animation-delay: 2.2s;
-    opacity: 0;
-}
-
-.right2 :nth-child(12){
-    animation-delay: 2.4s;
-    opacity: 0;
-}
-
-.right2 :nth-child(13){
-    animation-delay: 2.6s;
-    opacity: 0;
-}
-
-.right2 :nth-child(14){
-    animation-delay: 2.8s;
-    opacity: 0;
-}
-
-.right2 :nth-child(15){
-    animation-delay: 3s;
-    opacity: 0;
-}
-
-.right2 :nth-child(16){
-    animation-delay: 3.2s;
-    opacity: 0;
-}
-
-.right2 :nth-child(17){
-    animation-delay: 3.4s;
-    opacity: 0;
-}
-
-.right2 :nth-child(18){
-    animation-delay: 3.6s;
-    opacity: 0;
-}
-
-.right2 :nth-child(19){
-    animation-delay: 3.8s;
-    opacity: 0;
-}
-
-.right2 :nth-child(20){
-    animation-delay: 4s;
-    opacity: 0;
-}
-
-.right2 :nth-child(21){
-    animation-delay: 4.2s;
-    opacity: 0;
-}
-
-.right2 :nth-child(22){
-    animation-delay: 4.4s;
-    opacity: 0;
-}
-
-.right2 :nth-child(23){
-    animation-delay: 4.6s;
-    opacity: 0;
-}
-
-.right2 :nth-child(24){
-    animation-delay: 4.8s;
-    opacity: 0;
-}
-
-@keyframes right2{
-    from{
-        background-color: red;
-        opacity: 5;
-    }
-    to{
-        background-color: red;
-        opacity: 0;
-    }
-}
-
-
-.right2 :nth-child(24){
-    animation-name: lastright2;
-    animation-duration: 0.2s;
-    animation-delay: 5s;
-    animation-timing-function: linear;
     animation-fill-mode: forwards;
-} 
-
-@keyframes lastright2 {
-    from{
-        background-color:red;
-        opacity: 0;
-    }
-    to{
-        background-color: red;
-        opacity: 1;
-    }
 }
 
 
+@keyframes right2content {
+    0% {
+        content: "1";
+    }
 
-/* right 3 animation stat */
+    4% {
+        content: "2";
+    }
 
-/* .right3{
-    position: relative;
-} */
+    8% {
+        content: "3";
+    }
 
-/* .right3 span{
-    font-size: 30px;
-    font-weight: bold;
-    position: absolute;
-    display: inline-block;
-    top: 23px;
-    animation-name: right3;
+    12% {
+        content: "4";
+    }
+
+    16% {
+        content: "5";
+    }
+
+    20% {
+        content: "6";
+    }
+
+    24% {
+        content: "7";
+    }
+
+    28% {
+        content: "8";
+    }
+
+    32% {
+        content: "9";
+    }
+
+    36% {
+        content: "10";
+    }
+
+    40% {
+        content: "11";
+    }
+
+    44% {
+        content: "12";
+    }
+
+    48% {
+        content: "13";
+    }
+
+    52% {
+        content: "14";
+    }
+
+    56% {
+        content: "15";
+    }
+
+    60% {
+        content: "16";
+    }
+
+    65% {
+        content: "17";
+    }
+
+    69% {
+        content: "18";
+    }
+
+    73% {
+        content: "19";
+    }
+
+    77% {
+        content: "20";
+    }
+
+    81% {
+        content: "21";
+    }
+
+    85% {
+        content: "22";
+    }
+
+    89% {
+        content: "23";
+    }
+
+    93% {
+        content: "24";
+        /* animation-fill-mode: backwards; */
+    }
+
+
+
+}
+
+
+.anime3::after {
+    content: "25";
+    animation-name: right3content;
     animation-duration: 4s;
     animation-timing-function: linear;
-} */
-
-.right3 span{
-    top: 23px;
-
 }
 
-.right3 :nth-child(1){
-    animation-delay: 0.2s;
-    opacity: 0;
-}
-
-.right3 :nth-child(2){
-    animation-delay: 0.4s;
-    opacity: 0;
-}
-
-.right3 :nth-child(3){
-    animation-delay: 0.6s;
-    opacity: 0;
-}
-
-.right3 :nth-child(4){
-    animation-delay: 0.8s;
-    opacity: 0;
-}
-
-.right3 :nth-child(5){
-    animation-delay: 1s;
-    opacity: 0;
-}
-
-.right3 :nth-child(6){
-    animation-delay: 1.2s;
-    opacity: 0;
-}
-
-.right3 :nth-child(7){
-    animation-delay: 1.4s;
-    opacity: 0;
-}
-
-.right3 :nth-child(8){
-    animation-delay: 1.6s;
-    opacity: 0;
-}
-
-.right3 :nth-child(9){
-    animation-delay: 1.2s;
-    opacity: 0;
-}
-
-.right3 :nth-child(10){
-    animation-delay: 1.4s;
-    opacity: 0;
-}
-
-.right3 :nth-child(11){
-    animation-delay: 1.6s;
-    opacity: 0;
-}
-
-.right3 :nth-child(12){
-    animation-delay: 1.8s;
-    opacity: 0;
-}
-
-.right3 :nth-child(13){
-    animation-delay: 2s;
-    opacity: 0;
-}
-
-.right3 :nth-child(14){
-    animation-delay: 2.2s;
-    opacity: 0;
-}
-
-.right3 :nth-child(15){
-    animation-delay: 2.4s;
-    opacity: 0;
-}
-
-.right3 :nth-child(16){
-    animation-delay: 2.6s;
-    opacity: 0;
-}
-
-.right3 :nth-child(17){
-    animation-delay: 2.8s;
-    opacity: 0;
-}
-
-.right3 :nth-child(18){
-    animation-delay: 3s;
-    opacity: 0;
-}
-
-.right3 :nth-child(19){
-    animation-delay: 3.2s;
-    opacity: 0;
-}
-
-.right3 :nth-child(20){
-    animation-delay: 3.4s;
-    opacity: 0;
-}
-
-.right3 :nth-child(21){
-    animation-delay: 3.6s;
-    opacity: 0;
-}
-
-.right3 :nth-child(22){
-    animation-delay: 3.8s;
-    opacity: 0;
-}
-
-.right3 :nth-child(23){
-    animation-delay: 4s;
-    opacity: 0;
-}
-
-.right3 :nth-child(24){
-    animation-delay: 4.2s;
-    opacity: 0;
-}
-
-.right3 :nth-child(25){
-    animation-delay: 4.4s;
-    opacity: 0;
-}
-
-
-@keyframes right3 {
-    from{
-        /* background-color: red; */
-        opacity: 5;
-
+@keyframes right3content {
+    0% {
+        content: "1";
     }
-    to{
-        /* background-color: red; */
-        opacity: 0;
+
+    4% {
+        content: "2";
+    }
+
+    8% {
+        content: "3";
+    }
+
+    12% {
+        content: "4";
+    }
+
+    16% {
+        content: "5";
+    }
+
+    20% {
+        content: "6";
+    }
+
+    24% {
+        content: "7";
+    }
+
+    28% {
+        content: "8";
+    }
+
+    32% {
+        content: "9";
+    }
+
+    36% {
+        content: "10";
+    }
+
+    40% {
+        content: "11";
+    }
+
+    44% {
+        content: "12";
+    }
+
+    48% {
+        content: "13";
+    }
+
+    52% {
+        content: "14";
+    }
+
+    56% {
+        content: "15";
+    }
+
+    60% {
+        content: "16";
+    }
+
+    64% {
+        content: "17";
+    }
+
+    68% {
+        content: "18";
+    }
+
+    72% {
+        content: "19";
+    }
+
+    76% {
+        content: "20";
+    }
+
+    80% {
+        content: "21";
+    }
+
+    84% {
+        content: "22";
+    }
+
+    88% {
+        content: "23";
+    }
+
+    92% {
+        content: "24";
+    }
+
+    96% {
+        content: "25";
     }
 }
 
-.right3 :nth-child(25){
-    animation-name: lastright3;
-    animation-duration: 0.2s;
-    animation-delay: 4.6s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-} 
 
-@keyframes lastright3 {
-    from{
-        /* background-color:red; */
-        opacity: 0;
-    }
-    to{
-        /* background-color: red; */
-        opacity: 1;
-    }
-}
 
 /* section2 stat */
 
-.section2{
+.section2 {
     min-height: 110vh;
     width: 100%;
-    /* background-color: aqua; */
-    /* background-image: url("./homepic/bg\ img.png"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: contain; */
-    /* background-color: rgba(48, 199, 199,1); */
     background-color: rgb(34, 29, 29);
     display: flex;
     flex-direction: column;
@@ -764,17 +583,17 @@ nav{
 
 }
 
-.section2hl{
+.section2hl {
     line-height: 100px;
     text-align: center;
     color: white;
 }
 
-.section2hl h1{
+.section2hl h1 {
     font-size: 50px;
 }
 
-.section2hl p{
+.section2hl p {
     margin: auto;
     width: 80%;
     font-size: 20px;
@@ -786,8 +605,8 @@ nav{
 
 
 
-.section2main{
-    display:grid;
+.section2main {
+    display: grid;
     gap: 30px;
     align-items: center;
     justify-content: center;
@@ -795,10 +614,11 @@ nav{
     width: 100%;
     padding: 5px 20px 40px 20px;
     grid-template-columns: 22% 22% 22% 22%;
-    
+
 }
-.section2main .sm1box{
-    background-color:white;
+
+.section2main .sm1box {
+    background-color: white;
     height: 360px;
     text-align: center;
     display: flex;
@@ -812,27 +632,27 @@ nav{
 }
 
 
-.section2main h1{
+.section2main h1 {
     padding: 10px 1px 10px 1px;
 }
 
-.section2main p{
+.section2main p {
     font-size: 18px;
     overflow: hidden;
 }
 
 /* click panna mela pora div */
-.sm1box:hover{
+.sm1box:hover {
     margin-bottom: 30px;
     cursor: pointer;
-    
+
 }
 
 /* section2 finish */
 
 /* section3 Stat */
 
-.section3{
+.section3 {
     min-height: 100vh;
     display: flex;
     gap: 80px;
@@ -841,7 +661,8 @@ nav{
     padding: 1px 60px 1px 60px;
 }
 
-.section3 .s3right,.s3left{
+.section3 .s3right,
+.s3left {
     min-height: 80vh;
     width: 50%;
     display: flex;
@@ -850,211 +671,271 @@ nav{
     /* align-items: center; */
 }
 
-.section3 .s3right{
+.section3 .s3right {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding-top: 5%;
 }
-.s3right img{
+
+.s3right img {
     height: 50px;
     width: 100px;
 }
 
-.section3 .s3right h1{
+.section3 .s3right h1 {
     font-size: 40px;
 }
-.section3 .s3right p{
+
+.section3 .s3right p {
     font-size: 22px;
 }
-.section3 .s3right button{
+
+.section3 .s3right button {
     width: 160px;
     padding: 18px;
     margin-top: 10px;
     border-radius: 10px;
     border: unset;
-    background-color:rgb(113, 206, 126); 
+    background-color: rgb(113, 206, 126);
     transition: all 1s;
 
 }
 
-.s3right button:hover{
+.s3right button:hover {
     margin-top: 0px;
 }
 
 
 /* resposive stat */
 
-@media screen and (max-width:1200px){
-    .lefsection h1{
+@media screen and (max-width:1200px) {
+    .lefsection h1 {
         font-size: 50px;
     }
 }
 
-@media screen  and (max-width:1100px){
-    
-    .lefsection{
-        padding-left:20px;
+@media screen and (max-width:1100px) {
+
+    .lefsection {
+        padding-left: 20px;
         padding-right: 20px;
     }
 
-    .lefsection h1{
+    .lefsection h1 {
         font-size: 45px;
     }
 
-    .leftbuttontag :nth-child(3){
+    .leftbuttontag :nth-child(3) {
         display: none;
     }
 
-    .leftbuttontag button{
+    .leftbuttontag button {
         width: 45%;
     }
+
     /* section 2 responsive */
 
-    .sm1box h1{
+    .sm1box h1 {
         font-size: 25px;
         padding: 5px 0px;
     }
 
-    .sm1box p{
+    .sm1box p {
         font-size: normal;
     }
 
-    
 
-    .leftbuttontag .lbi{
+
+    .leftbuttontag .lbi {
         display: inline-block;
         font-size: 40px;
-        padding-left:25px;
-        color:aqua;
+        padding-left: 25px;
+        color: aqua;
     }
-    
+
 }
 
-    @media screen  and (max-width:1000px) {
+@media screen and (max-width:1000px) {
 
-        .sm1box{
-            width: 300px;
-        }
-        .section2main{
-            grid-template-columns: auto auto;
-        }
+    .sm1box {
+        width: 300px;
     }
 
-    @media screen and (max-width:900px) {
-        .lefsection h1{
-            font-size: 35px;
-            line-height: 35px;
-        }
-        
-        .leftbuttontag button{
-            width: 65%;
-        }
-
-        
-
+    .section2main {
+        grid-template-columns: auto auto;
     }
-
-    @media screen  and (max-width:800px) {
-            .section3{
-            flex-direction: column;
-            padding: 10px;
-            margin-top: 60px;
-
-    }
-
-            .section3 .s3right , .s3left{
-            width: 100%;
-            background-color: red;
-
-}
 }
 
-
-    @media screen and (max-width:750px) {
-            section{
-                display: grid;
-            }
-
-             .lefsection, .centersection, .rightsection{
-                width: 100%;
-            }
-
-            .lefsection h1{
-                font-size: 60px;
-                line-height: 50px;
-            }
-
-            .lefsection p{
-                font-size: 20px;
-            }
-
-            .leftbuttontag button{
-                width: 30%;
-            }
-
-            .leftbuttontag .lbi{
-                display: none;
-            }
-            .leftbuttontag .videobutton{
-                display: flex;
-            }
-            
-            .centersection{
-                display: flex;
-                justify-content: center;
-            }
-
-            .centersection img{
-                height: 95%;
-                width: 75%;
-            }
-
+@media screen and (max-width:900px) {
+    .lefsection h1 {
+        font-size: 35px;
+        line-height: 35px;
     }
 
-    @media screen and (max-width:660px) {
-        .section2main{
-            grid-template-columns: auto;
-        }
-
-        .leftbuttontag button{
-            width: 150px;
-        }
-
-        
+    .leftbuttontag button {
+        width: 65%;
     }
-    
-    @media screen and (max-width:500px){
-        section .centersection img{
-            height: 100%;
-            width: 100%;
-}
 
-    .section3 .s3left img{
-            width: 100%;
-            height: 100%;
-            margin: 20px;
-}
-    /* .sm1box img{
-
-            height: 10%;
-            width: 10%;
-            
-} */
 
 
 }
 
-    @media screen and (max-width:400px) {
-        .leftbuttontag{
+@media screen and (max-width:800px) {
+    .section3 {
+        margin: 10px;
+        flex-direction: column;
+        padding: 0px 20px;
+        gap: 10px;
+        margin-top: 60px;
+
+    }
+
+    .section3 .s3right,
+    .s3left {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lefsection,
+    .centersection,
+    .rightsection {
+        width: 100%;
+    }
+
+    .lefsection h1 {
+        font-size: 60px;
+        line-height: 50px;
+    }
+
+    .lefsection p {
+        font-size: 20px;
+    }
+
+    .leftbuttontag button {
+        width: 30%;
+    }
+
+    .leftbuttontag .lbi {
+        display: none;
+    }
+
+    .leftbuttontag .videobutton {
+        display: flex;
+    }
+
+    .centersection {
+        display: flex;
+        justify-content: center;
+    }
+
+    .centersection img {
+        height: 95%;
         width: 75%;
     }
 
-  
+    .rightsection {
+        padding-top: 50px;
     }
 
-    @media screen and (max-width:350px) {
-        .leftbuttontag{
+    .right1,
+    .right2,
+    .right3 {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:660px) {
+    .section2main {
+        grid-template-columns: auto;
+    }
+
+    .leftbuttontag button {
+        width: 150px;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    section .centersection img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .section3 .s3left img {
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+    }
+
+    .lefsection h1 {
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    .section2hl {
+        line-height: 60px;
+        padding: 20px 0px;
+    }
+
+    .section2hl h1 {
+        font-size: 40px;
+    }
+
+    .section2hl p {
+        width: 100%;
+        padding: 0px 10px;
+        font-size: 17px;
+    }
+
+    .section3 {
+        margin: 10px;
+        width: 100%;
+        padding: 0px 5px;
+    }
+
+    .section3 .s3right h1 {
+        font-size: 35px;
+
+    }
+
+    .section3 .s3right p {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .leftbuttontag {
+        width: 75%;
+    }
+
+    .lefsection h1 {
+        font-size: 40px;
+        line-height: 30px;
+    }
+
+    .section2hl h1 {
+        font-size: 35px;
+    }
+
+    .sm1box {
+        width: 260px;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    .leftbuttontag {
         width: 85%;
     }
-    }
+}
