@@ -56,6 +56,7 @@
     /* justify-content: center; */
     align-items: center;
     gap: 20px;
+    overflow: hidden;
 }
 .mobile-contact i{
     height: 50px;
@@ -165,11 +166,12 @@
     background-color: transparent;
     border: 1px solid #DCDFE8;
     border-radius: 10px;
+    background: #00D094;
 }
 .contact-details button:hover{
     cursor: pointer;
-    background: #00D094;
     color: white;
+    border: unset;
 }
 .pricing-wave{
     width: 80px;
