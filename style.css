@@ -8,146 +8,262 @@
     width: 100%;
     min-height: 100vh;
 }
-
+/* Nava bar Stat */
 nav {
     height: 100px;
     width: 100%;
-    position: relative;
-    background-color: aqua;
+    position: fixed;
+    top: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1px 20px 1px 20px;
+    background-color:aliceblue;
+    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
+    z-index: 999;
 }
 
-.centernav {
-    display: flex;
-    justify-content: space-between;
-    width: 45%;
-    position: relative;
-    cursor: pointer;
-    z-index: 80;
+/* Nav barresposi proberty */
+nav #check{
+    display:none ;
 }
 
-.centernav .homelink,
-.servicelink,
-.pagelink {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* align-items: center; */
-    justify-content: center;
-    padding-left: 15px;
-    box-shadow: 2px 2px 5px lightgray;
-    position: absolute;
-    left: -50px;
-    font-size: 20px;
-    top: 60px;
-    background-color: aqua;
-    /* display: none; */
-    opacity: 0;
-    transition: all 1s;
-    z-index: 10;
-}
-
-/* Home button */
-.home input:checked~.homelink {
-    display: flex;
-    top: 35px;
-    opacity: 5;
-    z-index: 8;
-}
-
-.home i:hover {
-    transform: rotate(-90deg);
-    transition: all 1s;
-}
-
-.centernav i:hover {
-    transform: rotate(-90deg);
-    transition: all 1s;
-}
-
-
-.services .servicelink {
-    left: 90px;
-}
-
-.services input:checked~.servicelink {
-    display: flex;
-    top: 35px;
-    opacity: 5;
-    z-index: 8;
-}
-
-.page .pagelink {
-    left: 330px;
-}
-
-.page input:checked~.pagelink {
-    display: flex;
-    top: 35px;
-    opacity: 5;
-    z-index: 8;
-
-}
-
-.centernav input {
+nav .checkI{
     display: none;
+    font-size: 50px;
 }
-
-.buttontag {
-    width: 20%;
+/* nav hover icon and lastbutton collaburation div */
+.navitag{
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
-.buttontag button {
-    width: 80%;
-    padding: 15px;
+/*Nav bar buttons*/
+
+nav button{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* nav bar center button */
+
+.submenu{
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+    
+/* nab bar center selecter button */
+
+.submenu button{
+    padding: 10px;
+    display: inline-block;
+    border: unset;
+    background-color: transparent;
+}
+
+/* center hover button tag  class*/
+
+.home,.services,.page{
+    position: relative;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+/* anger tag class */
+
+.homeanger,.servicesanger,.pageanger{
+    display: none;
+    position: absolute;
+    background-color:aliceblue;
+    padding-left: 10px;
+    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;   
+    cursor: pointer;
+    z-index: 1;
+    transition: all 1s; 
+}
+
+/* anger tag style */
+
+.home a,.services a,.page a{
+    color: gray;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 16px 1px;
+    font-size: 20px;
+    width: 150px;
+    transition: all 1s;
+}
+
+/* home tag hover */
+
+.home:hover .homeanger{
+    display: block;
+}
+
+
+/* home icon hovering */ 
+
+.home:hover .homei{
+    transition: all 1s;
+    transform: rotate(-90deg);
+}
+
+/* Servicetag hover*/
+
+.services:hover .servicesanger{
+    display: block;
+}
+
+.services:hover .servicesi{
+    transition: all 1s;
+    transform: rotate(-90deg);
+}
+
+/* page tag hover */
+
+.page:hover .pageanger{
+    display: block;
+}
+
+.page:hover .pagei{
+    transition: all 1s;
+    transform: rotate(-90deg);
+}
+
+
+.homeanger a:hover{
+    color:black;
+    padding-left: 5px;
+    background-color: gray;
+}
+
+.servicesanger a:hover{
+    color:black;
+    padding-left: 5px;
+    background-color: gray;
+}
+
+.pageanger a:hover{
+    color:black;
+    padding-left: 5px;
+    background-color: gray;
+}
+
+
+.about{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* nav last button tag style */
+.navlastbutton{
+    width: 140px;
+    padding: 15px 10px 15px 10px;
+    background-color: lightgreen;
     border-radius: 10px;
     border: unset;
-    background-color: rgb(113, 206, 126);
 }
 
-.buttontag label i {
-    color: red;
-    font-size: 32px;
+
+ nav .submenu button span{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    /* display: flex; */
+    /* align-items: center; */
+    
 }
 
-#centercheck {
+nav .submenu button span i{
+    position: absolute;
+}
+
+/* input method */
+#h, #s,#p{
+    display: none;
+}
+
+ button .x{
     display: none;
 }
 
 
-/* nav par responsive */
-
-@media screen and (max-width:1050px) {
-    .centernav {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width:900px) {
-    .centernav {
+/* Navbar resposive Stat */
+@media screen and (max-width:900px){
+    .submenu{
         position: absolute;
-        top: 96px;
-        background-color: red;
+        top: 100px;
         flex-direction: column;
+        height: 200px;
+        background-color: white;
         width: 100%;
         left: -100%;
-        text-align: center;
+        justify-content: space-between;
         transition: all 1s;
+        align-items: start;
+    }
+    .home button,.services  button,.page button{
+        display: flex;
+        justify-content: space-between;
+        /* background-color: yellow; */
+        width: 100%;
     }
 
-    nav #centercheck:checked~.centernav {
-        left: 0px;
+    .home,.services,.page{
+        width: 90%;
     }
+
+
+    .about{
+        padding-left: 10px;
+        width: 100%;
+        /* background-color: yellow; */
+    }
+
+
+    .servicesanger,.homeanger,.pageanger{
+        position: unset;
+
+    }
+    
+
+    nav input:checked~.submenu{
+        left: 0;
+    }
+
+    nav .checkI{
+        display:inline-block;
+    }
+
+    .homei:hover{
+        display: none;
+    }
+
+    .homei:hover .x{
+        display: block;
+    }
+
 
 }
+
+@media screen and (max-width:600px) {
+        nav .navitag button{
+            display: none;
+        }
+
+        nav .navitag i{
+            font-size: 40px;
+        }
+    
+}
+
 
 
 /* Nav bar over  */
@@ -155,6 +271,7 @@ nav {
 /* Section bar Stat */
 
 section {
+    margin-top: 100px;
     display: flex;
     min-height: 100vh;
     width: 100%;
@@ -162,7 +279,7 @@ section {
 
 .lefsection {
     width: 40%;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     min-height: 100vh;
     padding: 100px 1px 30px 50px;
 }
@@ -180,11 +297,14 @@ section {
 .leftbuttontag {
     display: flex;
     align-items: center;
+    /* background-color: red; */
+    height: 80px;
 }
 
 .leftbuttontag button {
     width: 40%;
     height: 50px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,6 +312,7 @@ section {
     background-color: lightgreen;
     border: unset;
     gap: 5px;
+    transition: all 1s;
 }
 
 .videobutton i {
@@ -207,12 +328,16 @@ section {
 .leftbuttontag .videobutton {
     margin-left: 25px;
     background-color: white;
+    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
+}
+
+.leftbuttontag button:hover{
+    margin-top: 0px;
 }
 
 .centersection {
     min-height: 100vh;
-    background-color: rgba(0, 208, 148, 0.32);
-    ;
+    background-image:linear-gradient(to top,blue,skyblue);
     display: flex;
     align-items: end;
 }
@@ -226,18 +351,25 @@ section {
 
 .lefsection img {
     animation-name: lefimg;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes lefimg {
-    from {
-        padding-left: 0px;
+    0%{
+        padding-left: 25px;
     }
 
-    to {
-        padding-left: 50px;
+    25% {
+        padding-left: 60px;
+    }
+
+    75%{
+        padding-left: 30px;
+    }
+    100%{
+        padding-left: 0px;
     }
 }
 
@@ -246,19 +378,28 @@ section {
 
 .centersection img {
     animation-name: center;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
 }
 
 @keyframes center {
-    from {
-        margin-bottom: 10px;
+     0%{
+        margin-bottom: 50px;
     }
 
-    to {
-        margin-bottom: 100px;
+    25%{
+        margin-bottom: 75px;
+    }
+    50%{
+        margin-bottom: 50px;
+    }
+    75%{
+        margin-bottom: 25px;
+    }
+    100%{
+        margin-bottom: 10px;
     }
 }
 
@@ -267,7 +408,6 @@ section {
 
 
 .rightsection {
-    background-color: gray;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -278,17 +418,18 @@ section {
 }
 
 
-.right1,
-.right2,
-.right3 {
-    background-color: lightcoral;
+.right1, .right2, .right3 {
+    /* background-color: lightcoral; */
+    background-color: whitesmoke;
     height: 100px;
-    width: 180px;
+    width: 220px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
     position: relative;
+    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
+
 }
 
 .rightsection span {
@@ -702,11 +843,13 @@ section {
 
 }
 
-.s3right button:hover {
-    margin-top: 0px;
+.lastbutton{
+    height: 80px;
 }
 
-
+.s3right button:hover{
+    margin-top: 2px;
+}
 /* resposive stat */
 
 @media screen and (max-width:1200px) {

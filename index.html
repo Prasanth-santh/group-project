@@ -14,56 +14,48 @@
     <div class="container">
         <nav>
             <div class="log">
-                <img src="./homepic/logo-dark.png" />
+                <img src="./homepic/logo.svg"/>
             </div>
-
-            <input type="checkbox" id="centercheck" />
-
-            <div class="centernav">
+            <input type="checkbox" id="check"/>
+            <div class="submenu">
                 <div class="home">
-                    <label for="homecheck">
-                        <a>Home</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </label>
-                    <input type="checkbox" id="homecheck" />
-                    <div class="homelink">
-                        <a href="./home">Home Stock</a>
+                        <!-- <i class="fa-solid fa-x"></i> -->
+                    <input type="checkbox" id="h"/>
+                    <label for="h">
+                    <button>Home <span><i class="fa-solid fa-chevron-down homei"></i> <i class="fa-solid fa-x x"></i></span></button>
+                </label>
+                    <div class="homeanger">
                         <a>Home Crypto</a>
+                        <a>Home Stock</a>
                         <a>Home Forex</a>
                     </div>
                 </div>
                 <div class="services">
-                    <label for="servicecheck">
-                        <a>Services</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </label>
-                    <input type="checkbox" id="servicecheck" />
-                    <div class="servicelink">
+                    <input type="checkbox" id="s"/>
+                    
+                    <button>Services <span><i class="fa-solid fa-chevron-down servicesi"></i>  <i class="fa-solid fa-x  x"></i></span> </button>
+                    <div class="servicesanger">
                         <a>Our Services</a>
-                        <a>Servuces details</a>
+                        <a>Services Details</a>
                     </div>
                 </div>
-                <a>About Us</a>
+                <a class="about">About Us</a>
                 <div class="page">
-                    <label>
-                        <a>Pages</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </label>
-                    <input type="checkbox" id="pagecheck" />
-                    <div class="pagelink">
+                    <input type="checkbox" id="p"/>
+                    <button>Pages <span><i class="fa-solid fa-chevron-down pagei"></i> <i class="fa-solid fa-x x"></i></span></button>
+                    <div class="pageanger">
                         <a>Our Team</a>
-                        <a>Warde Warren</a>
+                        <a>Wade Warren</a>
                         <a>Our Pricing</a>
                         <a>Blog</a>
                         <a>Blog Details</a>
                     </div>
                 </div>
-                <a>Contact Us</a>
             </div>
-            <div class="buttontag">
-                <button>Get Started</button>
-                <label for="centercheck">
-                    <i class="fa-solid fa-bars"></i>
+            <div class="navitag">
+            <button class="navlastbutton">Get Started</button>
+            <label for="check">
+                <i class="fa-solid fa-bars icon checkI"></i>
                 </label>
             </div>
         </nav>
@@ -107,6 +99,7 @@
                     <p>Satisfied Customer</p>
                 </div>
             </div>
+            
         </section>
         <!-- section 2 Stat -->
         <div class="section2">
@@ -158,7 +151,9 @@
                 <p>Hey folks! Meet our platform! With our platform, you'll get access to all the info you need to make
                     informed decisions. Our platform is your one-stop-shop for everything you need to know. So what are
                     you waiting for? Let's get started!</p>
+                    <div class="lastbutton">
                     <button>Explore More</button>
+                    </div>
             </div>
             
         </div>
