@@ -1,142 +1,1124 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-nav{
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+/* Nava bar Stat */
+nav {
     height: 100px;
     width: 100%;
-    position: relative;
-    background-color: aqua;
+    position: fixed;
+    top: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1px 20px 1px 20px;
+    background-color:aliceblue;
+    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
+    z-index: 999;
 }
 
-.centernav{
-    display: flex;
-    justify-content: space-between;
-    width: 45%;
-    position: relative;
-    cursor: pointer;
-    z-index: 80;
+/* Nav barresposi proberty */
+nav #check{
+    display:none ;
 }
 
-.centernav .homelink,.servicelink,.pagelink{
-    width: 150px;
+nav .checkI{
+    display: none;
+    font-size: 50px;
+}
+/* nav hover icon and lastbutton collaburation div */
+.navitag{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* align-items: center; */
-    justify-content: center;
-    padding-left: 15px;
-    box-shadow: 2px 2px 5px lightgray;
-    position: absolute;
-    left: -50px;
+    align-items: center;
+    gap: 30px;
+}
+
+/*Nav bar buttons*/
+
+nav button{
     font-size: 20px;
-    top:60px;
-    background-color:aqua;
-    /* display: none; */
-    opacity: 0;
-    transition: all 1s;
-    z-index: 10;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-        /* Home button */
-.home input:checked~.homelink{
+/* nav bar center button */
+
+.submenu{
+    width: 60%;
+    height: 30px;
     display: flex;
-    top: 35px;
-    opacity: 5;
-    z-index: 8;
-}
-
-.home i:hover{
-    transform: rotate(-90deg);
-    transition: all 1s;
-}
-
-.centernav i:hover{
-    transform: rotate(-90deg);
-    transition: all 1s;
-}
-
-
-.services .servicelink{
-    left: 90px;
-}
-
-.services input:checked~.servicelink{
-    display: flex;
-    top: 35px;
-    opacity: 5;
-    z-index: 8;
-}
-
-.page .pagelink{
-    left:330px;
-} 
-
-.page input:checked~.pagelink{
-    display: flex;
-    top: 35px;
-    opacity: 5;
-    z-index: 8;
+    align-items: center;
+    justify-content: space-between;
     
 }
 
-.centernav input{
+    
+/* nab bar center selecter button */
+
+.submenu button{
+    padding: 10px;
+    display: inline-block;
+    border: unset;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* center hover button tag  class*/
+
+.home,.services,.page{
+    position: relative;
+}
+
+/* anger tag class */
+
+.homeanger,.servicesanger,.pageanger{
+    display: none;
+    position: absolute;
+    background-color:aliceblue;
+    padding-left: 10px;
+    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;   
+    cursor: pointer;
+    z-index: 1; 
+    min-height: 100px;
+    min-height: 100px;
+   
+}
+
+/* anger tag style */
+
+.home a,.services a,.page a{
+    color: gray;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 16px 1px;
+    font-size: 20px;
+    width: 150px;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+/* home tag hover */
+
+.home:hover .homeanger{
+    display: block;
+    transition: all 1s;
+}
+
+/* home icon hovering */ 
+
+.home:hover .homei{
+    transform: rotate(-180deg);
+}
+
+/* Servicetag hover*/
+
+.services:hover .servicesanger{
+    display: block;
+}
+
+.services:hover .servicesi{
+    transform: rotate(-180deg);
+}
+
+/* page tag hover */
+
+.page:hover .pageanger{
+    display: block;
+}
+
+.page:hover .pagei{
+    transform: rotate(-180deg);
+}
+
+
+.homeanger a:hover{
+    color:black;
+    padding-left: 5px;
+    background-color: gray;
+}
+
+.servicesanger a:hover{
+    color:black;
+    padding-left: 5px;
+    background-color: gray;
+}
+
+.pageanger a:hover{
+    color:black;
+    padding-left: 5px;
+    background-color: gray;
+}
+
+
+.about{
+    
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* nav last button tag style */
+.navlastbutton{
+    width: 140px;
+    padding: 15px 10px 15px 10px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    border: unset;
+}
+
+
+ nav .submenu button span{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    /* display: flex; */
+    /* align-items: center; */
+    
+}
+
+nav .submenu button span i{
+    position: absolute;
+}
+
+/* input method */
+#h, #s,#p{
     display: none;
 }
-.buttontag {
-    width: 20%;
+
+ button .x{
+    display: none;
+}
+
+
+/* Navbar resposive Stat */
+@media screen and (max-width:1000px){
+    .submenu{
+        position: absolute;
+        top: 100px;
+        flex-direction: column;
+        height: 260px;
+        background-color: white;
+        width: 100%;
+        left: -100%;
+        justify-content: space-between;
+        transition: all 1s;
+        align-items: start;
+    }
+    .home button,.services  button,.page button{
+        display: flex;
+        justify-content: space-between;
+        /* background-color: yellow; */
+        width: 100%;
+    }
+
+    .home,.services,.page{
+        width: 100%;
+    }
+
+
+    .about{
+        padding-left: 10px;
+        width: 100%;
+        /* background-color: yellow; */
+    }
+
+
+    .servicesanger,.homeanger,.pageanger{
+        position: unset;
+
+    }
+    
+
+    nav input:checked~.submenu{
+        left: 0;
+    }
+
+    nav .checkI{
+        display:inline-block;
+    }
+
+    /* ethu yan nna hover alreaty pottorukkuratha
+     un check pannitto thirumpa checkbox vaikkirathu*/
+
+    .home:hover .homeanger{
+        display: none;
+    }
+
+    .home #h:checked ~ .homeanger{
+        display: block;
+    }
+
+    .home:hover .homei{
+        transform: unset;
+    }
+
+    /* service button */
+
+    .services:hover .servicesanger{
+        display: none;
+    }
+
+    .services #s:checked ~ .servicesanger{
+        display: block;
+    }
+
+    .services:hover .servicesi{
+        transform: unset;
+    }
+
+    /* page button */
+
+    .page:hover .pageanger{
+        display: none;
+    }
+
+    .page #p:checked ~ .pageanger{
+        display: block;
+    }
+
+    .page:hover .pagei{
+        transform:unset;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (max-width:600px) {
+        nav .navitag button{
+            display: none;
+        }
+
+        nav .navitag i{
+            font-size: 40px;
+        }
+    
+}
+
+
+
+/* Nav bar over  */
+
+/* Section bar Stat */
+
+section {
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.lefsection {
+    width: 40%;
+    /* background-color: lightcoral; */
+    min-height: 100vh;
+    padding: 100px 1px 30px 50px;
+}
+
+.lefsection h1 {
+    padding: 20px 1px 20px 1px;
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.lefsection p {
+    padding: 5px 1px 20px 1px;
+}
+
+.leftbuttontag {
+    display: flex;
     align-items: center;
+    /* background-color: red; */
+    height: 80px;
+}
+
+.leftbuttontag button {
+    width: 40%;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: lightgreen;
+    border: unset;
+    gap: 5px;
+    transition: all 1s;
+}
+
+.videobutton i {
+    font-size: 20px;
+}
+
+/* lbi enpathu left button i tag enru artham */
+.leftbuttontag .lbi {
+    display: none;
+}
+
+
+.leftbuttontag .videobutton {
+    margin-left: 25px;
+    background-color: white;
+    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
+}
+
+.leftbuttontag button:hover{
+    margin-top: 0px;
+}
+
+.centersection {
+    min-height: 100vh;
+    background-image:linear-gradient(to top,blue,skyblue);
+    display: flex;
+    align-items: end;
+}
+
+.centersection img {
+    height: 300px;
+    width: 300px;
+}
+
+/* leftsection animation */
+
+.lefsection img {
+    animation-name: lefimg;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes lefimg {
+    0%{
+        padding-left: 25px;
+    }
+
+    25% {
+        padding-left: 60px;
+    }
+
+    75%{
+        padding-left: 30px;
+    }
+    100%{
+        padding-left: 0px;
+    }
+}
+
+
+/* center section animation */
+
+.centersection img {
+    animation-name: center;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes center {
+     0%{
+        margin-bottom: 50px;
+    }
+
+    25%{
+        margin-bottom: 75px;
+    }
+    50%{
+        margin-bottom: 50px;
+    }
+    75%{
+        margin-bottom: 25px;
+    }
+    100%{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+.rightsection {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 40px;
     gap: 10px;
 }
-.buttontag button{
+
+
+.right1, .right2, .right3 {
+    /* background-color: lightcoral; */
+    background-color: whitesmoke;
+    height: 100px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    position: relative;
+    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
+
+}
+
+.rightsection span {
+    display: inline-block;
+}
+
+.anime1::before {
+    content: "10";
+    animation-name: rightfirst;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rightfirst {
+    0% {
+        content: "1";
+    }
+
+    11% {
+        content: "2";
+    }
+
+    22% {
+        content: "3";
+    }
+
+    33% {
+        content: "4";
+    }
+
+    44% {
+        content: "5";
+    }
+
+    55% {
+        content: "6";
+    }
+
+    66% {
+        content: "7";
+    }
+
+    77% {
+        content: "8";
+    }
+
+    88% {
+        content: "9";
+    }
+
+    99% {
+        content: "10";
+    }
+
+}
+
+.anime2::before {
+    content: "24";
+    animation-name: right2content;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes right2content {
+    0% {
+        content: "1";
+    }
+
+    4% {
+        content: "2";
+    }
+
+    8% {
+        content: "3";
+    }
+
+    12% {
+        content: "4";
+    }
+
+    16% {
+        content: "5";
+    }
+
+    20% {
+        content: "6";
+    }
+
+    24% {
+        content: "7";
+    }
+
+    28% {
+        content: "8";
+    }
+
+    32% {
+        content: "9";
+    }
+
+    36% {
+        content: "10";
+    }
+
+    40% {
+        content: "11";
+    }
+
+    44% {
+        content: "12";
+    }
+
+    48% {
+        content: "13";
+    }
+
+    52% {
+        content: "14";
+    }
+
+    56% {
+        content: "15";
+    }
+
+    60% {
+        content: "16";
+    }
+
+    65% {
+        content: "17";
+    }
+
+    69% {
+        content: "18";
+    }
+
+    73% {
+        content: "19";
+    }
+
+    77% {
+        content: "20";
+    }
+
+    81% {
+        content: "21";
+    }
+
+    85% {
+        content: "22";
+    }
+
+    89% {
+        content: "23";
+    }
+
+    93% {
+        content: "24";
+        /* animation-fill-mode: backwards; */
+    }
+
+
+
+}
+
+
+.anime3::after {
+    content: "25";
+    animation-name: right3content;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes right3content {
+    0% {
+        content: "1";
+    }
+
+    4% {
+        content: "2";
+    }
+
+    8% {
+        content: "3";
+    }
+
+    12% {
+        content: "4";
+    }
+
+    16% {
+        content: "5";
+    }
+
+    20% {
+        content: "6";
+    }
+
+    24% {
+        content: "7";
+    }
+
+    28% {
+        content: "8";
+    }
+
+    32% {
+        content: "9";
+    }
+
+    36% {
+        content: "10";
+    }
+
+    40% {
+        content: "11";
+    }
+
+    44% {
+        content: "12";
+    }
+
+    48% {
+        content: "13";
+    }
+
+    52% {
+        content: "14";
+    }
+
+    56% {
+        content: "15";
+    }
+
+    60% {
+        content: "16";
+    }
+
+    64% {
+        content: "17";
+    }
+
+    68% {
+        content: "18";
+    }
+
+    72% {
+        content: "19";
+    }
+
+    76% {
+        content: "20";
+    }
+
+    80% {
+        content: "21";
+    }
+
+    84% {
+        content: "22";
+    }
+
+    88% {
+        content: "23";
+    }
+
+    92% {
+        content: "24";
+    }
+
+    96% {
+        content: "25";
+    }
+}
+
+
+
+/* section2 stat */
+
+.section2 {
+    min-height: 110vh;
+    width: 100%;
+    background-color: rgb(34, 29, 29);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.section2hl {
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.section2hl h1 {
+    font-size: 50px;
+}
+
+.section2hl p {
+    margin: auto;
     width: 80%;
-    padding: 15px;
+    font-size: 20px;
+    line-height: normal;
+    color: lightgray;
+}
+
+
+
+
+
+.section2main {
+    display: grid;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    width: 100%;
+    padding: 5px 20px 40px 20px;
+    grid-template-columns: 22% 22% 22% 22%;
+
+}
+
+.section2main .sm1box {
+    background-color: white;
+    height: 360px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px 25px 15px;
+    border-radius: 10px;
+    transition: all 1s;
+    box-shadow: -2px 0 gray, 0 2px gray, 2px 0 gray, 0 -2px gray;
+}
+
+
+.section2main h1 {
+    padding: 10px 1px 10px 1px;
+}
+
+.section2main p {
+    font-size: 18px;
+    overflow: hidden;
+}
+
+/* click panna mela pora div */
+.sm1box:hover {
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+
+/* section2 finish */
+
+/* section3 Stat */
+
+.section3 {
+    min-height: 100vh;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 60px 1px 60px;
+}
+
+.section3 .s3right,
+.s3left {
+    min-height: 80vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* align-items: center; */
+}
+
+.section3 .s3right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 5%;
+}
+
+.s3right img {
+    height: 50px;
+    width: 100px;
+}
+
+.section3 .s3right h1 {
+    font-size: 40px;
+}
+
+.section3 .s3right p {
+    font-size: 22px;
+}
+
+.section3 .s3right button {
+    width: 160px;
+    padding: 18px;
+    margin-top: 10px;
     border-radius: 10px;
     border: unset;
     background-color: rgb(113, 206, 126);
+    transition: all 1s;
+
 }
 
-.buttontag label i{
-    color: red;
-    font-size: 32px;
+.lastbutton{
+    height: 80px;
 }
 
-#centercheck{
-    display: none;
+.s3right button:hover{
+    margin-top: 2px;
+}
+/* resposive stat */
+
+@media screen and (max-width:1200px) {
+    .lefsection h1 {
+        font-size: 50px;
+    }
 }
 
+@media screen and (max-width:1100px) {
 
-/* nav par responsive */
+    .lefsection {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-@media screen and (max-width:1050px) {
-    .centernav{
-        width: 50%;
+    .lefsection h1 {
+        font-size: 45px;
+    }
+
+    .leftbuttontag :nth-child(3) {
+        display: none;
+    }
+
+    .leftbuttontag button {
+        width: 45%;
+    }
+
+    /* section 2 responsive */
+
+    .sm1box h1 {
+        font-size: 25px;
+        padding: 5px 0px;
+    }
+
+    .sm1box p {
+        font-size: normal;
+    }
+
+
+
+    .leftbuttontag .lbi {
+        display: inline-block;
+        font-size: 40px;
+        padding-left: 25px;
+        color: aqua;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+
+    .sm1box {
+        width: 300px;
+    }
+
+    .section2main {
+        grid-template-columns: auto auto;
     }
 }
 
 @media screen and (max-width:900px) {
-    .centernav{
-        position: absolute;
-        top: 96px;
-        background-color: red;
-        flex-direction: column;
-        width: 100%;
-        left: -100%;
-        text-align: center;
-        transition: all 1s;
+    .lefsection h1 {
+        font-size: 35px;
+        line-height: 35px;
     }
 
-    nav #centercheck:checked~.centernav{
-        left: 0px;
+    .leftbuttontag button {
+        width: 65%;
+    }
+
+
+
+}
+
+@media screen and (max-width:800px) {
+    .section3 {
+        margin: 10px;
+        flex-direction: column;
+        padding: 0px 20px;
+        gap: 10px;
+        margin-top: 60px;
+
+    }
+
+    .section3 .s3right,
+    .s3left {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lefsection,
+    .centersection,
+    .rightsection {
+        width: 100%;
+    }
+
+    .lefsection h1 {
+        font-size: 60px;
+        line-height: 50px;
+    }
+
+    .lefsection p {
+        font-size: 20px;
+    }
+
+    .leftbuttontag button {
+        width: 30%;
+    }
+
+    .leftbuttontag .lbi {
+        display: none;
+    }
+
+    .leftbuttontag .videobutton {
+        display: flex;
+    }
+
+    .centersection {
+        display: flex;
+        justify-content: center;
+    }
+
+    .centersection img {
+        height: 95%;
+        width: 75%;
+    }
+
+    .rightsection {
+        padding-top: 50px;
+    }
+
+    .right1,
+    .right2,
+    .right3 {
+        width: 80%;
     }
 
 }
 
+@media screen and (max-width:660px) {
+    .section2main {
+        grid-template-columns: auto;
+    }
+
+    .leftbuttontag button {
+        width: 150px;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    section .centersection img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .section3 .s3left img {
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+    }
+
+    .lefsection h1 {
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    .section2hl {
+        line-height: 60px;
+        padding: 20px 0px;
+    }
+
+    .section2hl h1 {
+        font-size: 40px;
+    }
+
+    .section2hl p {
+        width: 100%;
+        padding: 0px 10px;
+        font-size: 17px;
+    }
+
+    .section3 {
+        margin: 10px;
+        width: 100%;
+        padding: 0px 5px;
+    }
+
+    .section3 .s3right h1 {
+        font-size: 35px;
+
+    }
+
+    .section3 .s3right p {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .leftbuttontag {
+        width: 75%;
+    }
+
+    .lefsection h1 {
+        font-size: 40px;
+        line-height: 30px;
+    }
+
+    .section2hl h1 {
+        font-size: 35px;
+    }
+
+    .sm1box {
+        width: 260px;
+    }
+
+}
+
+@media screen and (max-width:350px) {
+    .leftbuttontag {
+        width: 85%;
+    }
+}

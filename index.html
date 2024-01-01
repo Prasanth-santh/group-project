@@ -1,68 +1,180 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Group Project</title>
-        <link rel="stylesheet" type="text/css" href="./style.css"/>
-        <meta name="viewport" content="width-device=width,initial-scale=1.0"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
-        <div class="container">
-            <nav>
-                <div class="log">
-                    <img src="./homepic/logo-dark.png"/>
-                </div>
 
-                <input type="checkbox" id="centercheck"/>
+<head>
+    <title>Group Project</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta name="viewport" content="width-device=width,initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-                <div class="centernav">  
-                    <div class="home">
-                        <label for="homecheck"> 
-                        <a>Home</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        </label>
-                        <input type="checkbox" id="homecheck"/>
-                        <div class="homelink">
-                            <a href="./home">Home Stock</a>
-                            <a>Home Crypto</a>
-                            <a>Home Forex</a>
-                        </div>
-                    </div>
-                    <div class="services">
-                        <label for="servicecheck">
-                        <a>Services</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        </label>
-                        <input type="checkbox" id="servicecheck"/>
-                        <div class="servicelink">
-                            <a>Our Services</a>
-                            <a>Servuces details</a>
-                        </div>
-                    </div>
-                    <a>About Us</a>
-                    <div class="page">
-                        <label>  
-                        <a>Pages</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        </label>
-                        <input type="checkbox" id="pagecheck"/>
-                        <div class="pagelink">
-                            <a>Our Team</a>
-                            <a>Warde Warren</a>
-                            <a>Our Pricing</a>
-                            <a>Blog</a>
-                            <a>Blog Details</a>
-                        </div>
-                    </div>
-                    <a>Contact Us</a>
-                </div>
-                <div class="buttontag">
-                <button>Get Started</button>
-                <label for="centercheck">
-                    <i class="fa-solid fa-bars"></i>
-                </label>  
+<body>
+    <div class="container">
+        <nav>
+            <div class="log">
+                <img src="./homepic/logo.svg"/>
             </div>
-            </nav>
+            <input type="checkbox" id="check"/>
+            <div class="submenu">
+                <div class="home">
+                        <!-- <i class="fa-solid fa-x"></i> -->
+                    <input type="checkbox" id="h"/>
+                
+                    <button>
+                        Home
+                        <label for="h"><i class="fa-solid fa-chevron-down homei"></i></label>
+                    </button>
+                
+                    <div class="homeanger">
+                        <a>Home Crypto</a>
+                        <a>Home Stock</a>
+                        <a>Home Forex</a>
+                    </div>
+                </div>
+                <div class="services">
+                    <input type="checkbox" id="s"/>
+                    
+                    <button>
+                        Services
+                        <label for="s">
+                            <i class="fa-solid fa-chevron-down servicesi"></i>
+                        </label>
+                    </button>
+                    <div class="servicesanger">
+                        <a>Our Services</a>
+                        <a>Services Details</a>
+                    </div>
+                </div>
+                <a class="about">About Us</a>
+                <div class="page">
+                    <input type="checkbox" id="p"/>
+                    <button>
+                        Pages
+                        <label for="p">
+                            <i class="fa-solid fa-chevron-down pagei"></i>
+                        </label>
+                    </button>
+                    <div class="pageanger">
+                        <a>Our Team</a>
+                        <a>Wade Warren</a>
+                        <a>Our Pricing</a>
+                        <a>Blog</a>
+                        <a>Blog Details</a>
+                    </div>
+                </div>
+                <a class="about">Contact Us</a>
+            </div>
+            
+            <div class="navitag">
+            <button class="navlastbutton">Get Started</button>
+            <label for="check">
+                <i class="fa-solid fa-bars icon checkI"></i>
+                </label>
+            </div>
+            
+        </nav>
+
+        <!-----Nav close---->
+        <section>
+            <div class="lefsection">
+                <img src="./homepic/arrow1.png" />
+                <h1>Maximize Your Investment Returns</h1>
+                <p>Anyone can invest money to different currency to increase their earnings by the help of tradingo
+                    through online.</p>
+                <div class="leftbuttontag">
+                    <button>Learn More</button>
+                    <i class="fa-regular fa-circle-play lbi"></i>
+                    <button class="videobutton"><i class="fa-regular fa-circle-play"></i>Watch Video</button>
+                </div>
+            </div>
+                
+            <div class="centersection">
+                <img src="./homepic/centersection.png" />
+            </div>
+
+            <div class="rightsection">
+
+                <!-- right section 1st box -->
+                <div class="right1">
+                    <h1><span class="anime1"></span>Years</h1>
+                    <p>Trading Expering</p>
+                </div>
+                <!-- right section 2nd box-->
+
+                <div class="right2">
+                    <h1><span class="anime2"></span>/7</h1>
+                    <p>online Support</p>
+                </div>
+
+
+
+                <div class="right3">
+                    <h1><span class="anime3"></span>K</h1>
+                    <p>Satisfied Customer</p>
+                </div>
+            </div>
+            
+        </section>
+        <!-- section 2 Stat -->
+        <div class="section2">
+            <div class="section2hl">
+                <h1>Features We Have</h1>
+                <p>Hey there! Here are the features we have: user-friendly interface, top-notch security, and fast
+                    perfomance</p>
+            </div>
+            <div class="section2main">
+                <div class="sm1box">
+                    <img src="./homepic/sm1 img.png" />
+                    <h1>Real time data</h1>
+                    <p>Real-time data is like having a magic crystal ball that tells you what's happening now.</p>
+                </div>
+
+                <div class="sm2box sm1box">
+                    <img src="./homepic/sm2 img.png" />
+                    <h1>Real time data</h1>
+                    <p>Real-time data is like having a magic crystal ball that tells you what's happening now.</p>
+                </div>
+
+                <div class="sm3box sm1box">
+                    <img src="./homepic/sm3 img.png" />
+                    <h1>Real time data</h1>
+                    <p>Real-time data is like having a magic crystal ball that tells you what's happening now.</p>
+                </div>
+
+                <div class="sm4box sm1box">
+                    <img src="./homepic/sm4 img.png" />
+                    <h1>Real time data</h1>
+                    <p>Real-time data is like having a magic crystal ball that tells you what's happening now.</p>
+                </div>
+
+
+
+            </div>
         </div>
-    </body>
+
+        <!-- section2 finish -->
+
+        <!-- Section3 is Stat -->
+        <div class="section3">
+            <div class="s3left">
+                <img src="./homepic/section3.png" />
+            </div>
+            <div class="s3right">
+                <img src="./homepic/arrow1.png" />
+                <h1>Meet Our Platform To Know More About</h1>
+                <p>Hey folks! Meet our platform! With our platform, you'll get access to all the info you need to make
+                    informed decisions. Our platform is your one-stop-shop for everything you need to know. So what are
+                    you waiting for? Let's get started!</p>
+                    <div class="lastbutton">
+                    <button>Explore More</button>
+                    </div>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+
 </html>
