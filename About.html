@@ -7,6 +7,8 @@
 
     <!-- STYLE -->
     <link rel="stylesheet" type="text/css" href="./About.css" />
+    <link rel="stylesheet" type="text/css" href="./team.css"/>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
 
     <!-- META -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +23,64 @@
 <body>
     <!-- MAIN -->
     <div class="container">
+
+        <!-- NAVBAR -->
+        <nav>
+            <div class="log">
+                <img src="./homepic/logo-dark.png"/>
+            </div>
+
+            <input type="checkbox" id="centercheck"/>
+
+            <div class="centernav">  
+                <div class="home">
+                    <label for="homecheck"> 
+                    <a>Home</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </label>
+                    <input type="checkbox" id="homecheck"/>
+                    <div class="homelink">
+                        <a href="./home">Home Stock</a>
+                        <a>Home Crypto</a>
+                        <a>Home Forex</a>
+                    </div>
+                </div>
+                <div class="services">
+                    <label for="servicecheck">
+                    <a>Services</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </label>
+                    <input type="checkbox" id="servicecheck"/>
+                    <div class="servicelink">
+                        <a>Our Services</a>
+                        <a>Servuces details</a>
+                    </div>
+                </div>
+                <a>About Us</a>
+                <div class="page">
+                    <label>  
+                    <a>Pages</a>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </label>
+                    <input type="checkbox" id="pagecheck"/>
+                    <div class="pagelink">
+                        <a>Our Team</a>
+                        <a>Warde Warren</a>
+                        <a>Our Pricing</a>
+                        <a>Blog</a>
+                        <a>Blog Details</a>
+                    </div>
+                </div>
+                <a>Contact Us</a>
+            </div>
+            <div class="buttontag">
+            <button>Get Started</button>
+            <label for="centercheck">
+                <i class="fa-solid fa-bars"></i>
+            </label>  
+        </div>
+        </nav>
+
 
         <!-- HOME -->
         <div class="home">
