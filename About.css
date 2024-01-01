@@ -56,6 +56,50 @@
     height: 200px;
 }
 
+/* EXPERIENCE */
+.experience {
+    width:100%;
+    min-height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 10px;
+}
+
+.experience>img {
+    width:400px;
+    height:400px;
+}
+
+.experience>div {
+    padding: 20px;
+}
+
+.experience>div>h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color:rgb(61, 61, 212);
+}
+
+.experience>div>p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color:gray;
+}
+
+.experience>div>button {
+    background-color: lightgreen;
+    border-radius:5px;
+    border:unset;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.experience>div>button:hover{
+    background-color: rgb(8, 141, 97);
+}
+
 @media only screen and (min-width:300px) and (max-width:600px) {
 
     .home {
