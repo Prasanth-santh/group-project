@@ -49,7 +49,7 @@ nav button{
 /* nav bar center button */
 
 .submenu{
-    width: 60%;
+    width: 50%;
     height: 30px;
     display: flex;
     align-items: center;
@@ -101,19 +101,6 @@ nav button{
     width: 150px;
     text-decoration: none;
     transition: all 1s;
-}
-
-/* home tag hover */
-
-.home:hover .homeanger{
-    display: block;
-    transition: all 1s;
-}
-
-/* home icon hovering */ 
-
-.home:hover .homei{
-    transform: rotate(-180deg);
 }
 
 /* Servicetag hover*/
@@ -170,8 +157,13 @@ nav button{
     background-color: lightgreen;
     border-radius: 10px;
     border: unset;
+    transition: all 1s;
 }
 
+.navlastbutton:hover{
+    margin-bottom: 10px;
+    color: gray;
+}
 
  nav .submenu button span{
     position: relative;
@@ -187,7 +179,7 @@ nav .submenu button span i{
 }
 
 /* input method */
-#h, #s,#p{
+ #s,#p{
     display: none;
 }
 
@@ -197,12 +189,12 @@ nav .submenu button span i{
 
 
 /* Navbar resposive Stat */
-@media screen and (max-width:1000px){
+@media screen and (max-width:900px){
     .submenu{
         position: absolute;
         top: 100px;
         flex-direction: column;
-        height: 260px;
+        min-height: 260px;
         background-color: white;
         width: 100%;
         left: -100%;
@@ -231,6 +223,7 @@ nav .submenu button span i{
 
     .servicesanger,.homeanger,.pageanger{
         position: unset;
+        /* position: absolute; */
 
     }
     
@@ -333,6 +326,27 @@ section {
 .lefsection p {
     padding: 5px 1px 20px 1px;
 }
+/* roted image */
+.lefsection .roted{
+    position: absolute;
+    left: 30%;
+    top: 36%;
+    background-color: red;
+    animation-name: roted;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes roted {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
 
 .leftbuttontag {
     display: flex;
@@ -387,21 +401,25 @@ section {
     width: 300px;
 }
 
-/* leftsection animation */
 
-.lefsection img {
+/* leftsection animation */
+/* arrow enpathu lefsection la erukkura img */
+.lefsection .arrow {
     animation-name: lefimg;
-    animation-duration: 4s;
-    animation-timing-function: linear;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes lefimg {
     0%{
-        padding-left: 25px;
+        padding-left: 0px;
     }
 
     25% {
+        padding-left: 30px;
+    }
+    50%{
         padding-left: 60px;
     }
 
@@ -418,34 +436,30 @@ section {
 
 .centersection img {
     animation-name: center;
-    animation-duration: 4s;
-    animation-timing-function: linear;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 
 }
 
 @keyframes center {
      0%{
-        margin-bottom: 50px;
+        margin-bottom: 0%;
     }
 
     25%{
-        margin-bottom: 75px;
+        margin-bottom: 10%;
     }
     50%{
-        margin-bottom: 50px;
+        margin-bottom: 20%;
     }
     75%{
-        margin-bottom: 25px;
+        margin-bottom: 10%;
     }
     100%{
-        margin-bottom: 10px;
+        margin-bottom: 0%;
     }
 }
-
-
-
-
 
 .rightsection {
     width: 40%;
@@ -842,6 +856,7 @@ section {
     padding: 1px 60px 1px 60px;
 }
 
+
 .section3 .s3right,
 .s3left {
     min-height: 80vh;
@@ -852,6 +867,8 @@ section {
     /* align-items: center; */
 }
 
+
+
 .section3 .s3right {
     display: flex;
     flex-direction: column;
@@ -859,10 +876,39 @@ section {
     padding-top: 5%;
 }
 
-.s3right img {
+.s3imganime{
+    width: 50%;
+}
+
+.s3right  .arrow2 {
     height: 50px;
     width: 100px;
+    animation-name: s3img;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
 }
+
+@keyframes s3img {
+    0%{
+        margin-left: 0%;
+    }
+
+    25%{
+        margin-left:25%
+    }
+    50%{
+        margin-left: 50%;
+    }
+    75%{
+        margin-left: 25%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
+
 
 .section3 .s3right h1 {
     font-size: 40px;
@@ -978,6 +1024,7 @@ section {
     .s3left {
         width: 100%;
     }
+
 }
 
 
@@ -985,6 +1032,13 @@ section {
     section {
         display: flex;
         flex-direction: column;
+    }
+
+   .lefsection .roted{
+
+        position: absolute;
+        left: 88%;
+        top: 37%;
     }
 
     .lefsection,
