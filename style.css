@@ -66,12 +66,15 @@ nav button{
     border: unset;
     background-color: transparent;
 }
+
 /* center hover button tag  class*/
+
 .home,.services,.page{
     position: relative;
     transition: all 1s;
     cursor: pointer;
 }
+
 /* anger tag class */
 
 .homeanger,.servicesanger,.pageanger{
@@ -104,11 +107,14 @@ nav button{
     display: block;
 }
 
-/* home icon hovering */
+
+/* home icon hovering */ 
+
 .home:hover .homei{
     transition: all 1s;
     transform: rotate(-90deg);
 }
+
 /* Servicetag hover*/
 
 .services:hover .servicesanger{
@@ -166,29 +172,85 @@ nav button{
 }
 
 
+ nav .submenu button span{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    /* display: flex; */
+    /* align-items: center; */
+    
+}
+
+nav .submenu button span i{
+    position: absolute;
+}
+
+/* input method */
+#h, #s,#p{
+    display: none;
+}
+
+ button .x{
+    display: none;
+}
+
+
 /* Navbar resposive Stat */
 @media screen and (max-width:900px){
     .submenu{
         position: absolute;
         top: 100px;
         flex-direction: column;
-        background-color: red;
-        min-height: 300px;
+        height: 200px;
+        background-color: white;
         width: 100%;
         left: -100%;
         justify-content: space-between;
         transition: all 1s;
+        align-items: start;
     }
+    .home button,.services  button,.page button{
+        display: flex;
+        justify-content: space-between;
+        /* background-color: yellow; */
+        width: 100%;
+    }
+
+    .home,.services,.page{
+        width: 90%;
+    }
+
+
+    .about{
+        padding-left: 10px;
+        width: 100%;
+        /* background-color: yellow; */
+    }
+
+
+    .servicesanger,.homeanger,.pageanger{
+        position: unset;
+
+    }
+    
 
     nav input:checked~.submenu{
         left: 0;
     }
 
-
-
     nav .checkI{
         display:inline-block;
     }
+
+    .homei:hover{
+        display: none;
+    }
+
+    .homei:hover .x{
+        display: block;
+    }
+
+
 }
 
 @media screen and (max-width:600px) {
@@ -201,6 +263,9 @@ nav button{
         }
     
 }
+
+
+
 /* Nav bar over  */
 
 /* Section bar Stat */
