@@ -41,6 +41,21 @@
     font-size: 25px;
 }
 
+
+/* HOME-IMAGE */
+.home-image {
+    height: 250px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image>img {
+    width: 70%;
+    height: 200px;
+}
+
 @media only screen and (min-width:300px) and (max-width:600px) {
 
     .home {
@@ -63,6 +78,16 @@
 
     .home>div>span:nth-child(2) {
         font-size: 20px;
+    }
+
+    /* HOME-IMAGE */
+    .home-image {
+        margin-top: 30px;
+    }
+
+    .home-image>img {
+        width: 70%;
+        height: 150px;
     }
 
 }
