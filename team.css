@@ -12,12 +12,16 @@
 .first-content{
     min-height: 300px;
     width: 100%;
-    margin: 6rem 0rem 0;
+    /* margin: 6rem 0rem 0; */
     border: 1px solid black;
     background-image:url(https://bitrader.thetork.com/wp-content/themes/bitrader/assets/img/bg/breadcrumb_bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+.overall-container{
+padding: 100px 0 0 ;
 
 }
 .first-text{
