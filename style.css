@@ -168,7 +168,10 @@ nav button{
     background-color: lightgreen;
     border-radius: 10px;
     border: unset;
+    text-align: center;
+    font-size: 18px;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .navlastbutton:hover{
@@ -958,7 +961,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px 10px 20px;
-    
+    margin-bottom: 20px;
 }
 
 .d4L{
@@ -968,7 +971,7 @@ section {
 }
 
 .d4L button{
-    
+
 }
 
 .d4L h1{
@@ -992,6 +995,10 @@ section {
 
 .d4R{
     margin: auto;
+}
+
+.d4L button{
+    margin-top: 20px;
 }
 
 /* resposive stat */
@@ -1081,6 +1088,7 @@ section {
         font-size:30px ;
     }
     
+   
 
 
 }
