@@ -172,12 +172,12 @@
 }
 
 .adviser>div {
-    width:100%;
+    width: 100%;
     display: grid;
-    justify-items:center;
+    justify-items: center;
     align-items: center;
-    gap:20px;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .adviser>div>div {
@@ -212,7 +212,7 @@
 
 .adviser>div>div>div>p {
     font-size: 15px;
-    color:rgb(62, 60, 60);
+    color: rgb(62, 60, 60);
 }
 
 @media only screen and (min-width:300px) and (max-width:600px) {
@@ -239,15 +239,75 @@
         font-size: 20px;
     }
 
-    /* HOME-IMAGE */
+    /* HOME-IMAGE  */
     .home-image {
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     .home-image>img {
         width: 70%;
         height: 150px;
     }
+
+
+
+    /* EXPERIENCE */
+    .experience {
+        flex-direction: column;
+    }
+
+    .experience>img {
+        width: 300px;
+        height: 250px;
+        margin-right: 40px;
+    }
+
+    .experience>div>h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .experience>div>p {
+        font-size: 20px;
+    }
+
+    .experience>div>button {
+        font-size: 15px;
+    }
+
+    /* ROADMAP */
+    .roadmap {
+        margin-bottom: 50px;
+    }
+
+    .roadmap>h1 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .roadmap>p {
+        margin-bottom: 30px;
+        font-size: 20px;
+        padding: 0px 10px;
+    }
+
+    
+/* ADVISER */
+.adviser {
+    margin-bottom: 50px;
+}
+
+.adviser>h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.adviser>p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
 
 }
 
