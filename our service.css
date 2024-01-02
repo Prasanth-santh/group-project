@@ -171,7 +171,8 @@
     position: relative;
     animation-name: client-info;
     animation-duration: 2s;
-    scroll-behavior: hidden;
+    /* scroll-behavior: hidden; */
+    overflow: hidden;
 }
 
 
