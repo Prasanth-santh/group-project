@@ -44,7 +44,7 @@
 
 /* HOME-IMAGE */
 .home-image {
-    height: 250px;
+    height: 300px;
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -53,23 +53,23 @@
 
 .home-image>img {
     width: 70%;
-    height: 200px;
+    height: 300px;
 }
 
 /* EXPERIENCE */
 .experience {
-    width:100%;
-    min-height:300px;
+    width: 100%;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:20px;
+    gap: 20px;
     padding: 10px;
 }
 
 .experience>img {
-    width:400px;
-    height:400px;
+    width: 700px;
+    height: 700px;
 }
 
 .experience>div {
@@ -77,53 +77,143 @@
 }
 
 .experience>div>h1 {
-    font-size: 25px;
+    font-size: 40px;
     margin-bottom: 20px;
-    color:rgb(61, 61, 212);
+    color: rgb(61, 61, 212);
 }
 
 .experience>div>p {
-    font-size: 15px;
+    font-size: 25px;
     margin-bottom: 20px;
-    color:gray;
+    color: gray;
 }
 
 .experience>div>button {
     background-color: lightgreen;
-    border-radius:5px;
-    border:unset;
-    font-size: 13px;
-    padding: 5px;
+    border-radius: 5px;
+    border: unset;
+    font-size: 25px;
+    padding: 10px;
 }
 
-.experience>div>button:hover{
+.experience>div>button:hover {
     background-color: rgb(8, 141, 97);
 }
 
 /* ROADMAP */
+.roadmap {
+    margin-bottom: 100px;
+}
+
 .roadmap>h1 {
     text-align: center;
     margin-bottom: 15px;
-    font-size: 25px;
-    color:rgb(71, 209, 71);
+    font-size: 45px;
+    color: rgb(71, 209, 71);
 }
 
 .roadmap>p {
     text-align: center;
-    color:gray;
-    margin-bottom: 15px;
-    font-size: 15px;
+    color: gray;
+    margin-bottom: 50px;
+    font-size: 25px;
     padding: 0px 100px;
 }
 
 .roadmap>div {
     width: 100%;
+    padding: 0px 50px;
     display: grid;
     justify-content: center;
-    align-items: center;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    align-items: start;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.roadmap>div>div>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.roadmap>div>div>div>h2 {
+    font-size: 25px;
+}
+
+.roadmap>div>div>div>h2:nth-child(2) {
+    color: rgb(67, 217, 67);
+}
+
+
+.roadmap>div>div>p {
+    font-size: 20px;
+    color: gray;
+}
+
+/* ADVISER */
+.adviser {
+    margin-bottom: 50px;
+}
+
+.adviser>h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 45px;
+    color: rgb(71, 209, 71);
+}
+
+.adviser>p {
+    text-align: center;
+    color: gray;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0px 100px;
+}
+
+.adviser>div {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.adviser>div>div {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.adviser>div>div>img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+.adviser>div>div>div {
+    position: absolute;
+    background-color: rgba(233, 229, 229, 0.7);
+    bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.adviser>div>div>div>h3 {
+    font-size: 25px;
+}
+
+
+.adviser>div>div>div>p {
+    font-size: 15px;
+    color: rgb(62, 60, 60);
+}
 
 @media only screen and (min-width:300px) and (max-width:600px) {
 
@@ -149,14 +239,74 @@
         font-size: 20px;
     }
 
-    /* HOME-IMAGE */
+    /* HOME-IMAGE  */
     .home-image {
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
     .home-image>img {
         width: 70%;
         height: 150px;
+    }
+
+
+
+    /* EXPERIENCE */
+    .experience {
+        flex-direction: column;
+    }
+
+    .experience>img {
+        width: 300px;
+        height: 250px;
+        margin-right: 40px;
+    }
+
+    .experience>div>h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .experience>div>p {
+        font-size: 20px;
+    }
+
+    .experience>div>button {
+        font-size: 15px;
+    }
+
+    /* ROADMAP */
+    .roadmap {
+        margin-bottom: 50px;
+    }
+
+    .roadmap>h1 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .roadmap>p {
+        margin-bottom: 30px;
+        font-size: 20px;
+        padding: 0px 10px;
+    }
+
+
+    /* ADVISER */
+    .adviser {
+        margin-bottom: 50px;
+    }
+
+    .adviser>h1 {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .adviser>p {
+        margin-bottom: 30px;
+        font-size: 20px;
+        padding: 0px 10px;
     }
 
 }
@@ -178,6 +328,24 @@
         bottom: 40px;
     }
 
+    /* EXPERIENCE */
+    .experience>img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .experience>div>h1 {
+        font-size: 30px;
+    }
+
+    .experience>div>p {
+        font-size: 20px;
+    }
+
+    .experience>div>button {
+        font-size: 15px;
+    }
+
 }
 
 
@@ -186,6 +354,50 @@
     .home>div {
         left: 40px;
         bottom: 40px;
+    }
+
+    /* EXPERIENCE */
+    .experience>img {
+        width: 400px;
+        height: 400px;
+        margin-right: 40px;
+    }
+
+    .experience>div>h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .experience>div>p {
+        font-size: 30px;
+    }
+
+    .experience>div>button {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width:1001px) and (max-width:1150px) {
+
+    /* EXPERIENCE */
+    .experience>img {
+        width: 500px;
+        height: 500px;
+        margin-right: 40px;
+    }
+
+    .experience>div>h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .experience>div>p {
+        font-size: 30px;
+    }
+
+    .experience>div>button {
+        font-size: 20px;
     }
 
 }
