@@ -183,9 +183,6 @@ nav button{
     position: relative;
     top: 5px;
     left: 10px;
-    /* display: flex; */
-    /* align-items: center; */
-    
 }
 
 nav .submenu button span i{
@@ -988,6 +985,9 @@ section {
     text-decoration: none;
 }
 
+.d4R img{
+    width: 100%;
+}
 
 .d4L i{
     color: blue;
@@ -1262,6 +1262,11 @@ section {
 
     .section3 .s3right p {
         font-size: 20px;
+    }
+
+    .page4 .d4R img{
+        margin: 1px 5% 1px 5%;
+        text-align: center;
     }
 
 }
