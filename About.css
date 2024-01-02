@@ -292,22 +292,22 @@
         padding: 0px 10px;
     }
 
-    
-/* ADVISER */
-.adviser {
-    margin-bottom: 50px;
-}
 
-.adviser>h1 {
-    margin-bottom: 15px;
-    font-size: 30px;
-}
+    /* ADVISER */
+    .adviser {
+        margin-bottom: 50px;
+    }
 
-.adviser>p {
-    margin-bottom: 30px;
-    font-size: 20px;
-    padding: 0px 10px;
-}
+    .adviser>h1 {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .adviser>p {
+        margin-bottom: 30px;
+        font-size: 20px;
+        padding: 0px 10px;
+    }
 
 }
 
@@ -328,6 +328,24 @@
         bottom: 40px;
     }
 
+    /* EXPERIENCE */
+    .experience>img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .experience>div>h1 {
+        font-size: 30px;
+    }
+
+    .experience>div>p {
+        font-size: 20px;
+    }
+
+    .experience>div>button {
+        font-size: 15px;
+    }
+
 }
 
 
@@ -336,6 +354,50 @@
     .home>div {
         left: 40px;
         bottom: 40px;
+    }
+
+    /* EXPERIENCE */
+    .experience>img {
+        width: 400px;
+        height: 400px;
+        margin-right: 40px;
+    }
+
+    .experience>div>h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .experience>div>p {
+        font-size: 30px;
+    }
+
+    .experience>div>button {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width:1001px) and (max-width:1150px) {
+
+    /* EXPERIENCE */
+    .experience>img {
+        width: 500px;
+        height: 500px;
+        margin-right: 40px;
+    }
+
+    .experience>div>h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .experience>div>p {
+        font-size: 30px;
+    }
+
+    .experience>div>button {
+        font-size: 20px;
     }
 
 }
