@@ -1296,3 +1296,89 @@ section {
         width: 85%;
     }
 }
+
+
+/* Form tag  Stat*/
+    form{
+        position: absolute;
+        top: 150px;
+        right: 33%;
+        height: 400px;
+        width: calc(30%);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        z-index: 20;
+        background-color:rgb(8, 8, 31);
+        outline: none;
+        display: none;
+    }
+    form label{
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        font-size: 20px;
+        color: aqua;
+        
+    }
+    form input{
+        padding: 12px 10px 10px 16px;
+        color: white;
+        border-radius: 20px;
+        border: unset;
+        width: 90%;
+        outline:aqua ;
+        border:  1px solid aqua;
+        background-color: transparent;
+    }
+
+    .summit-from{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .summit-from input{
+        width: 40%;
+        padding: 10px;
+    }
+
+    form input:focus{
+        box-shadow: 5px 0px 5px gray,0px 5px 5px gray,0px -5px 5px gray,-5px 0px 5px gray;
+    }
+
+    .lefsection #fr:checked~form{
+        display: flex;
+    }
+
+
+    /* click it is a login card click button  or fixed button */
+    .click{
+        position: fixed;
+        right: 10px;
+        top: 120px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        z-index: 100;
+        background-color: rgb(10, 238, 10);
+        box-shadow: 5px 0px 5px green,0px 5px 5px green,0px -5px 5px green,-5px 0px 5px green;
+    }
+
+    .click i{
+        font-size: 30px;
+    }
+
+
+    .lefsection #fr{
+        display: none;
+    }
+
+    
+/* Form tag close */
