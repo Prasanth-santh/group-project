@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+/* container */
+
+.container{
+    /* padding-top: 100px; */
+    /* background-color: red; */
+}
+
 /* service-bg */
 
 .service-bg{
@@ -113,6 +120,9 @@
 .card:hover{
     border: 3px solid rgba(76, 172, 113, 0.904);
     cursor: pointer;
+    transition: all 1s ;
+    transform: translate(0px,-15px)
+
 }
 .card:hover h2{
     color:  rgba(31, 240, 111, 0.904);
@@ -206,6 +216,8 @@
 .bottomline:hover{
     border: 3px solid rgba(76, 172, 113, 0.904);
     cursor: pointer;
+    transition: all 1s ;
+    transform: translate(0px,-15px)
 }
 
 
