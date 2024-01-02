@@ -154,8 +154,9 @@ nav button{
 
 
 .about{
-    
     cursor: pointer;
+    color: black;
+    text-decoration: none;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -948,6 +949,51 @@ section {
 .s3right button:hover{
     margin-top: 2px;
 }
+
+/* 4th page */
+.page4{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    
+}
+
+.d4L{
+    width: 50%;
+    padding-left: 20px;
+    
+}
+
+.d4L button{
+    
+}
+
+.d4L h1{
+    font-size: 45px;
+}
+
+.d4L ul{
+    list-style: none;
+}
+
+.d4L ul li{
+    padding-top: 20px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+.d4L i{
+    color: blue;
+} 
+
+.d4R{
+    margin: auto;
+}
+
 /* resposive stat */
 
 @media screen and (max-width:1200px) {
@@ -1006,6 +1052,10 @@ section {
     .section2main {
         grid-template-columns: auto auto;
     }
+
+    .page4{
+        padding: 0px;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -1018,6 +1068,19 @@ section {
         width: 65%;
     }
 
+    .page4{
+        flex-direction: column-reverse;
+        gap: 40px;
+        
+    }
+
+    .d4L{
+        width: 100%;
+    }
+    .d4L h1{
+        font-size:30px ;
+    }
+    
 
 
 }
