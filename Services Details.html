@@ -5,76 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./Services Details.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./team.css"/> -->
     <script src="https://kit.fontawesome.com/cb3a9ad0ef.js" crossorigin="anonymous"></script>
     <title>Services Details</title>
 </head>
 
 <body>
     <!-- ----------- overall webpage------------- -->
-    <div class="overall page">
+    <div class="overall-page">
             <!-- ----------------nav starts-------------------- -->
-        <nav>
-            <div class="log">
-                <img src="./homepic/logo-dark.png" />
-            </div>
-
-            <input type="checkbox" id="centercheck" />
-
-            <div class="centernav">
-                <div class="home">
-                    <label for="homecheck">
-                        <a>Home</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </label>
-                    <input type="checkbox" id="homecheck" />
-                    <div class="homelink">
-                        <a href="./home">Home Stock</a>
-                        <a>Home Crypto</a>
-                        <a>Home Forex</a>
+            <nav>
+                <div class="log">
+                    <img src="./homepic/logo.svg"/>
+                </div>
+                <input type="checkbox" id="check"/>
+                <div class="submenu">
+                    <div class="home">
+                            <!-- <i class="fa-solid fa-x"></i> -->
+                        <a href="./index.html"><button>Home</button></a>
+                    </div>
+                    <div class="services">
+                        <input type="checkbox" id="s"/>
+                        
+                        <button>
+                            Services
+                            <label for="s">
+                                <i class="fa-solid fa-chevron-down servicesi"></i>
+                            </label>
+                        </button>
+                        <div class="servicesanger">
+                            <a href="./our service.html">Our Services</a>
+                            <a href="./Services Details.html">Services Details</a>
+                        </div>
+                    </div>
+                    <a href="./About.html" class="about">About Us</a>
+                    <div class="page">
+                        <input type="checkbox" id="p"/>
+                        <button>
+                            Pages
+                            <label for="p">
+                                <i class="fa-solid fa-chevron-down pagei"></i>
+                            </label>
+                        </button>
+                        <div class="pageanger">
+                            <a href="./Team.html">Our Team</a>
+                            <a href="./Pricing.html">Our Pricing</a>
+                            <a href="./Blog.html">Blog</a>
+                            <a href="./Contact.html">Contect Us</a>
+                        </div>
                     </div>
                 </div>
-                <div class="services">
-                    <label for="servicecheck">
-                        <a>Services</a>
-                        <i class="fa-solid fa-chevron-down"></i>
+                
+                <div class="navitag">
+                <button class="navlastbutton">Get Started</button>
+                <label for="check">
+                    <i class="fa-solid fa-bars icon checkI"></i>
                     </label>
-                    <input type="checkbox" id="servicecheck" />
-                    <div class="servicelink">
-                        <a>Our Services</a>
-                        <a>Servuces details</a>
-                    </div>
                 </div>
-                <a>About Us</a>
-                <div class="page">
-                    <label>
-                        <a>Pages</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </label>
-                    <input type="checkbox" id="pagecheck" />
-                    <div class="pagelink">
-                        <a>Our Team</a>
-                        <a>Warde Warren</a>
-                        <a>Our Pricing</a>
-                        <a>Blog</a>
-                        <a>Blog Details</a>
-                    </div>
-                </div>
-                <a>Contact Us</a>
-            </div>
-            <div class="buttontag">
-                <button>Get Started</button>
-                <label for="centercheck">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-            </div>
-        </nav>
-
+                
+            </nav>
+    
         <!-----Nav close---->
         <!-- ----------- service home ------------- -->
         <section class="service-d-bg">
             <img src="./service details pic/graph.jpeg" alt="img">
             <article class="bg-content">
-                <h1>Strategy Consulting</h1>
+                <h2>Strategy Consulting</h2>
                 <p><span>Bitrader</span>&nbsp; >&nbsp; <span>Services</span>&nbsp; > &nbsp;Strategy Consulting</p>
             </article>
         </section>
@@ -184,6 +180,61 @@
             </div>
 
 
+        </div>
+
+         <!-- footer container -->
+         <div class="footer">
+            <!-- footer content -->
+            <div class="footer-content">
+                <img src="./pic/pricing_wave.png" alt="pic" class="pricing-wave">
+                <div class="bitrader">
+                    <img src="./pic/logo-dark.png" alt="pic">
+                    <p> Welcome to our trading site! We offer the best, most affordable products and services around.
+                        Shop
+                        now and start finding great deals!</p>
+                    <div class="downlode-img">
+                        <a href="https://www.google.com/search?q=apple+store&rlz=1C1ONGR_enIN1083IN1083&oq=apple+store&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEwgBEC4YxwEYsQMYyQMY0QMYgAQyBggCEEUYOzIOCAMQRRgnGDsYgAQYigUyCggEEAAYkgMYgAQyCggFEAAYkgMYgAQyCggGEAAYsQMYgAQyBggHEEUYPNIBCTEyNTkwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"><img src="./pic/apple.png" alt="pic"> </a>
+                        <a href="https://www.google.com/search?q=play+store&rlz=1C1ONGR_enIN1083IN1083&oq=play&gs_lcrp=EgZjaHJvbWUqEggAEAAYFBiDARiHAhixAxiABDISCAAQABgUGIMBGIcCGLEDGIAEMgYIARBFGDkyEAgCEC4YgwEYsQMYgAQY5QQyDQgDEAAYgwEYsQMYgAQyBwgEEAAYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg0MDI4ajBqOagCALACAA&sourceid=chrome&ie=UTF-8"> <img src="./pic/playstore.png" alt="pic"> </a>
+                    </div>
+                </div>
+                <div class="footer-conditions">
+                    <div class="quick-link">
+                        <h1> Quick links </h1>
+                        <p>About Us</p>
+                        <p>Teams</p>
+                        <p>Services</p>
+                        <p>Features</p>
+                    </div>
+                    <div class="quick-link">
+                        <h1> Support </h1>
+                        <p>Terms & Conditions</p>
+                        <p>Privacy Policy</p>
+                        <p>FAQs</p>
+                        <p>Support Center</p>
+                    </div>
+                    <div class="quick-link">
+                        <h1> Company </h1>
+                        <p> Careers </p>
+                        <p> Updates </p>
+                        <p> Job </p>
+                        <p> Announce </p>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- copy rights content -->
+            <div class="copy-rights">
+                <p> © 2023 All Rights Reserved By Thetork </p>
+                <div class="social-media">
+                    <a href="https://www.google.com/search?q=facebook&rlz=1C1ONGR_enIN1083IN1083&oq=faceb&gs_lcrp=EgZjaHJvbWUqFQgAEAAYQxiDARjjAhixAxiABBiKBTIVCAAQABhDGIMBGOMCGLEDGIAEGIoFMhgIARAuGEMYgwEYxwEYsQMY0QMYgAQYigUyBggCEEUYQDIGCAMQRRg5MgwIBBAAGEMYgAQYigUyDAgFEAAYQxiABBiKBTIGCAYQBRhAMgYIBxBFGDzSAQg3MzA3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="https://www.google.com/search?q=instagram&rlz=1C1ONGR_enIN1083IN1083&oq=ins&gs_lcrp=EgZjaHJvbWUqEggBEAAYQxiDARixAxiABBiKBTIGCAAQRRg8MhIIARAAGEMYgwEYsQMYgAQYigUyFAgCEEUYORhDGIMBGLEDGIAEGIoFMgwIAxAAGEMYgAQYigUyDQgEEAAYgwEYsQMYgAQyBggFEEUYPTIGCAYQRRg9MgYIBxBFGDzSAQgyMDYyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"> <i class="fa-brands fa-instagram"></i> </a>
+                    <a href=" https://www.google.com/search?q=linkedin&rlz=1C1ONGR_enIN1083IN1083&oq=link&gs_lcrp=EgZjaHJvbWUqDQgAEAAYgwEYsQMYgAQyDQgAEAAYgwEYsQMYgAQyDwgBEEUYORiDARixAxiABDITCAIQLhiDARjHARixAxjRAxiABDINCAMQABiDARixAxiABDIKCAQQABixAxiABDIPCAUQABgUGIcCGLEDGIAEMgYIBhBFGDwyBggHEEUYPNIBCDU2NThqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8"> <i class="fa-brands fa-linkedin"></i> </a>
+                    <a href=" https://www.youtube.com/ "> <i class="fa-brands fa-youtube"></i> </a>
+                    <a href="https://www.google.com/search?q=twitter&rlz=1C1ONGR_enIN1083IN1083&oq=twitt&gs_lcrp=EgZjaHJvbWUqFQgAEAAYQxiDARjjAhixAxiABBiKBTIVCAAQABhDGIMBGOMCGLEDGIAEGIoFMhgIARAuGEMYgwEYxwEYsQMY0QMYgAQYigUyBggCEEUYOTIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyDAgFEAAYQxiABBiKBTIMCAYQABhDGIAEGIoFMgYIBxBFGDzSAQgxODU3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8 "> <i class="fa-brands fa-twitter"></i> </a>
+                </div>
+
+            </div>
         </div>
 
     </div>
