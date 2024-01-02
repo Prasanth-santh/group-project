@@ -151,6 +151,12 @@
     color: gray;
 }
 
+.roadmap>div>div {
+    box-shadow: 0px 0px 5px gray;
+    padding: 10px;
+}
+
+
 /* ADVISER */
 .adviser {
     margin-bottom: 50px;
