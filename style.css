@@ -2,6 +2,13 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    background-color: linear-gradient(150.39deg, rgba(237, 242, 248, 0.22) 15.02%, #52eaf0 99.59%);;
+}
+
+:root{
+    --box: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;   
+    --colorg:gray;
+ 
 }
 
 .container {
@@ -19,7 +26,7 @@ nav {
     justify-content: space-between;
     padding: 1px 20px 1px 20px;
     background-color:aliceblue;
-    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
+    box-shadow: var(--box);
     z-index: 999;
 }
 
@@ -32,7 +39,9 @@ nav .checkI{
     display: none;
     font-size: 50px;
 }
+
 /* nav hover icon and lastbutton collaburation div */
+
 .navitag{
     display: flex;
     align-items: center;
@@ -81,8 +90,8 @@ nav button{
     position: absolute;
     background-color:aliceblue;
     padding-left: 10px;
-    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;   
     cursor: pointer;
+    box-shadow: var(--box);
     z-index: 1; 
     min-height: 100px;
     min-height: 100px;
@@ -92,7 +101,7 @@ nav button{
 /* anger tag style */
 
 .home a,.services a,.page a{
-    color: gray;
+    color: var(--colorg);
     display: block;
     font-family: "Font Awesome 5 Free";
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -101,6 +110,7 @@ nav button{
     width: 150px;
     text-decoration: none;
     transition: all 1s;
+    text-decoration: none;
 }
 
 /* Servicetag hover*/
@@ -127,19 +137,19 @@ nav button{
 .homeanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color:var(--colorg);
 }
 
 .servicesanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color:var(--colorg);
 }
 
 .pageanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color: var(--colorg);
 }
 
 
@@ -162,7 +172,7 @@ nav button{
 
 .navlastbutton:hover{
     margin-bottom: 10px;
-    color: gray;
+    color: var(--colorg);
 }
 
  nav .submenu button span{
@@ -331,7 +341,6 @@ section {
     position: absolute;
     left: 30%;
     top: 36%;
-    background-color: red;
     animation-name: roted;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -391,14 +400,16 @@ section {
 
 .centersection {
     min-height: 100vh;
-    background-image:linear-gradient(to top,blue,skyblue);
     display: flex;
     align-items: end;
+    background: linear-gradient(160deg, rgba(229, 237, 248, 0.00) 0%, rgba(0, 208, 148, 0.32) 100%);
+
 }
 
 .centersection img {
     height: 300px;
     width: 300px;
+    
 }
 
 
@@ -441,6 +452,7 @@ section {
     animation-timing-function: linear;
 
 }
+
 
 @keyframes center {
      0%{
@@ -1045,6 +1057,38 @@ section {
     .centersection,
     .rightsection {
         width: 100%;
+    }
+
+    .centersection{
+        min-height: 110vh;
+       
+    }
+    
+    .centersection img{
+        animation-name:centerres;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes centerres{
+        0%{
+            margin-bottom: 0%;
+    }
+    25%{
+            margin-bottom: 5%;
+    }
+
+    50%{
+            margin-bottom: 10%;
+    }
+
+    75%{
+            margin-bottom: 5%;
+    }
+    100%{
+            margin-bottom: 0%;
+    }
     }
 
     .lefsection h1 {
