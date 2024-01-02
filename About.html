@@ -24,63 +24,55 @@
     <!-- MAIN -->
     <div class="container">
 
-        <!-- NAVBAR -->
         <nav>
             <div class="log">
-                <img src="./homepic/logo-dark.png" />
+                <img src="./homepic/logo.svg" />
             </div>
-
-            <input type="checkbox" id="centercheck" />
-
-            <div class="centernav">
+            <input type="checkbox" id="check" />
+            <div class="submenu">
                 <div class="home">
-                    <label for="homecheck">
-                        <a>Home</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </label>
-                    <input type="checkbox" id="homecheck" />
-                    <div class="homelink">
-                        <a href="./home">Home Stock</a>
-                        <a>Home Crypto</a>
-                        <a>Home Forex</a>
-                    </div>
+                    <button>Home</button>
                 </div>
                 <div class="services">
-                    <label for="servicecheck">
-                        <a>Services</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </label>
-                    <input type="checkbox" id="servicecheck" />
-                    <div class="servicelink">
+                    <input type="checkbox" id="s" />
+
+                    <button>
+                        Services
+                        <label for="s">
+                            <i class="fa-solid fa-chevron-down servicesi"></i>
+                        </label>
+                    </button>
+                    <div class="servicesanger">
                         <a>Our Services</a>
-                        <a>Servuces details</a>
+                        <a>Services Details</a>
                     </div>
                 </div>
-                <a>About Us</a>
+                <a class="about">About Us</a>
                 <div class="page">
-                    <label>
-                        <a>Pages</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </label>
-                    <input type="checkbox" id="pagecheck" />
-                    <div class="pagelink">
+                    <input type="checkbox" id="p" />
+                    <button>
+                        Pages
+                        <label for="p">
+                            <i class="fa-solid fa-chevron-down pagei"></i>
+                        </label>
+                    </button>
+                    <div class="pageanger">
                         <a>Our Team</a>
-                        <a>Warde Warren</a>
                         <a>Our Pricing</a>
                         <a>Blog</a>
-                        <a>Blog Details</a>
+                        <a>Contect Us</a>
                     </div>
                 </div>
-                <a>Contact Us</a>
             </div>
-            <div class="buttontag">
-                <button>Get Started</button>
-                <label for="centercheck">
-                    <i class="fa-solid fa-bars"></i>
+
+            <div class="navitag">
+                <button class="navlastbutton">Get Started</button>
+                <label for="check">
+                    <i class="fa-solid fa-bars icon checkI"></i>
                 </label>
             </div>
-        </nav>
 
+        </nav>
 
         <!-- HOME -->
         <div class="home">
