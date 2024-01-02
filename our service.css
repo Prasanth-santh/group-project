@@ -168,8 +168,10 @@
     width: 100%;
     min-height: 500px;
     gap:30px;
-    overflow: hidden;
-
+    position: relative;
+    animation-name: client-info;
+    animation-duration: 2s;
+    scroll-behavior: hidden;
 }
 
 
@@ -177,6 +179,16 @@
     background-color: white;
     width:500px ;
     border-bottom: 1px solid gray;
+    
+}
+
+@keyframes client-info{
+    from{
+        left: 800px;
+    }
+    to{
+        left: 0;
+    }
 }
 .client-info-box p{
     width: 100%;
