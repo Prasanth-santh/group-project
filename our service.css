@@ -134,7 +134,7 @@
 
 .clientbox{
     background-color: rgb(179, 212, 231);
-    padding: 100px;
+    padding: 100px 20px;
     min-height: 700px;
     text-align: center;
 }
@@ -162,11 +162,11 @@
 /* client-info-box */
 
 .client-info-box{
-    padding-top: 50px;
+    padding: 50px 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap; */
     width: 100%;
+    min-height: 500px;
     gap:30px;
     position: relative;
     animation-name: client-info;
@@ -177,7 +177,7 @@
 
 .client-info{
     background-color: white;
-    width:450px ;
+    width:500px ;
     border-bottom: 1px solid gray;
     
 }
@@ -196,6 +196,8 @@
 }
 .bottomline{
     padding: 40px;
+    min-height: 350px;
+    /* width: 600px; */
     border-radius: 10px;
     background-color: white;
     border: 3px solid transparent;
@@ -209,6 +211,19 @@
 @media screen and (max-width:600px) {
     .client-info{
         width: 100%;
+    }
+    .client-info-box{
+        flex-wrap: wrap;
+        width: 100%;
+       
+    }
+       
+}
+@media screen and (min-width:670px) and (max-width:1000px) {
+    .client-info-box{
+        flex-wrap: wrap;
+         justify-content: center;
+        align-items: center;
     }
     
 }
@@ -272,12 +287,143 @@
     font-size: 50px;
     color: rgba(117, 241, 165, 0.904);
 }
-.bottomline:hover .icon i{
+.bottomline:hover .icon>i{
     color:rgb(10, 102, 59);
 }
 
 @media screen and (max-width:430px){
-    .profile-info-container .icon{
-        display: none;
+    .profile-info-container {
+        justify-content: center;
+    }
+}
+@media screen and (min-width:900px) and (max-width:1400px) {
+    
+    .anim1{
+        position: relative;
+        animation: anim1 10s infinite ;
+        transition: 2s all;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease;
+    }
+    @keyframes anim1{
+        0%{
+            left: 0;
+        }
+        50%{
+            left: -53%;
+        }
+        75%{
+            left: -100%;
+        }
+        100%{
+            left: -150%;
+        }
+
+    }
+    .anim2{
+        position: relative;
+        animation: anim2 10s infinite ;
+        transition: 2s all;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes anim2{
+        0%{
+            left: 0;
+        }
+        50%{
+            left: -53%;
+        }
+        75%{
+            left: -100%;
+        }
+        100%{
+            left: -156%;
+        }
+    }
+    .anim3{
+        position: relative;
+        animation: anim3 10s infinite ;
+        transition: 2s all;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes anim3{
+        0%{
+            left: 0;
+        }
+        50%{
+            left: -53%;
+        }
+        75%{
+            left: -100%;
+        }
+        100%{
+            left: -156%;
+        }
+
+    }
+    .anim4{
+        position: relative;
+        animation: anim4 10s infinite ;
+        transition: 2s all;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes anim4{
+        0%{
+            left: 0;
+        }
+        50%{
+            left: -53%;
+        }
+        75%{
+            left: -100%;
+        }
+        100%{
+            left: -156%;
+        }
+
+    }
+    .anim5{
+        position: relative;
+        animation: anim5 10s infinite ;
+        transition: 2s all;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes anim5{
+        0%{
+            left: 0;
+        }
+        50%{
+            left: -53%;
+        }
+        75%{
+            left: -100%;
+        }
+        100%{
+            left: -156%;
+        }
+
+    }
+    .anim6{
+        position: relative;
+        animation: anim6 10s infinite ;
+        transition: 2s all;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes anim6{
+        0%{
+            left: 0;
+        }
+        50%{
+            left: -53%;
+        }
+        100%{
+            left: -106%;
+        }
+
     }
 }

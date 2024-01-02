@@ -9,34 +9,273 @@
 /* HOME */
 .home {
     width: 100%;
-    min-height:350px;
-    position:relative;
+    min-height: 350px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .home>img {
-    width:100%;
-    height:350px;
-    position:absolute;
+    width: 100%;
+    height: 350px;
+    position: absolute;
 }
 
 .home>div {
     position: absolute;
-    left:100px;
+    left: 100px;
     bottom: 80px;
 }
 
 .home>div>span:nth-child(1) {
-    color:rgb(139, 137, 137);
+    color: rgb(139, 137, 137);
     font-weight: bold;
     font-size: 25px;
 }
 
 
 .home>div>span:nth-child(2) {
-    color:white;
+    color: white;
     font-weight: bold;
     font-size: 25px;
+}
+
+
+/* HOME-IMAGE */
+.home-image {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image>img {
+    width: 70%;
+    height: 300px;
+}
+
+/* EXPERIENCE */
+.experience {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.experience>img {
+    width: 700px;
+    height: 700px;
+}
+
+.experience>div {
+    padding: 20px;
+}
+
+.experience>div>h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(61, 61, 212);
+}
+
+.experience>div>p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.experience>div>button {
+    background-color: lightgreen;
+    border-radius: 5px;
+    border: unset;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.experience>div>button:hover {
+    background-color: rgb(8, 141, 97);
+}
+
+/* ROADMAP */
+.roadmap {
+    margin-bottom: 100px;
+}
+
+.roadmap>h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 45px;
+    color: rgb(71, 209, 71);
+}
+
+.roadmap>p {
+    text-align: center;
+    color: gray;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0px 100px;
+}
+
+.roadmap>div {
+    width: 100%;
+    padding: 0px 50px;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.roadmap>div>div>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.roadmap>div>div>div>h2 {
+    font-size: 25px;
+}
+
+.roadmap>div>div>div>h2:nth-child(2) {
+    color: rgb(67, 217, 67);
+}
+
+
+.roadmap>div>div>p {
+    font-size: 20px;
+    color: gray;
+}
+
+/* ADVISER */
+.adviser {
+    margin-bottom: 50px;
+}
+
+.adviser>h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 45px;
+    color: rgb(71, 209, 71);
+}
+
+.adviser>p {
+    text-align: center;
+    color: gray;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0px 100px;
+}
+
+.adviser>div {
+    width:100%;
+    display: grid;
+    justify-items:center;
+    align-items: center;
+    gap:20px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.adviser>div>div {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.adviser>div>div>img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+.adviser>div>div>div {
+    position: absolute;
+    background-color: rgba(233, 229, 229, 0.7);
+    bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.adviser>div>div>div>h3 {
+    font-size: 25px;
+}
+
+
+.adviser>div>div>div>p {
+    font-size: 15px;
+    color:rgb(62, 60, 60);
+}
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+
+    .home {
+        min-height: 200px;
+    }
+
+    .home>img {
+        top: 0px;
+        height: 200px;
+    }
+
+    .home>div {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .home>div>span:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .home>div>span:nth-child(2) {
+        font-size: 20px;
+    }
+
+    /* HOME-IMAGE */
+    .home-image {
+        margin-top: 30px;
+    }
+
+    .home-image>img {
+        width: 70%;
+        height: 150px;
+    }
+
+}
+
+
+@media only screen and (min-width:601px) and (max-width:900px) {
+
+    .home {
+        min-height: 300px;
+    }
+
+    .home>img {
+        top: 0px;
+        height: 300px;
+    }
+
+    .home>div {
+        left: 40px;
+        bottom: 40px;
+    }
+
+}
+
+
+@media only screen and (min-width:901px) and (max-width:1000px) {
+
+    .home>div {
+        left: 40px;
+        bottom: 40px;
+    }
+
 }
