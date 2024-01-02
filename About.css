@@ -44,7 +44,7 @@
 
 /* HOME-IMAGE */
 .home-image {
-    height: 250px;
+    height: 300px;
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@
 
 .home-image>img {
     width: 70%;
-    height: 200px;
+    height: 300px;
 }
 
 /* EXPERIENCE */
@@ -68,8 +68,8 @@
 }
 
 .experience>img {
-    width: 400px;
-    height: 400px;
+    width: 700px;
+    height: 700px;
 }
 
 .experience>div {
@@ -77,13 +77,13 @@
 }
 
 .experience>div>h1 {
-    font-size: 25px;
+    font-size: 40px;
     margin-bottom: 20px;
     color: rgb(61, 61, 212);
 }
 
 .experience>div>p {
-    font-size: 15px;
+    font-size: 25px;
     margin-bottom: 20px;
     color: gray;
 }
@@ -92,8 +92,8 @@
     background-color: lightgreen;
     border-radius: 5px;
     border: unset;
-    font-size: 13px;
-    padding: 5px;
+    font-size: 25px;
+    padding: 10px;
 }
 
 .experience>div>button:hover {
@@ -102,21 +102,21 @@
 
 /* ROADMAP */
 .roadmap {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .roadmap>h1 {
     text-align: center;
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 45px;
     color: rgb(71, 209, 71);
 }
 
 .roadmap>p {
     text-align: center;
     color: gray;
-    margin-bottom: 30px;
-    font-size: 15px;
+    margin-bottom: 50px;
+    font-size: 25px;
     padding: 0px 100px;
 }
 
@@ -138,7 +138,7 @@
 }
 
 .roadmap>div>div>div>h2 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .roadmap>div>div>div>h2:nth-child(2) {
@@ -147,7 +147,7 @@
 
 
 .roadmap>div>div>p {
-    font-size: 15px;
+    font-size: 20px;
     color: gray;
 }
 
@@ -159,32 +159,30 @@
 .adviser>h1 {
     text-align: center;
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 45px;
     color: rgb(71, 209, 71);
 }
 
 .adviser>p {
     text-align: center;
     color: gray;
-    margin-bottom: 30px;
-    font-size: 15px;
+    margin-bottom: 50px;
+    font-size: 25px;
     padding: 0px 100px;
 }
 
 .adviser>div {
     width:100%;
     display: grid;
-    justify-content:center;
+    justify-items:center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
-    padding: 20px;
-
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 }
 
 .adviser>div>div {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -193,8 +191,8 @@
 
 
 .adviser>div>div>img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     position: absolute;
 }
 
@@ -208,12 +206,12 @@
 }
 
 .adviser>div>div>div>h3 {
-    font-size: 15px;
+    font-size: 25px;
 }
 
 
 .adviser>div>div>div>p {
-    font-size: 10px;
+    font-size: 15px;
     color:rgb(62, 60, 60);
 }
 
