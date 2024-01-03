@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
+    font-family: "Open Sans", sans-serif;
+=======
+    font-family:'Times New Roman', Times, serif;
+    
+>>>>>>> 651ef1fb78aa12a394b98ba75c48650f83b93949
 }
 /* Nava bar Stat */
 nav {
