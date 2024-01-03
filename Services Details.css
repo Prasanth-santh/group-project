@@ -6,7 +6,7 @@
 /* Nava bar Stat */
 nav {
     height: 100px;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0px;
     display: flex;
@@ -14,7 +14,7 @@ nav {
     justify-content: space-between;
     padding: 1px 20px 1px 20px;
     background-color:aliceblue;
-    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
+    box-shadow: var(--box);
     z-index: 999;
 }
 
@@ -27,7 +27,9 @@ nav .checkI{
     display: none;
     font-size: 50px;
 }
+
 /* nav hover icon and lastbutton collaburation div */
+
 .navitag{
     display: flex;
     align-items: center;
@@ -76,8 +78,8 @@ nav button{
     position: absolute;
     background-color:aliceblue;
     padding-left: 10px;
-    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;   
     cursor: pointer;
+    box-shadow: var(--box);
     z-index: 1; 
     min-height: 100px;
     min-height: 100px;
@@ -87,7 +89,7 @@ nav button{
 /* anger tag style */
 
 .home a,.services a,.page a{
-    color: gray;
+    color: var(--colorg);
     display: block;
     font-family: "Font Awesome 5 Free";
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -96,6 +98,7 @@ nav button{
     width: 150px;
     text-decoration: none;
     transition: all 1s;
+    text-decoration: none;
 }
 
 /* Servicetag hover*/
@@ -122,25 +125,26 @@ nav button{
 .homeanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color:var(--colorg);
 }
 
 .servicesanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color:var(--colorg);
 }
 
 .pageanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color: var(--colorg);
 }
 
 
 .about{
-    
     cursor: pointer;
+    color: black;
+    text-decoration: none;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -152,21 +156,21 @@ nav button{
     background-color: lightgreen;
     border-radius: 10px;
     border: unset;
+    text-align: center;
+    font-size: 18px;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .navlastbutton:hover{
     margin-bottom: 10px;
-    color: gray;
+    color: var(--colorg);
 }
 
  nav .submenu button span{
     position: relative;
     top: 5px;
     left: 10px;
-    /* display: flex; */
-    /* align-items: center; */
-    
 }
 
 nav .submenu button span i{
@@ -292,6 +296,12 @@ nav .submenu button span i{
     
 }
 
+@media screen and (min-width:320px) and (max-width:420px){
+    .navlastbutton{
+        display:none;
+    }
+} 
+
 
 
 /* Nav bar over  */
@@ -390,6 +400,7 @@ nav .submenu button span i{
     line-height: 35px;
     transition: all 0.2s;
 }
+
 .categories a{
     text-decoration: none;
 
