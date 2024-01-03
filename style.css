@@ -2,9 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Lora', serif;
-    font-family: 'Playpen Sans', cursive;
-    font-family: 'PT Serif', serif;
+    font-family: "Open Sans", sans-serif;
     background-color: linear-gradient(150.39deg, rgba(237, 242, 248, 0.22) 15.02%, #52eaf0 99.59%);;
 }
 
@@ -311,6 +309,116 @@ nav .submenu button span i{
 
 /* Nav bar over  */
 
+
+/* Form tag  Stat*/
+form{
+    position:fixed;
+    top: 25%;
+    right: 34%;
+    height: 400px;
+    width: 30%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    z-index: 20;
+    background-color:rgb(8, 8, 31);
+    outline: none;
+    display: none;
+}
+form label{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 20px;
+    color: aqua;
+    
+}
+form input{
+    padding: 12px 10px 10px 16px;
+    color: white;
+    border-radius: 20px;
+    border: unset;
+    width: 90%;
+    outline:aqua ;
+    border:  1px solid aqua;
+    background-color: transparent;
+}
+
+.summit-from{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.summit-from input{
+    width: 40%;
+    padding: 10px;
+}
+
+form input:focus{
+    box-shadow: 5px 0px 5px gray,0px 5px 5px gray,0px -5px 5px gray,-5px 0px 5px gray;
+}
+
+ #fr:checked~form{
+    display: flex;
+}
+
+
+/* click it is a login card click button  or fixed button */
+.click{
+    position: fixed;
+    right: 1%;
+    top: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50px;
+    z-index: 100;
+    background-color: rgb(10, 238, 10);
+    box-shadow: 5px 0px 5px green,0px 5px 5px green,0px -5px 5px green,-5px 0px 5px green;
+}
+
+.click i{
+    font-size: 30px;
+}
+
+
+.lefsection #fr{
+    display: none;
+}
+
+/* Form tag close */
+
+/* click2 button start */
+.click2{
+    height: 50px;
+    width: 50px; 
+    background-color: rgb(10, 238, 10);
+    box-shadow: 5px 0px 5px green,0px 5px 5px green,0px -5px 5px green,-5px 0px 5px green; 
+    z-index: 100;
+    position: fixed;
+    top: 90%;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click2 i{
+    font-size: 30px;
+    color: black;
+}
+
+/* click button close */
+
+
+
 /* Section bar Stat */
 
 section {
@@ -368,6 +476,7 @@ section {
     width: 40%;
     height: 50px;
     margin-top: 10px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -376,6 +485,11 @@ section {
     border: unset;
     gap: 5px;
     transition: all 1s;
+    cursor: pointer;
+}
+
+.videobutton i a{
+    text-decoration:unset;
 }
 
 .videobutton i {
@@ -409,7 +523,7 @@ section {
 .centersection img {
     height: 300px;
     width: 300px;
-    
+
 }
 
 
@@ -936,8 +1050,10 @@ section {
     margin-top: 10px;
     border-radius: 10px;
     border: unset;
+    font-size: 18px;
     background-color: rgb(113, 206, 126);
     transition: all 1s;
+    cursor: pointer;
 
 }
 
@@ -947,6 +1063,7 @@ section {
 
 .s3right button:hover{
     margin-top: 2px;
+    color: gray;
 }
 
 /* 4th page */
@@ -993,12 +1110,22 @@ section {
 } 
 
 .d4R{
-    margin: auto;
+    display: flex;
+    justify-content: center;
+
 }
 
 .d4L button{
     margin-top: 20px;
+    width: 200px;
 }
+
+
+
+
+
+
+
 
 /* resposive stat */
 
@@ -1021,6 +1148,10 @@ section {
 
     .leftbuttontag :nth-child(3) {
         display: none;
+    }
+
+    form{
+        width:calc(30%);
     }
 
     .leftbuttontag button {
@@ -1061,6 +1192,11 @@ section {
 
     .page4{
         padding: 0px;
+    }
+
+    form{
+        width:300px;
+        right: 30%;
     }
 }
 
@@ -1105,6 +1241,11 @@ section {
     .section3 .s3right,
     .s3left {
         width: 100%;
+    }
+
+    form{
+        width:280px;
+        right: 28%;
     }
 
 }
@@ -1159,7 +1300,7 @@ section {
     100%{
             margin-bottom: 0%;
     }
-    }
+}
 
     .lefsection h1 {
         font-size: 60px;
@@ -1204,6 +1345,8 @@ section {
 
 }
 
+
+
 @media screen and (max-width:660px) {
     .section2main {
         grid-template-columns: auto;
@@ -1214,6 +1357,18 @@ section {
     }
 
 
+}
+
+@media screen and (max-width:600px){
+    form{
+        right:26%;
+    }
+}
+
+@media screen and (max-width:550px){
+    form{
+        right:24%;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -1263,11 +1418,22 @@ section {
         font-size: 20px;
     }
 
-    .page4 .d4R img{
-        margin: 1px 5% 1px 5%;
-        text-align: center;
+    .d4R{
+        justify-content: center;
+        align-items: center;
     }
 
+     .d4R img{
+        margin: 1px 5% 1px 5%;
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    form{
+        right:22%;
+    }
 }
 
 @media screen and (max-width:400px) {
@@ -1288,97 +1454,21 @@ section {
         width: 260px;
     }
 
+    form{
+        top: 33%;
+        right:16%;
+    }
+
 }
 
 @media screen and (max-width:350px) {
     .leftbuttontag {
         width: 85%;
     }
+
+    form{
+        right: 11%;
+    }
+
 }
 
-
-/* Form tag  Stat*/
-    form{
-        position:fixed;
-        top: 200pxpx;
-        right: 10%;
-        height: 400px;
-        width: calc(30%);
-        border-radius: 16px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 25px;
-        z-index: 20;
-        background-color:rgb(8, 8, 31);
-        outline: none;
-        display: none;
-    }
-    form label{
-        position: absolute;
-        top: 16px;
-        right: 20px;
-        font-size: 20px;
-        color: aqua;
-        
-    }
-    form input{
-        padding: 12px 10px 10px 16px;
-        color: white;
-        border-radius: 20px;
-        border: unset;
-        width: 90%;
-        outline:aqua ;
-        border:  1px solid aqua;
-        background-color: transparent;
-    }
-
-    .summit-from{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 90%;
-    }
-
-    .summit-from input{
-        width: 40%;
-        padding: 10px;
-    }
-
-    form input:focus{
-        box-shadow: 5px 0px 5px gray,0px 5px 5px gray,0px -5px 5px gray,-5px 0px 5px gray;
-    }
-
-     #fr:checked~form{
-        display: flex;
-    }
-
-
-    /* click it is a login card click button  or fixed button */
-    .click{
-        position: fixed;
-        right: 10px;
-        top: 120px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        width: 50px;
-        z-index: 100;
-        background-color: rgb(10, 238, 10);
-        box-shadow: 5px 0px 5px green,0px 5px 5px green,0px -5px 5px green,-5px 0px 5px green;
-    }
-
-    .click i{
-        font-size: 30px;
-    }
-
-
-    .lefsection #fr{
-        display: none;
-    }
-
-    
-/* Form tag close */
