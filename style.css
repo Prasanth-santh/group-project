@@ -3,21 +3,19 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-    background-color: linear-gradient(150.39deg, rgba(237, 242, 248, 0.22) 15.02%, #52eaf0 99.59%);
-    ;
+    background-color: linear-gradient(150.39deg, rgba(237, 242, 248, 0.22) 15.02%, #52eaf0 99.59%);;
 }
 
-:root {
-    --box: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
-    --colorg: gray;
-
+:root{
+    --box: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;   
+    --colorg:gray;
+ 
 }
 
 .container {
     width: 100%;
     min-height: 100vh;
 }
-
 /* Nava bar Stat */
 nav {
     height: 100px;
@@ -28,24 +26,24 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1px 20px 1px 20px;
-    background-color: aliceblue;
+    background-color:aliceblue;
     box-shadow: var(--box);
     z-index: 999;
 }
 
 /* Nav barresposi proberty */
-nav #check {
-    display: none;
+nav #check{
+    display:none ;
 }
 
-nav .checkI {
+nav .checkI{
     display: none;
     font-size: 50px;
 }
 
 /* nav hover icon and lastbutton collaburation div */
 
-.navitag {
+.navitag{
     display: flex;
     align-items: center;
     gap: 30px;
@@ -53,25 +51,25 @@ nav .checkI {
 
 /*Nav bar buttons*/
 
-nav button {
+nav button{
     font-size: 20px;
 }
 
 /* nav bar center button */
 
-.submenu {
+.submenu{
     width: 50%;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    
 }
 
-
+    
 /* nab bar center selecter button */
 
-.submenu button {
+.submenu button{
     padding: 10px;
     display: inline-block;
     border: unset;
@@ -81,34 +79,28 @@ nav button {
 
 /* center hover button tag  class*/
 
-.home,
-.services,
-.page {
+.home,.services,.page{
     position: relative;
 }
 
 /* anger tag class */
 
-.homeanger,
-.servicesanger,
-.pageanger {
+.homeanger,.servicesanger,.pageanger{
     display: none;
     position: absolute;
-    background-color: aliceblue;
+    background-color:aliceblue;
     padding-left: 10px;
     cursor: pointer;
     box-shadow: var(--box);
-    z-index: 1;
+    z-index: 1; 
     min-height: 100px;
     min-height: 100px;
-
+   
 }
 
 /* anger tag style */
 
-.home a,
-.services a,
-.page a {
+.home a,.services a,.page a{
     color: var(--colorg);
     display: block;
     margin: 16px 1px;
@@ -121,45 +113,45 @@ nav button {
 
 /* Servicetag hover*/
 
-.services:hover .servicesanger {
+.services:hover .servicesanger{
     display: block;
 }
 
-.services:hover .servicesi {
+.services:hover .servicesi{
     transform: rotate(-180deg);
 }
 
 /* page tag hover */
 
-.page:hover .pageanger {
+.page:hover .pageanger{
     display: block;
 }
 
-.page:hover .pagei {
+.page:hover .pagei{
     transform: rotate(-180deg);
 }
 
 
-.homeanger a:hover {
-    color: black;
+.homeanger a:hover{
+    color:black;
+    padding-left: 5px;
+    background-color:var(--colorg);
+}
+
+.servicesanger a:hover{
+    color:black;
+    padding-left: 5px;
+    background-color:var(--colorg);
+}
+
+.pageanger a:hover{
+    color:black;
     padding-left: 5px;
     background-color: var(--colorg);
 }
 
-.servicesanger a:hover {
-    color: black;
-    padding-left: 5px;
-    background-color: var(--colorg);
-}
 
-.pageanger a:hover {
-    color: black;
-    padding-left: 5px;
-    background-color: var(--colorg);
-}
-
-
-.about {
+.about{
     cursor: pointer;
     color: black;
     text-decoration: none;
@@ -167,7 +159,7 @@ nav button {
 }
 
 /* nav last button tag style */
-.navlastbutton {
+.navlastbutton{
     width: 140px;
     padding: 15px 10px 15px 10px;
     background-color: lightgreen;
@@ -179,35 +171,34 @@ nav button {
     cursor: pointer;
 }
 
-.navlastbutton:hover {
+.navlastbutton:hover{
     margin-bottom: 10px;
     color: var(--colorg);
 }
 
-nav .submenu button span {
+ nav .submenu button span{
     position: relative;
     top: 5px;
     left: 10px;
 }
 
- .submenu button span i {
+nav .submenu button span i{
     position: absolute;
 }
 
 /* input method */
-#s,
-#p {
+ #s,#p{
     display: none;
 }
 
-button .x {
+ button .x{
     display: none;
 }
 
 
 /* Navbar resposive Stat */
-@media screen and (max-width:900px) {
-    .submenu {
+@media screen and (max-width:900px){
+    .submenu{
         position: absolute;
         top: 100px;
         flex-direction: column;
@@ -219,108 +210,214 @@ button .x {
         transition: all 1s;
         align-items: start;
     }
-
-    .home button,
-    .services button,
-    .page button {
+    .home button,.services  button,.page button{
         display: flex;
         justify-content: space-between;
         /* background-color: yellow; */
         width: 100%;
     }
 
-    .home,
-    .services,
-    .page {
+    .home,.services,.page{
         width: 100%;
     }
 
 
-    .about {
+    .about{
         padding-left: 10px;
         width: 100%;
         /* background-color: yellow; */
     }
 
 
-    .servicesanger,
-    .homeanger,
-    .pageanger {
+    .servicesanger,.homeanger,.pageanger{
         position: unset;
         /* position: absolute; */
 
     }
+    
 
-
-    nav input:checked~.submenu {
+    nav input:checked~.submenu{
         left: 0;
     }
 
-    nav .checkI {
-        display: inline-block;
+    nav .checkI{
+        display:inline-block;
     }
 
     /* ethu yan nna hover alreaty pottorukkuratha
      un check pannitto thirumpa checkbox vaikkirathu*/
 
-    .home:hover .homeanger {
+    .home:hover .homeanger{
         display: none;
     }
 
-    .home #h:checked~.homeanger {
+    .home #h:checked ~ .homeanger{
         display: block;
     }
 
-    .home:hover .homei {
+    .home:hover .homei{
         transform: unset;
     }
 
     /* service button */
 
-    .services:hover .servicesanger {
+    .services:hover .servicesanger{
         display: none;
     }
 
-    .services #s:checked~.servicesanger {
+    .services #s:checked ~ .servicesanger{
         display: block;
     }
 
-    .services:hover .servicesi {
+    .services:hover .servicesi{
         transform: unset;
     }
 
     /* page button */
 
-    .page:hover .pageanger {
+    .page:hover .pageanger{
         display: none;
     }
 
-    .page #p:checked~.pageanger {
+    .page #p:checked ~ .pageanger{
         display: block;
     }
 
-    .page:hover .pagei {
-        transform: unset;
+    .page:hover .pagei{
+        transform:unset;
     }
+
+
+
 
 
 
 }
 
 @media screen and (max-width:600px) {
-    nav .navitag a {
-        display: none;
-    }
+        nav .navitag button{
+            display: none;
+        }
 
-    nav .navitag .checkI {
-        font-size: 40px;
-    }
-
+        nav .navitag .checkI{
+            font-size: 40px;
+        }
+    
 }
 
 
 
 /* Nav bar over  */
+
+
+/* Form tag  Stat*/
+form{
+    position:fixed;
+    top: 25%;
+    right: 34%;
+    height: 400px;
+    width: 30%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    z-index: 20;
+    background-color:rgb(8, 8, 31);
+    outline: none;
+    display: none;
+}
+form label{
+    top: 16px;
+    right: 20px;
+    font-size: 20px;
+    color: aqua;
+    
+}
+form input{
+    padding: 12px 10px 10px 16px;
+    color: white;
+    border-radius: 20px;
+    border: unset;
+    width: 90%;
+    outline:aqua ;
+    border:  1px solid aqua;
+    background-color: transparent;
+}
+
+.summit-from{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+
+}
+
+.summit-from input{
+    width: 40%;
+    padding: 10px;
+}
+
+form input:focus{
+    box-shadow: 5px 0px 5px gray,0px 5px 5px gray,0px -5px 5px gray,-5px 0px 5px gray;
+}
+
+ #fr:checked~form{
+    display: flex;
+}
+
+
+/* click it is a login card click button  or fixed button */
+.click{
+    position: fixed;
+    right: 10px;
+    top: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50px;
+    z-index: 100;
+    animation: unset;
+    background-color: rgb(10, 238, 10);
+    box-shadow: 5px 0px 5px green,0px 5px 5px green,0px -5px 5px green,-5px 0px 5px green;
+}
+
+.click .usI{
+    font-size: 30px;
+}
+
+
+.lefsection #fr{
+    display: none;
+}
+
+/* Form tag close */
+
+/* click2 button start */
+.click2{
+    height: 50px;
+    width: 50px; 
+    background-color: rgb(10, 238, 10);
+    box-shadow: 5px 0px 5px green,0px 5px 5px green,0px -5px 5px green,-5px 0px 5px green; 
+    z-index: 100;
+    position: fixed;
+    top: 90%;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click2 .updown{
+    font-size: 30px;
+    color: black;
+}
+
+/* click button close */
+
 
 
 /* Section bar Stat */
@@ -348,9 +445,8 @@ section {
 .lefsection p {
     padding: 5px 1px 20px 1px;
 }
-
 /* roted image */
-.lefsection .roted {
+.lefsection .roted{
     position: absolute;
     left: 30%;
     top: 36%;
@@ -361,14 +457,13 @@ section {
 }
 
 @keyframes roted {
-    0% {
+    0%{
         transform: rotate(0deg);
     }
-
-    100% {
+    100%{
         transform: rotate(360deg);
     }
-
+    
 }
 
 .leftbuttontag {
@@ -394,8 +489,9 @@ section {
     cursor: pointer;
 }
 
-.lefsection .videobutton a {
-    text-decoration: none;
+ .lefsection .videobutton a {
+    text-decoration:none;
+    color: black;
 }
 
 .videobutton i {
@@ -414,7 +510,7 @@ section {
     box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
 }
 
-.leftbuttontag button:hover {
+.leftbuttontag button:hover{
     margin-top: 0px;
 }
 
@@ -435,7 +531,6 @@ section {
 
 /* leftsection animation */
 /* arrow enpathu lefsection la erukkura img */
-
 .lefsection .arrow {
     animation-name: lefimg;
     animation-duration: 6s;
@@ -444,23 +539,21 @@ section {
 }
 
 @keyframes lefimg {
-    0% {
+    0%{
         padding-left: 0px;
     }
 
     25% {
         padding-left: 30px;
     }
-
-    50% {
+    50%{
         padding-left: 60px;
     }
 
-    75% {
+    75%{
         padding-left: 30px;
     }
-
-    100% {
+    100%{
         padding-left: 0px;
     }
 }
@@ -478,23 +571,20 @@ section {
 
 
 @keyframes center {
-    0% {
+     0%{
         margin-bottom: 0%;
     }
 
-    25% {
+    25%{
         margin-bottom: 10%;
     }
-
-    50% {
+    50%{
         margin-bottom: 20%;
     }
-
-    75% {
+    75%{
         margin-bottom: 10%;
     }
-
-    100% {
+    100%{
         margin-bottom: 0%;
     }
 }
@@ -510,9 +600,7 @@ section {
 }
 
 
-.right1,
-.right2,
-.right3 {
+.right1, .right2, .right3 {
     /* background-color: lightcoral; */
     background-color: whitesmoke;
     height: 100px;
@@ -916,11 +1004,11 @@ section {
     padding-top: 5%;
 }
 
-.s3imganime {
+.s3imganime{
     width: 50%;
 }
 
-.s3right .arrow2 {
+.s3right  .arrow2 {
     height: 50px;
     width: 100px;
     animation-name: s3img;
@@ -931,23 +1019,20 @@ section {
 }
 
 @keyframes s3img {
-    0% {
+    0%{
         margin-left: 0%;
     }
 
-    25% {
-        margin-left: 25%
+    25%{
+        margin-left:25%
     }
-
-    50% {
+    50%{
         margin-left: 50%;
     }
-
-    75% {
+    75%{
         margin-left: 25%;
     }
-
-    100% {
+    100%{
         margin-left: 0%;
     }
 }
@@ -974,17 +1059,17 @@ section {
 
 }
 
-.lastbutton {
+.lastbutton{
     height: 80px;
 }
 
-.s3right button:hover {
+.s3right button:hover{
     margin-top: 2px;
     color: gray;
 }
 
 /* 4th page */
-.page4 {
+.page4{
     min-height: 80vh;
     width: 100%;
     display: flex;
@@ -994,45 +1079,41 @@ section {
     margin-bottom: 20px;
 }
 
-.d4L {
+.d4L{
     width: 50%;
     padding-left: 20px;
-
+    
 }
 
-/* .d4L button{
-
-} */
-
-.d4L h1 {
+.d4L h1{
     font-size: 45px;
 }
 
-.d4L ul {
+.d4L ul{
     list-style: none;
 }
 
-.d4L ul li {
+.d4L ul li{
     padding-top: 20px;
     font-size: 25px;
     text-decoration: none;
 }
 
-.d4R img {
+.d4R img{
     width: 100%;
 }
 
-.d4L i {
+/* .d4L i{
     color: blue;
-}
+}  */
 
-.d4R {
+.d4R{
     display: flex;
     justify-content: center;
 
 }
 
-.d4L button {
+.d4L button{
     margin-top: 20px;
     width: 200px;
 }
@@ -1041,10 +1122,7 @@ section {
 
 
 
-/* all button tag */
-button{
-    font-size: 18px;
-}
+
 
 
 /* resposive stat */
@@ -1070,8 +1148,8 @@ button{
         display: none;
     }
 
-    form {
-        width: calc(30%);
+    form{
+        width:calc(30%);
     }
 
     .leftbuttontag button {
@@ -1110,12 +1188,12 @@ button{
         grid-template-columns: auto auto;
     }
 
-    .page4 {
+    .page4{
         padding: 0px;
     }
 
-    form {
-        width: 300px;
+    form{
+        width:300px;
         right: 30%;
     }
 }
@@ -1130,21 +1208,20 @@ button{
         width: 65%;
     }
 
-    .page4 {
+    .page4{
         flex-direction: column-reverse;
         gap: 40px;
-
+        
     }
 
-    .d4L {
+    .d4L{
         width: 100%;
     }
-
-    .d4L h1 {
-        font-size: 30px;
+    .d4L h1{
+        font-size:30px ;
     }
-
-
+    
+   
 
 
 }
@@ -1164,8 +1241,8 @@ button{
         width: 100%;
     }
 
-    form {
-        width: 280px;
+    form{
+        width:280px;
         right: 28%;
     }
 
@@ -1178,7 +1255,7 @@ button{
         flex-direction: column;
     }
 
-    .lefsection .roted {
+   .lefsection .roted{
 
         position: absolute;
         left: 88%;
@@ -1191,39 +1268,37 @@ button{
         width: 100%;
     }
 
-    .centersection {
+    .centersection{
         min-height: 110vh;
-
+       
     }
-
-    .centersection img {
-        animation-name: centerres;
+    
+    .centersection img{
+        animation-name:centerres;
         animation-duration: 6s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }
 
-    @keyframes centerres {
-        0% {
+    @keyframes centerres{
+        0%{
             margin-bottom: 0%;
-        }
-
-        25% {
-            margin-bottom: 5%;
-        }
-
-        50% {
-            margin-bottom: 10%;
-        }
-
-        75% {
-            margin-bottom: 5%;
-        }
-
-        100% {
-            margin-bottom: 0%;
-        }
     }
+    25%{
+            margin-bottom: 5%;
+    }
+
+    50%{
+            margin-bottom: 10%;
+    }
+
+    75%{
+            margin-bottom: 5%;
+    }
+    100%{
+            margin-bottom: 0%;
+    }
+}
 
     .lefsection h1 {
         font-size: 60px;
@@ -1276,21 +1351,21 @@ button{
     }
 
     .leftbuttontag button {
-        width: 160px;
+        width: 150px;
     }
 
 
 }
 
-@media screen and (max-width:600px) {
-    form {
-        right: 26%;
+@media screen and (max-width:600px){
+    form{
+        right:26%;
     }
 }
 
-@media screen and (max-width:550px) {
-    form {
-        right: 24%;
+@media screen and (max-width:550px){
+    form{
+        right:24%;
     }
 }
 
@@ -1341,21 +1416,21 @@ button{
         font-size: 20px;
     }
 
-    .d4R {
+    .d4R{
         justify-content: center;
         align-items: center;
     }
 
-    .d4R img {
+     .d4R img{
         margin: 1px 5% 1px 5%;
         width: 80%;
     }
 
 }
 
-@media screen and (max-width:600px) {
-    form {
-        right: 22%;
+@media screen and (max-width:600px){
+    form{
+        right:22%;
     }
 }
 
@@ -1363,11 +1438,10 @@ button{
     .leftbuttontag {
         width: 100%;
     }
-
-    .lefsection button{
-        width: 50%;
+    
+    .centersection{
+        height: 80vh;
     }
-
 
     .lefsection h1 {
         font-size: 40px;
@@ -1378,13 +1452,30 @@ button{
         font-size: 35px;
     }
 
+
     .sm1box {
         width: 260px;
     }
 
-    form {
+    form{
         top: 33%;
-        right: 16%;
+        right:16%;
+    }
+
+    .centersection img{
+        animation: unset;
+    }
+
+    .lefsection .arrow{
+        animation: unset;
+    }
+
+    .s3right .arrow2{
+        animation: unset;
+    }
+
+    .click,.click2{
+        right: 15px;
     }
 
 }
@@ -1394,11 +1485,7 @@ button{
         width: 100%;
     }
 
-    .lefsection button{
-        width: 50%;
-    }
-
-    form {
+    form{
         right: 11%;
     }
 
@@ -1408,44 +1495,28 @@ button{
 
 /* scroll par edit Start */
 
-::-webkit-scrollbar {
-    width: 10px;
-}
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
 
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
+    ::-webkit-scrollbar-track{
+        box-shadow: inset 0 0 5px grey; 
 
-}
+    }
 
-::-webkit-scrollbar-thumb {
-    background-color: lightgray;
-}
+    ::-webkit-scrollbar-thumb{
+        background-color: lightgray;
+    }
 
-::-webkit-scrollbar-thumb:hover {
-    background: gray;
-}
-
-
-
-/* scroll bar edit finish */
-
-.userrow{
-    position: fixed;
-    right: 1%;
-    bottom:20px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    width: 50px;
-    z-index: 100;
-    background-color: rgb(10, 238, 10);
-    box-shadow: 5px 0px 5px green, 0px 5px 5px green, 0px -5px 5px green, -5px 0px 5px green;
-}
-
+    ::-webkit-scrollbar-thumb:hover {
+        background: gray; 
+      }
 
 
 button{
+    color:black;
     cursor: pointer;
 }
+    
+
+/* scroll bar edit finish */

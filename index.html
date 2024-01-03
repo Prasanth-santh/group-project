@@ -3,12 +3,14 @@
 
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="./homepic/Bitcoin3.jfif" />
-    <title>Group Project</title>
+    <title>Crypto currency</title>
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <link rel="stylesheet" type="text/css" href="./team.css" />
     <link rel="stylesheet" type="text/css" href="./Pricing.css" />
     <link rel="stylesheet" type="text/css" href="./our service.css" />
+    <link rel="stylesheet" href="./Contact.css">
     <meta name="viewport" content="width-device=width,initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,9 +19,6 @@
 
 <body>
     <div class="container">
-
-       
-
         <!-- Nav Stat -->
         <nav>
             <div class="log">
@@ -61,26 +60,64 @@
             </div>
 
             <div class="navitag">
-                <a class="navlastbutton">Get Started</a>
+                <button class="navlastbutton"><a>Get Started</a></button>
                 <label for="check">
                     <i class="fa-solid fa-bars icon checkI"></i>
                 </label>
             </div>
 
         </nav>
+        <!-----Nav close---->
+        <div>
+            <!-- user icon stat -->
+            <label for="fr">
+                <div class="click">
+                    <i class="fa-solid fa-user  usI"></i>
+                </div>
+            </label>
+            <!-- user icon colose -->
 
-        <!-- section -->
-        <section   id="navrow">
+            <!-- form tag stat -->
+            <input type="checkbox" id="fr" />
+            <form>
+                <label for="fr">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <input type="text" placeholder="Enter your Name" />
+                <input type="password" placeholder="Enter your Password" />
+                <input type="email" placeholder="Enter your Email" />
+                <input type="password" placeholder="Comform password" />
+                <div class="summit-from">
+                    <input type="reset" />
+                    <input type="submit" />
+                </div>
+            </form>
+            <!-- form tag close -->
+
+            <!-- home fixed icon start -->
+
+            <div class="click2">
+                <a href="#allsection"><i class="fa-solid fa-angles-up  updown"></i></a>
+            </div>
+        </div>
+
+        <!-- home fixed icon close -->
+
+
+        <section id="allsection">
             <div class="lefsection">
                 <img src="./homepic/rounded.png" class="roted" />
-                <img src="./homepic/arrow1.png" class="arrow" />
+                <div class="arrowdiv">
+                    <img src="./homepic/arrow1.png" class="arrow" />
+                </div>
                 <h1>Maximize Your Investment Returns</h1>
                 <p>Anyone can invest money to different currency to increase their earnings by the help of tradingo
                     through online.</p>
                 <div class="leftbuttontag">
                     <button>Learn More</button>
                     <i class="fa-regular fa-circle-play lbi"></i>
-                    <button class="videobutton"><a href="https://youtu.be/7dvol-bVyeA?si=aComvMSBarphO2st"><i class="fa-regular fa-circle-play"></i>Watch Video</a></button>
+                    <button class="videobutton"><a href="https://youtu.be/7dvol-bVyeA?si=aComvMSBarphO2st"><i
+                                class="fa-regular fa-circle-play"></i>Watch Video</a></button>
                 </div>
             </div>
 
@@ -477,7 +514,57 @@
 
                 </div>
             </div>
+            <!-- content starts  -->
+            <div class="Contact-us">
+                <!-- overall content for contact -->
+                <div class="overall-contact">
+                    <!-- get in touch -->
+                    <div class="get-in">
+                        <h1> Let’s <span>Get In Touch </span> <br> With Us</h1>
+                        <!-- social media link -->
+                        <div class="icon-content">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
 
+                        <div class="mobile-contact animate1">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="mobile-num">
+                                <p> 0917749254</p>
+                                <p> 0983888611</p>
+                            </div>
+                        </div>
+                        <div class="mobile-contact animate2">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="mobile-num">
+                                <p> Bitrader@gmail.com </p>
+                                <p> hello@gmail.com </p>
+                            </div>
+                        </div>
+                        <div class="mobile-contact animate3">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="mobile-num">
+                                <p> 88 Sheridan Street </p>
+                                <p> 534 Victoria Trail </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- details container -->
+                    <div class="contact-details">
+                        <label> Name </label>
+                        <input type="text" placeholder="Full Name ">
+                        <label> Email </label>
+                        <input type="text" placeholder="Email Here ">
+                        <label> Message </label>
+                        <textarea placeholder=" Enter Your Message"></textarea>
+                        <button> Contact Us Now</button>
+                    </div>
+                    <img src="./pic/pricing_wave.png" alt="pic" class="pricing-wave">
+                </div>
+            </div>
             <!-- Subscribe details -->
             <div class="Subscribe-detials">
                 <img src="./pic/cta_shape1.png" alt="pic" class="shape1">
@@ -563,7 +650,6 @@
                             href="https://www.google.com/search?q=twitter&rlz=1C1ONGR_enIN1083IN1083&oq=twitt&gs_lcrp=EgZjaHJvbWUqFQgAEAAYQxiDARjjAhixAxiABBiKBTIVCAAQABhDGIMBGOMCGLEDGIAEGIoFMhgIARAuGEMYgwEYxwEYsQMY0QMYgAQYigUyBggCEEUYOTIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyDAgFEAAYQxiABBiKBTIMCAYQABhDGIAEGIoFMgYIBxBFGDzSAQgxODU3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8 ">
                             <i class="fa-brands fa-twitter"></i> </a>
                     </div>
-
                 </div>
             </div>
 
@@ -571,6 +657,7 @@
         </div>
 
         <!-- other file code2 close -->
+
 
     </div>
 </body>
