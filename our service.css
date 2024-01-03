@@ -99,21 +99,21 @@
     border-radius: 10px;
     text-align: center;
     border: 3px solid transparent;
-    animation-name:card-animation ;
-    animation-duration: 1s;
+    /* animation-name:card-animation ;
+    animation-duration: 1s; */
     position: relative;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
+    /* animation-iteration-count: 1;
+    animation-timing-function: ease-in; */
 }
 
-@keyframes card-animation{
+/* @keyframes card-animation{
      from{
         top: 100px;
      }
      to{
         top:0
      }
-}
+} */
 
 .card h2{
     padding-bottom: 20px;
