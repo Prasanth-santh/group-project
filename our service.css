@@ -94,7 +94,7 @@
     padding-bottom: 50px;
 }
 .card{
-    width: 350px;
+    width: 300px;
     padding: 70px 40px;
     background-color: rgb(209, 235, 245);
     border-radius: 10px;
@@ -106,10 +106,10 @@
     /* animation-iteration-count: 1;
     animation-timing-function: ease-in; */
 }
-@media screen (min-width:300px) and (max-width:500px) {
-    .card{
-        width:300px;
-    }
+@media screen and(max-width:500px) {    
+        .card{
+            width:300px
+        }
     
 }
 /* @keyframes card-animation{
@@ -322,7 +322,7 @@
         justify-content: center;
     }
 }
-@media screen and (min-width:900px) and (max-width:1400px) {
+@media screen and (min-width:1000px) and (max-width:1400px) {
     
     .anim1{
         position: relative;
