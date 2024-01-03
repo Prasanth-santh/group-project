@@ -204,7 +204,6 @@ nav .submenu button span i{
     .home button,.services  button,.page button{
         display: flex;
         justify-content: space-between;
-        /* background-color: yellow; */
         width: 100%;
     }
 
@@ -216,13 +215,11 @@ nav .submenu button span i{
     .about{
         padding-left: 10px;
         width: 100%;
-        /* background-color: yellow; */
     }
 
 
     .servicesanger,.homeanger,.pageanger{
         position: unset;
-        /* position: absolute; */
 
     }
     
@@ -323,7 +320,6 @@ nav .submenu button span i{
     top: 145px;
     left: 15%;
     line-height: 38px;
-    /* display: flex; */
 
 }
 .bg-content h1{
@@ -347,13 +343,9 @@ nav .submenu button span i{
     flex-wrap: wrap;
     flex-direction: column;
     gap: 40px;
-    /* background-color: blueviolet; */
-    /* width: 30%; */
 }
 .search-bar{
     width: 100%;
-    /* background-color: red; */
-    /* padding: 20px 25px 3px;   */
     border-radius: 7px;
 }
 .input{
@@ -382,7 +374,6 @@ nav .submenu button span i{
 }
 .categories{
     width: 100%;
-    /* background-color: orangered; */
     line-height: 31px;
     padding: 20px 25px;
     border-radius: 7px;
@@ -411,7 +402,6 @@ nav .submenu button span i{
 }
 .social-links{
     width: 100%;
-    /* background-color: coral; */
     padding: 20px 25px;
     border-radius: 7px;
 }
@@ -446,17 +436,14 @@ nav .submenu button span i{
 }
 .right-modules{
     width: 100%;
-    /* background-color: crimson; */
     padding: 20px 25px;
     border-radius: 7px;
     min-height: 140px;
 }
 .content {
-    /* height: 300px; */
     width: 100%;
     padding: 10px;
     margin-top: 25px ;
-    /* background-color: red; */
 }
 .content img{
     height: 270px;
@@ -464,7 +451,6 @@ nav .submenu button span i{
     border-radius: 16px;
 }
 .smart-trading{
-    /* background-color: burlywood; */
     padding: 23px;
     line-height: 24px;
 }
@@ -477,7 +463,6 @@ nav .submenu button span i{
     font-size: 19px;
 }
 .qna{
-    /* background-color: cornflowerblue; */
     padding: 10px;
     margin-top: 20px;
 }
@@ -523,13 +508,11 @@ nav .submenu button span i{
     display: flex;
     justify-content: space-between;
     gap: 19px;
-    /* background-color: orange; */
 
 }
 .img{
     height: 400px;
     margin-top: 15px;
-    /* background-color: blue; */
     width: 100%;
     overflow:hidden;
     position: relative;
@@ -538,9 +521,7 @@ nav .submenu button span i{
 .img img{
     height: 100%;
     width: 100%;
-    /* margin: auto; */
     text-align: center;
-    /* position: relative; */
     object-fit: cover;
     transition: all 0.4s;
 }
@@ -549,10 +530,8 @@ nav .submenu button span i{
     top: 75%;
     text-align: center;
     background-color: whitesmoke;
-    /* background-color: red; */
     width: 90%;
     left: 6%;
-    /* transform: translate(2%); */
     border-radius: 18px;
     padding: 20px;
     line-height: 25px;
@@ -615,7 +594,6 @@ nav .submenu button span i{
     flex-wrap: wrap;
 }
 .quick-link{
-    /* min-height: 300px; */
     width: 250px;
     padding: 15px;
     color: white;
@@ -740,7 +718,6 @@ nav .submenu button span i{
     .img-holder{
         flex-direction: column;
         align-items: center;
-        /* gap: 10px; */
     }
     .img{
         width: 70%;
@@ -775,7 +752,6 @@ nav .submenu button span i{
     }
     .img img{
         height: 100%;
-        /* width: 300px; */
         object-fit: cover;
     }
     .exp-details{
