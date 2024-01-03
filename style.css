@@ -2,6 +2,9 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Lora', serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'PT Serif', serif;
     background-color: linear-gradient(150.39deg, rgba(237, 242, 248, 0.22) 15.02%, #52eaf0 99.59%);;
 }
 
@@ -52,7 +55,6 @@ nav .checkI{
 
 nav button{
     font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* nav bar center button */
@@ -103,8 +105,6 @@ nav button{
 .home a,.services a,.page a{
     color: var(--colorg);
     display: block;
-    font-family: "Font Awesome 5 Free";
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 16px 1px;
     font-size: 20px;
     width: 150px;
@@ -158,7 +158,6 @@ nav button{
     color: black;
     text-decoration: none;
     font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* nav last button tag style */
@@ -1300,9 +1299,9 @@ section {
 
 /* Form tag  Stat*/
     form{
-        position: absolute;
-        top: 150px;
-        right: 33%;
+        position:fixed;
+        top: 200pxpx;
+        right: 10%;
         height: 400px;
         width: calc(30%);
         border-radius: 16px;
@@ -1351,7 +1350,7 @@ section {
         box-shadow: 5px 0px 5px gray,0px 5px 5px gray,0px -5px 5px gray,-5px 0px 5px gray;
     }
 
-    .lefsection #fr:checked~form{
+     #fr:checked~form{
         display: flex;
     }
 
