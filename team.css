@@ -308,7 +308,7 @@ padding: 100px 0 0 ;
     gap: 10px;
     flex-wrap: wrap;
 }
-.social-media a{
+.social-media>a{
     height: 50px;
     width: 50px;
     padding: 10px;
