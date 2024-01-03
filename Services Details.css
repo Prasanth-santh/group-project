@@ -6,7 +6,7 @@
 /* Nava bar Stat */
 nav {
     height: 100px;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0px;
     display: flex;
@@ -14,7 +14,7 @@ nav {
     justify-content: space-between;
     padding: 1px 20px 1px 20px;
     background-color:aliceblue;
-    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
+    box-shadow: var(--box);
     z-index: 999;
 }
 
@@ -27,7 +27,9 @@ nav .checkI{
     display: none;
     font-size: 50px;
 }
+
 /* nav hover icon and lastbutton collaburation div */
+
 .navitag{
     display: flex;
     align-items: center;
@@ -76,8 +78,8 @@ nav button{
     position: absolute;
     background-color:aliceblue;
     padding-left: 10px;
-    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;   
     cursor: pointer;
+    box-shadow: var(--box);
     z-index: 1; 
     min-height: 100px;
     min-height: 100px;
@@ -87,7 +89,7 @@ nav button{
 /* anger tag style */
 
 .home a,.services a,.page a{
-    color: gray;
+    color: var(--colorg);
     display: block;
     font-family: "Font Awesome 5 Free";
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -96,6 +98,7 @@ nav button{
     width: 150px;
     text-decoration: none;
     transition: all 1s;
+    text-decoration: none;
 }
 
 /* Servicetag hover*/
@@ -122,25 +125,26 @@ nav button{
 .homeanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color:var(--colorg);
 }
 
 .servicesanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color:var(--colorg);
 }
 
 .pageanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color: var(--colorg);
 }
 
 
 .about{
-    
     cursor: pointer;
+    color: black;
+    text-decoration: none;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -152,21 +156,21 @@ nav button{
     background-color: lightgreen;
     border-radius: 10px;
     border: unset;
+    text-align: center;
+    font-size: 18px;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .navlastbutton:hover{
     margin-bottom: 10px;
-    color: gray;
+    color: var(--colorg);
 }
 
  nav .submenu button span{
     position: relative;
     top: 5px;
     left: 10px;
-    /* display: flex; */
-    /* align-items: center; */
-    
 }
 
 nav .submenu button span i{
@@ -200,7 +204,6 @@ nav .submenu button span i{
     .home button,.services  button,.page button{
         display: flex;
         justify-content: space-between;
-        /* background-color: yellow; */
         width: 100%;
     }
 
@@ -212,13 +215,11 @@ nav .submenu button span i{
     .about{
         padding-left: 10px;
         width: 100%;
-        /* background-color: yellow; */
     }
 
 
     .servicesanger,.homeanger,.pageanger{
         position: unset;
-        /* position: absolute; */
 
     }
     
@@ -292,6 +293,12 @@ nav .submenu button span i{
     
 }
 
+@media screen and (min-width:320px) and (max-width:420px){
+    .navlastbutton{
+        display:none;
+    }
+} 
+
 
 
 /* Nav bar over  */
@@ -313,7 +320,6 @@ nav .submenu button span i{
     top: 145px;
     left: 15%;
     line-height: 38px;
-    /* display: flex; */
 
 }
 .bg-content h1{
@@ -337,13 +343,9 @@ nav .submenu button span i{
     flex-wrap: wrap;
     flex-direction: column;
     gap: 40px;
-    /* background-color: blueviolet; */
-    /* width: 30%; */
 }
 .search-bar{
     width: 100%;
-    /* background-color: red; */
-    /* padding: 20px 25px 3px;   */
     border-radius: 7px;
 }
 .input{
@@ -372,7 +374,6 @@ nav .submenu button span i{
 }
 .categories{
     width: 100%;
-    /* background-color: orangered; */
     line-height: 31px;
     padding: 20px 25px;
     border-radius: 7px;
@@ -390,6 +391,7 @@ nav .submenu button span i{
     line-height: 35px;
     transition: all 0.2s;
 }
+
 .categories a{
     text-decoration: none;
 
@@ -400,7 +402,6 @@ nav .submenu button span i{
 }
 .social-links{
     width: 100%;
-    /* background-color: coral; */
     padding: 20px 25px;
     border-radius: 7px;
 }
@@ -435,17 +436,14 @@ nav .submenu button span i{
 }
 .right-modules{
     width: 100%;
-    /* background-color: crimson; */
     padding: 20px 25px;
     border-radius: 7px;
     min-height: 140px;
 }
 .content {
-    /* height: 300px; */
     width: 100%;
     padding: 10px;
     margin-top: 25px ;
-    /* background-color: red; */
 }
 .content img{
     height: 270px;
@@ -453,7 +451,6 @@ nav .submenu button span i{
     border-radius: 16px;
 }
 .smart-trading{
-    /* background-color: burlywood; */
     padding: 23px;
     line-height: 24px;
 }
@@ -466,7 +463,6 @@ nav .submenu button span i{
     font-size: 19px;
 }
 .qna{
-    /* background-color: cornflowerblue; */
     padding: 10px;
     margin-top: 20px;
 }
@@ -512,13 +508,11 @@ nav .submenu button span i{
     display: flex;
     justify-content: space-between;
     gap: 19px;
-    /* background-color: orange; */
 
 }
 .img{
     height: 400px;
     margin-top: 15px;
-    /* background-color: blue; */
     width: 100%;
     overflow:hidden;
     position: relative;
@@ -527,9 +521,7 @@ nav .submenu button span i{
 .img img{
     height: 100%;
     width: 100%;
-    /* margin: auto; */
     text-align: center;
-    /* position: relative; */
     object-fit: cover;
     transition: all 0.4s;
 }
@@ -538,10 +530,8 @@ nav .submenu button span i{
     top: 75%;
     text-align: center;
     background-color: whitesmoke;
-    /* background-color: red; */
     width: 90%;
     left: 6%;
-    /* transform: translate(2%); */
     border-radius: 18px;
     padding: 20px;
     line-height: 25px;
@@ -604,7 +594,6 @@ nav .submenu button span i{
     flex-wrap: wrap;
 }
 .quick-link{
-    /* min-height: 300px; */
     width: 250px;
     padding: 15px;
     color: white;
@@ -729,7 +718,6 @@ nav .submenu button span i{
     .img-holder{
         flex-direction: column;
         align-items: center;
-        /* gap: 10px; */
     }
     .img{
         width: 70%;
@@ -764,7 +752,6 @@ nav .submenu button span i{
     }
     .img img{
         height: 100%;
-        /* width: 300px; */
         object-fit: cover;
     }
     .exp-details{

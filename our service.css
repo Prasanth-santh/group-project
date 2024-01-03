@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
-/* container */
+/* containerbox */
 
-.container{
-    /* padding-top: 100px; */
+.containerbox{
+    /* padding-top: 200px; */
     /* background-color: red; */
+}
+.overall-content{
+    /* padding: 100px 0 0; */
+}
+.topgap{
+    margin-top: 100px;
 }
 
 /* service-bg */
@@ -20,6 +26,7 @@
     padding: 100px;
     background-repeat: no-repeat;
     background-size: cover;
+    /* margin-top: 100px; */
 }
 .service-bg h1{
     color: white;
