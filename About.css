@@ -157,70 +157,6 @@
 }
 
 
-/* ADVISER */
-.adviser {
-    margin-bottom: 50px;
-}
-
-.adviser>h1 {
-    text-align: center;
-    margin-bottom: 15px;
-    font-size: 45px;
-    color: rgb(71, 209, 71);
-}
-
-.adviser>p {
-    text-align: center;
-    color: gray;
-    margin-bottom: 50px;
-    font-size: 25px;
-    padding: 0px 100px;
-}
-
-.adviser>div {
-    width: 100%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.adviser>div>div {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.adviser>div>div>img {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-}
-
-.adviser>div>div>div {
-    position: absolute;
-    background-color: rgba(233, 229, 229, 0.7);
-    bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.adviser>div>div>div>h3 {
-    font-size: 25px;
-}
-
-
-.adviser>div>div>div>p {
-    font-size: 15px;
-    color: rgb(62, 60, 60);
-}
-
 @media only screen and (min-width:300px) and (max-width:600px) {
 
     .home {
@@ -297,26 +233,7 @@
         font-size: 20px;
         padding: 0px 10px;
     }
-
-
-    /* ADVISER */
-    .adviser {
-        margin-bottom: 50px;
-    }
-
-    .adviser>h1 {
-        margin-bottom: 15px;
-        font-size: 30px;
-    }
-
-    .adviser>p {
-        margin-bottom: 30px;
-        font-size: 20px;
-        padding: 0px 10px;
-    }
-
 }
-
 
 @media only screen and (min-width:601px) and (max-width:900px) {
 
