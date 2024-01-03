@@ -1517,6 +1517,16 @@ button{
     color:black;
     cursor: pointer;
 }
-    
+
+
+.lab3{
+    width: 100%;
+    text-align: end;
+
+}
+
+.lab3 i{
+    margin-right:15px ;
+}
 
 /* scroll bar edit finish */
