@@ -106,7 +106,12 @@
     /* animation-iteration-count: 1;
     animation-timing-function: ease-in; */
 }
-
+@media screen (min-width:300px) and (max-width:500px) {
+    .card{
+        width:300px;
+    }
+    
+}
 /* @keyframes card-animation{
      from{
         top: 100px;
