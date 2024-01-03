@@ -2,6 +2,13 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    background-color: linear-gradient(150.39deg, rgba(237, 242, 248, 0.22) 15.02%, #52eaf0 99.59%);;
+}
+
+:root{
+    --box: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;   
+    --colorg:gray;
+ 
 }
 
 .container {
@@ -19,7 +26,7 @@ nav {
     justify-content: space-between;
     padding: 1px 20px 1px 20px;
     background-color:aliceblue;
-    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;
+    box-shadow: var(--box);
     z-index: 999;
 }
 
@@ -32,7 +39,9 @@ nav .checkI{
     display: none;
     font-size: 50px;
 }
+
 /* nav hover icon and lastbutton collaburation div */
+
 .navitag{
     display: flex;
     align-items: center;
@@ -81,8 +90,8 @@ nav button{
     position: absolute;
     background-color:aliceblue;
     padding-left: 10px;
-    box-shadow: -1px 0 lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray;   
     cursor: pointer;
+    box-shadow: var(--box);
     z-index: 1; 
     min-height: 100px;
     min-height: 100px;
@@ -92,7 +101,7 @@ nav button{
 /* anger tag style */
 
 .home a,.services a,.page a{
-    color: gray;
+    color: var(--colorg);
     display: block;
     font-family: "Font Awesome 5 Free";
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -101,6 +110,7 @@ nav button{
     width: 150px;
     text-decoration: none;
     transition: all 1s;
+    text-decoration: none;
 }
 
 /* Servicetag hover*/
@@ -127,25 +137,26 @@ nav button{
 .homeanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color:var(--colorg);
 }
 
 .servicesanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color:var(--colorg);
 }
 
 .pageanger a:hover{
     color:black;
     padding-left: 5px;
-    background-color: gray;
+    background-color: var(--colorg);
 }
 
 
 .about{
-    
     cursor: pointer;
+    color: black;
+    text-decoration: none;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -157,21 +168,21 @@ nav button{
     background-color: lightgreen;
     border-radius: 10px;
     border: unset;
+    text-align: center;
+    font-size: 18px;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .navlastbutton:hover{
     margin-bottom: 10px;
-    color: gray;
+    color: var(--colorg);
 }
 
  nav .submenu button span{
     position: relative;
     top: 5px;
     left: 10px;
-    /* display: flex; */
-    /* align-items: center; */
-    
 }
 
 nav .submenu button span i{
@@ -331,7 +342,6 @@ section {
     position: absolute;
     left: 30%;
     top: 36%;
-    background-color: red;
     animation-name: roted;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -391,14 +401,16 @@ section {
 
 .centersection {
     min-height: 100vh;
-    background-image:linear-gradient(to top,blue,skyblue);
     display: flex;
     align-items: end;
+    background: linear-gradient(160deg, rgba(229, 237, 248, 0.00) 0%, rgba(0, 208, 148, 0.32) 100%);
+
 }
 
 .centersection img {
     height: 300px;
     width: 300px;
+    
 }
 
 
@@ -441,6 +453,7 @@ section {
     animation-timing-function: linear;
 
 }
+
 
 @keyframes center {
      0%{
@@ -936,6 +949,58 @@ section {
 .s3right button:hover{
     margin-top: 2px;
 }
+
+/* 4th page */
+.page4{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+}
+
+.d4L{
+    width: 50%;
+    padding-left: 20px;
+    
+}
+
+.d4L button{
+
+}
+
+.d4L h1{
+    font-size: 45px;
+}
+
+.d4L ul{
+    list-style: none;
+}
+
+.d4L ul li{
+    padding-top: 20px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.d4R img{
+    width: 100%;
+}
+
+.d4L i{
+    color: blue;
+} 
+
+.d4R{
+    margin: auto;
+}
+
+.d4L button{
+    margin-top: 20px;
+}
+
 /* resposive stat */
 
 @media screen and (max-width:1200px) {
@@ -994,6 +1059,10 @@ section {
     .section2main {
         grid-template-columns: auto auto;
     }
+
+    .page4{
+        padding: 0px;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -1006,6 +1075,20 @@ section {
         width: 65%;
     }
 
+    .page4{
+        flex-direction: column-reverse;
+        gap: 40px;
+        
+    }
+
+    .d4L{
+        width: 100%;
+    }
+    .d4L h1{
+        font-size:30px ;
+    }
+    
+   
 
 
 }
@@ -1045,6 +1128,38 @@ section {
     .centersection,
     .rightsection {
         width: 100%;
+    }
+
+    .centersection{
+        min-height: 110vh;
+       
+    }
+    
+    .centersection img{
+        animation-name:centerres;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes centerres{
+        0%{
+            margin-bottom: 0%;
+    }
+    25%{
+            margin-bottom: 5%;
+    }
+
+    50%{
+            margin-bottom: 10%;
+    }
+
+    75%{
+            margin-bottom: 5%;
+    }
+    100%{
+            margin-bottom: 0%;
+    }
     }
 
     .lefsection h1 {
@@ -1149,6 +1264,11 @@ section {
         font-size: 20px;
     }
 
+    .page4 .d4R img{
+        margin: 1px 5% 1px 5%;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width:400px) {
@@ -1176,3 +1296,89 @@ section {
         width: 85%;
     }
 }
+
+
+/* Form tag  Stat*/
+    form{
+        position: absolute;
+        top: 150px;
+        right: 33%;
+        height: 400px;
+        width: calc(30%);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        z-index: 20;
+        background-color:rgb(8, 8, 31);
+        outline: none;
+        display: none;
+    }
+    form label{
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        font-size: 20px;
+        color: aqua;
+        
+    }
+    form input{
+        padding: 12px 10px 10px 16px;
+        color: white;
+        border-radius: 20px;
+        border: unset;
+        width: 90%;
+        outline:aqua ;
+        border:  1px solid aqua;
+        background-color: transparent;
+    }
+
+    .summit-from{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .summit-from input{
+        width: 40%;
+        padding: 10px;
+    }
+
+    form input:focus{
+        box-shadow: 5px 0px 5px gray,0px 5px 5px gray,0px -5px 5px gray,-5px 0px 5px gray;
+    }
+
+    .lefsection #fr:checked~form{
+        display: flex;
+    }
+
+
+    /* click it is a login card click button  or fixed button */
+    .click{
+        position: fixed;
+        right: 10px;
+        top: 120px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        z-index: 100;
+        background-color: rgb(10, 238, 10);
+        box-shadow: 5px 0px 5px green,0px 5px 5px green,0px -5px 5px green,-5px 0px 5px green;
+    }
+
+    .click i{
+        font-size: 30px;
+    }
+
+
+    .lefsection #fr{
+        display: none;
+    }
+
+    
+/* Form tag close */
